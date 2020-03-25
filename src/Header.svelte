@@ -13,15 +13,34 @@
     margin-right: 50px;
   }
   nav ul :global(a) {
-    @apply text-2xl;
+    @apply text-xl font-light text-primary no-underline;
+    /* color: #ababab; */
+    transition: color ease 0.3s;
+    position: relitive;
+  }
+  nav ul :global(a)::after {
+    transform: translateX(-50%);
+    width: 20%;
+    height: 6px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    content: "";
+    border-radius: 6px;
+    background: #4b6cc1;
+  }
+  nav ul :global(a):hover {
+    color: white;
   }
   .brand :global(a) {
-    @apply text-4xl;
+    @apply text-2xl font-medium text-white no-underline tracking-wider;
   }
 </style>
 
 <header class="bg-primary">
-  <div class="flex justify-between mx-auto inner-wrapper">
+  <div class="flex justify-between mx-auto inner-wrapper items-center py-20">
     <div class="brand">
       <Link class="text-6xl" to="/">AARON WILDER</Link>
     </div>
