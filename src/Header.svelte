@@ -13,10 +13,10 @@
     margin-right: 50px;
   }
   nav ul :global(a) {
-    @apply text-xl font-light text-primary no-underline;
-    /* color: #ababab; */
     transition: color ease 0.3s;
     position: relitive;
+    @apply text-xl font-light text-primary no-underline;
+    /* color: #ababab; */
   }
   nav ul :global(a)::after {
     transform: translateX(-50%);
@@ -40,7 +40,7 @@
 </style>
 
 <header class="bg-primary">
-  <div class="flex justify-between mx-auto inner-wrapper items-center py-20">
+  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper">
     <div class="brand">
       <Link class="text-6xl" to="/">AARON WILDER</Link>
     </div>
