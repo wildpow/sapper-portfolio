@@ -11,6 +11,44 @@ const mode = process.env.NODE_ENV
 const dev = mode === 'development'
 const legacy = !!process.env.SAPPER_LEGACY_BUILD
 
+import getPreprocessor from 'svelte-preprocess'
+import postcss from 'rollup-plugin-postcss'
+import path from 'path'
+
+const postcssPlugins = (purgecss = false) => {
+  return [
+    require('postcss-import')(),
+    require('postcss-url')(),
+    require('tailwindcss')('./tailwind.config.js'),
+    require('autoprefixer'),
+    // Do not purge the CSS in dev mode to be able to play with classes in the browser dev-tools.
+    purgecss &&
+      require('@fullhuman/postcss-purgecss')({
+        content: ['./**/*.svelte'],
+        extractors: [
+          {
+            extractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+
+            // Specify the file extensions to include when scanning for
+            // class names.
+            extensions: ['svelte'],
+          },
+        ],
+        // Whitelist selectors to stop Purgecss from removing them from your CSS.
+        whitelist: ['html', 'body'],
+      }),
+  ].filter(Boolean)
+}
+
+const preprocess = getPreprocessor({
+  transformers: {
+    postcss: {
+      // Don't need purgecss because Svelte handle unused css for you.
+      plugins: postcssPlugins(),
+    },
+  },
+})
+
 const onwarn = (warning, onwarn) =>
   (warning.code === 'CIRCULAR_DEPENDENCY' &&
     /[/\\]@sapper[/\\]/.test(warning.message)) ||
@@ -26,6 +64,7 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
       svelte({
+        preprocess,
         dev,
         hydratable: true,
         emitCss: true,
@@ -78,6 +117,7 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
       svelte({
+        preprocess,
         generate: 'ssr',
         dev,
       }),
@@ -85,6 +125,10 @@ export default {
         dedupe: ['svelte'],
       }),
       commonjs(),
+      postcss({
+        plugins: postcssPlugins(!dev),
+        extract: path.resolve(__dirname, './static/global.css'),
+      }),
     ],
     external: Object.keys(pkg.dependencies).concat(
       require('module').builtinModules ||
