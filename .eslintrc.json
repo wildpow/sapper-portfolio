@@ -1,15 +1,19 @@
 {
   "env": {
     "browser": true,
-    "es6": true
+    "es6": true,
+    "node": true
   },
   "parserOptions": {
     "ecmaVersion": 2019,
     "sourceType": "module"
   },
   "plugins": ["svelte3"],
-  "extends": ["eslint:recommended","plugin:import/errors",
-		"plugin:import/warnings"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
   "overrides": [
     {
       "files": ["**/*.svelte"],
