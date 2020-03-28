@@ -3,57 +3,63 @@
 </script>
 
 <style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
+  @media screen and (max-width: 1920px) {
+    .inner-wrapper {
+      max-width: 1430px;
+      width: 92%;
+    }
+  }
+  li:not(:last-child) {
+    margin-right: 50px;
+  }
+  nav ul :global(a) {
+    transition: color ease 0.3s;
+    position: relitive;
+    @apply text-xl font-light text-primary no-underline;
+    /* color: #ababab; */
+  }
+  nav ul :global(a)::after {
+    transform: translateX(-50%);
+    width: 20%;
+    height: 6px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+    content: "";
+    border-radius: 6px;
+    background: #4b6cc1;
+  }
+  nav ul :global(a):hover {
+    color: white;
+  }
+  .brand :global(a) {
+    @apply text-2xl font-medium text-white no-underline tracking-wider;
+  }
 </style>
 
-<nav>
-	<ul>
-		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
-		<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>blog</a></li>
-	</ul>
-</nav>
+<header class="bg-primary">
+  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper">
+    <div class="brand">
+      <a class="text-6xl" aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
+    </div>
+    <nav>
+      <ul class="flex">
+        <li>
+					<a aria-current='{segment === "projects" ? "page" : undefined}' href='projects'>projects</a>
+        </li>
+        <li>
+          <a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a>
+        </li>
+        <li>
+					<a aria-current='{segment === "services" ? "page" : undefined}' href='services'>services</a>
+        </li>
+        <li>
+					<a aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
