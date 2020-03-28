@@ -13,10 +13,12 @@
     margin-right: 50px;
   }
   nav ul :global(a) {
+    @apply text-2xl font-thin text-primary no-underline tracking-wider;
     transition: color ease 0.3s;
     position: relitive;
-    @apply text-xl font-light text-primary no-underline;
-    /* color: #ababab; */
+		/* color: #ababab; */
+		text-rendering: optimizeLegibility;
+		
   }
   nav ul :global(a)::after {
     transform: translateX(-50%);
@@ -35,28 +37,28 @@
     color: white;
   }
   .brand :global(a) {
-    @apply text-2xl font-medium text-white no-underline tracking-wider;
+    @apply text-3xl font-medium text-white no-underline tracking-wider;
   }
 </style>
 
 <header class="bg-primary">
   <div class="flex items-center justify-between py-20 mx-auto inner-wrapper">
     <div class="brand">
-      <a class="text-6xl" aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
+      <a  aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
     </div>
     <nav>
       <ul class="flex">
         <li>
-					<a aria-current='{segment === "projects" ? "page" : undefined}' href='projects'>projects</a>
+					<a aria-current='{segment === "projects" ? "page" : undefined}' href='projects'>Projects</a>
         </li>
         <li>
-          <a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a>
+          <a aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a>
         </li>
         <li>
-					<a aria-current='{segment === "services" ? "page" : undefined}' href='services'>services</a>
+					<a aria-current='{segment === "services" ? "page" : undefined}' href='services'>Services</a>
         </li>
         <li>
-					<a aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>contact</a>
+					<a aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>Contact</a>
         </li>
       </ul>
     </nav>
