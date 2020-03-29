@@ -1,5 +1,12 @@
 <script>
 	export let segment;
+	import { onMount } from 'svelte';
+
+	import { fade, fly } from 'svelte/transition';
+	let visible = false;
+	onMount(()=> {
+		visible = true
+	})
 </script>
 
 <style>
@@ -59,9 +66,9 @@
 		max-width: 22px;
 	}
 </style>
-
+{#if visible}
 <header class="bg-primary">
-  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper">
+  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper" in:fly="{{ y: 200, duration: 2000 }}" out:fade>
     <div class="brand">
       <a  aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
     </div>
@@ -83,4 +90,4 @@
     </nav>
   </div>
 </header>
-
+{/if}
