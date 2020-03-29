@@ -14,13 +14,13 @@
   }
   nav ul :global(a) {
     @apply text-2xl font-thin text-primary no-underline tracking-wider;
-    transition: color ease 0.3s;
-    position: relitive;
+    transition: all ease 0.3s;
+    position: relative;
 		/* color: #ababab; */
 		text-rendering: optimizeLegibility;
 		
   }
-  nav ul :global(a)::after {
+  nav ul :global(a)::before {
     transform: translateX(-50%);
     width: 20%;
     height: 6px;
@@ -31,14 +31,33 @@
     pointer-events: none;
     content: "";
     border-radius: 6px;
-    background: #4b6cc1;
-  }
+		background: #4b6cc1;
+		transition: all ease 0.3s;  }
   nav ul :global(a):hover {
     color: white;
-  }
+	}
+	nav ul :global(a):hover::before{
+  width: 70%;
+  opacity: 1;
+}
   .brand :global(a) {
-    @apply text-3xl font-medium text-white no-underline tracking-wider;
-  }
+		@apply text-3xl font-medium text-white no-underline tracking-wider;
+	}
+	.brand :global(a):after {
+		transition: max-width ease .3s;
+		margin-top: 10px;
+		width: 100%;
+		max-width: 38px;
+    height: 6px;
+    display: block;
+    content: '';
+    border-radius: 1000px;
+    background: #4b6cc1;
+		}
+	.brand :global(a):hover:after {
+	
+		max-width: 22px;
+	}
 </style>
 
 <header class="bg-primary">
