@@ -16,8 +16,8 @@
   <title>Aaron Wilder</title>
 </svelte:head>
 
-<section class="flex h-full bg-primary">
-  <div class="flex items-center justify-between py-16 mx-auto inner-wrapper">
+<section class="flex bg-primary">
+  <div class="flex items-center justify-around py-16 mx-auto inner-wrapper">
     <div class="flex flex-col align-middle">
       <h1 class="text-6xl text-white ">Hey, I'm Aaron.</h1>
       <h2 class="max-w-md mt-8 text-3xl font-light text-primary">

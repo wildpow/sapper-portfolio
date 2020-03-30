@@ -62,7 +62,7 @@
 	}
 </style>
 {#if visible}
-<header class="bg-primary">
+<header class="relative bg-primary">
   <div class="flex items-center justify-between py-20 mx-auto inner-wrapper" in:fly="{{ y: -200, duration: 2000 }}" out:fade>
     <div class="brand">
       <a  aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>

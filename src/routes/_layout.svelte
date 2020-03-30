@@ -10,6 +10,8 @@
   @tailwind utilities;
   body {
     font-family: 'Rubik', 'Arial', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
   @media screen and (max-width: 1920px) {
     .inner-wrapper {
