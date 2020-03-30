@@ -11,9 +11,6 @@
 </script>
 
 <style>
-	header {
-		opacity: 1;
-	}
   li:not(:last-child) {
     margin-right: 50px;
   }
@@ -66,11 +63,11 @@
 </style>
 {#if visible}
 <header class="absolute z-10 w-full">
-  <div class="flex items-center justify-between pt-16 pb-12 mx-auto inner-wrapper" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
+  <div class="flex items-center justify-between pt-4 pb-6 mx-auto border-b-2 border-gray-600 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
     <div class="brand">
       <a  aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
     </div>
-    <nav>
+    <nav class="hidden lg:block">
       <ul class="flex">
         <li>
 					<a aria-current='{segment === "projects" ? "page" : undefined}' href='projects'>Projects</a>

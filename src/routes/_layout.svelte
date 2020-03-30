@@ -20,12 +20,17 @@
     }
   }
   .page-banner {
-    padding-top: 180px;
+    padding-top: 90px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
-    @apply bg-primary pb-20;
+    @apply bg-primary pb-32;
+  }
+  @media screen and (min-width: 768px) {
+    .page-banner {
+      padding-top: 180px;
+    }
   }
   .heading__tagLine {
-    @apply text-6xl text-white;
+    @apply text-4xl text-6xl text-white;
   }
   .heading__desciption {
     @apply mt-5 text-3xl font-light text-primary;

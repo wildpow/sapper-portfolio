@@ -15,8 +15,16 @@
     /* width: 345px;
     height: 510px; */
     max-width: 345px;
-    margin-bottom: -80px;
     border-radius: 6px;
+  }
+  @media screen and (min-width: 768px){
+    img {
+      margin-bottom: -80px;
+    }
+    section {
+      padding-bottom: 200px;
+    height: 107vh;
+    }
   }
   a {
     background: #4b6cc1;
@@ -33,10 +41,7 @@
     background: none;
     color: #4b6cc1;
   }
-  section {
-    padding-bottom: 200px;
-    height: 107vh;
-  }
+ 
   figure {
     background: #121316;
     border-radius: 6px;
@@ -53,10 +58,10 @@
   {#if visible}
 
   <div
-    class="flex items-center justify-around py-4 pb-16 mx-auto inner-wrapper" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
-    <div class="flex flex-col pr-8 align-middle">
+    class="flex flex-col items-center justify-around py-4 pb-16 mx-auto inner-wrapper md:flex-row" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
+    <div class="flex flex-col align-middle">
       <h1 class="heading__tagLine">Hey, I'm Aaron.</h1>
-      <h2 class="max-w-md heading__desciption">
+      <h2 class="max-w-md pr-8 heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
         businesses do better online.
       </h2>
