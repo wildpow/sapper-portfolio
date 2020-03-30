@@ -10,7 +10,9 @@
 </script>
 
 <style>
- 
+	header {
+		opacity: 1;
+	}
   li:not(:last-child) {
     margin-right: 50px;
   }
@@ -62,8 +64,8 @@
 	}
 </style>
 {#if visible}
-<header class="absolute z-10 w-full ">
-  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper" in:fly="{{ y: -200, duration: 2000 }}" out:fade>
+<header class="absolute z-10 w-full transition:fade" in:fade="{{duration: 700}}">
+  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper" in:fly="{{ y: -100, duration: 700 }}">
     <div class="brand">
       <a  aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
     </div>

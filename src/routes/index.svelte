@@ -1,3 +1,14 @@
+<script>
+  	import { onMount } from 'svelte';
+
+	import { fade, fly } from 'svelte/transition';
+	let visible = false;
+	onMount(()=> {
+		visible = true
+	})
+
+</script>
+
 <style>
   img {
     /* width: 345px;
@@ -24,6 +35,7 @@
   section {
     padding-top: 211px;
     padding-bottom: 200px;
+    height: 100vh;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
   }
   figure {
@@ -38,9 +50,11 @@
   <title>Aaron Wilder</title>
 </svelte:head>
 
-<section class="relative flex bg-primary">
+<section class="relative bg-primary">
+  {#if visible}
+  <div in:fade="{{duration: 700}}">
   <div
-    class="flex items-center justify-around py-4 pb-16 mx-auto inner-wrapper">
+    class="flex items-center justify-around py-4 pb-16 mx-auto inner-wrapper" in:fly="{{ y: 100, duration: 700 }}">
     <div class="flex flex-col pr-8 align-middle">
       <h1 class="text-6xl text-white ">Hey, I'm Aaron.</h1>
       <h2 class="max-w-md mt-8 text-3xl font-light text-primary">
@@ -56,4 +70,6 @@
     </figure>
 
   </div>
+</div>
+  {/if}
 </section>
