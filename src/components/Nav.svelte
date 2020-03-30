@@ -20,7 +20,7 @@
     margin-right: 50px;
   }
   nav ul :global(a) {
-    @apply text-2xl font-thin text-primary no-underline tracking-wider;
+    @apply text-2xl font-light text-primary no-underline tracking-wider;
     transition: all ease 0.3s;
     position: relative;
 		/* color: #ababab; */
@@ -68,7 +68,7 @@
 </style>
 {#if visible}
 <header class="bg-primary">
-  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper" in:fly="{{ y: 200, duration: 2000 }}" out:fade>
+  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper" in:fly="{{ y: -200, duration: 2000 }}" out:fade>
     <div class="brand">
       <a  aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
     </div>

@@ -8,6 +8,9 @@
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+  body {
+    font-family: 'Rubik', 'Arial', sans-serif;
+  }
 </style>
 
 <Nav {segment} />
