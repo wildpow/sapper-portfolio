@@ -1,8 +1,9 @@
 <script>
 	export let segment;
 	import { onMount } from 'svelte';
+	import { quintOut } from 'svelte/easing';
 
-	import { fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	let visible = false;
 	onMount(()=> {
 		visible = true
@@ -64,8 +65,8 @@
 	}
 </style>
 {#if visible}
-<header class="absolute z-10 w-full transition:fade" in:fade="{{duration: 700}}">
-  <div class="flex items-center justify-between py-20 mx-auto inner-wrapper" in:fly="{{ y: -100, duration: 700 }}">
+<header class="absolute z-10 w-full">
+  <div class="flex items-center justify-between pt-16 pb-12 mx-auto inner-wrapper" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
     <div class="brand">
       <a  aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
     </div>

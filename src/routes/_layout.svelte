@@ -19,6 +19,17 @@
       width: 92%;
     }
   }
+  .page-banner {
+    padding-top: 180px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+    @apply bg-primary pb-20;
+  }
+  .heading__tagLine {
+    @apply text-6xl text-white;
+  }
+  .heading__desciption {
+    @apply mt-5 text-3xl font-light text-primary;
+  }
 </style>
 
 <Nav {segment} />

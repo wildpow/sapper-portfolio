@@ -1,7 +1,8 @@
 <script>
   	import { onMount } from 'svelte';
+    import { quintOut } from 'svelte/easing';
 
-	import { fade, fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 	let visible = false;
 	onMount(()=> {
 		visible = true
@@ -33,10 +34,8 @@
     color: #4b6cc1;
   }
   section {
-    padding-top: 211px;
     padding-bottom: 200px;
-    height: 100vh;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+    height: 107vh;
   }
   figure {
     background: #121316;
@@ -50,14 +49,14 @@
   <title>Aaron Wilder</title>
 </svelte:head>
 
-<section class="relative bg-primary">
+<section class="relative page-banner">
   {#if visible}
-  <div in:fade="{{duration: 700}}">
+
   <div
-    class="flex items-center justify-around py-4 pb-16 mx-auto inner-wrapper" in:fly="{{ y: 100, duration: 700 }}">
+    class="flex items-center justify-around py-4 pb-16 mx-auto inner-wrapper" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
     <div class="flex flex-col pr-8 align-middle">
-      <h1 class="text-6xl text-white ">Hey, I'm Aaron.</h1>
-      <h2 class="max-w-md mt-8 text-3xl font-light text-primary">
+      <h1 class="heading__tagLine">Hey, I'm Aaron.</h1>
+      <h2 class="max-w-md heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
         businesses do better online.
       </h2>
@@ -70,6 +69,6 @@
     </figure>
 
   </div>
-</div>
+
   {/if}
 </section>
