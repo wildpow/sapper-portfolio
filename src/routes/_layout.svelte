@@ -11,6 +11,12 @@
   body {
     font-family: 'Rubik', 'Arial', sans-serif;
   }
+  @media screen and (max-width: 1920px) {
+    .inner-wrapper {
+      max-width: 1430px;
+      width: 92%;
+    }
+  }
 </style>
 
 <Nav {segment} />

@@ -10,12 +10,7 @@
 </script>
 
 <style>
-  @media screen and (max-width: 1920px) {
-    .inner-wrapper {
-      max-width: 1430px;
-      width: 92%;
-    }
-  }
+ 
   li:not(:last-child) {
     margin-right: 50px;
   }
