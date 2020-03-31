@@ -23,7 +23,7 @@
     }
     .hero {
       padding-bottom: 200px;
-    height: 107vh;
+    height: 105vh;
     }
   }
   a {
@@ -70,7 +70,7 @@
       </a>
     </div>
     <figure>
-      <img src="aaron.jpg" alt="Aaron Wilder smiling in a suit" />
+      <img src="Portraits16-9.jpg" alt="Aaron Wilder smiling in a suit" />
     </figure>
 
   </div>
@@ -80,5 +80,14 @@
 <section class="py-32">
   <div class="pb-20 mx-auto inner-wrapper">
     <h2 class="pb-3 text-2xl font-medium uppercase border-b-4 text-secondary border-article">Featured Project</h2>
+    <article class="flex">
+      <figure>
+        <img src="esc.png" alt="e.s.c. mattress center"/>
+      </figure>
+      <div>
+        <h3>E.S.C. Mattress Center</h3>
+        <p>A local bedding company's web site designed to help customers find information on sleep health and find the best sleep solutions for their needs</p>  
+      </div>
+    </article>
     </div>
   </section>
