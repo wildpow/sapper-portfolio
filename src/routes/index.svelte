@@ -11,11 +11,10 @@
 </script>
 
 <style>
-  img {
+  .hero__img {
     /* width: 345px;
     height: 510px; */
     max-width: 345px;
-    border-radius: 6px;
   }
   @media screen and (min-width: 768px){
     img {
@@ -26,33 +25,30 @@
     height: 105vh;
     }
   }
-  a {
-    background: #4b6cc1;
-    color: white;
-    border-radius: 1000px;
-    align-self: start;
+  .hero__button {
     transition: all ease 0.3s;
   }
-  a:hover {
-    -webkit-transform: scale(1.075);
+  .hero__button:hover {
     transform: scale(1.075);
-    -webkit-box-shadow: inset 0 0 0 2px #4b6cc1;
     box-shadow: inset 0 0 0 2px #4b6cc1;
     background: none;
     color: #4b6cc1;
   }
- 
-  figure {
-    background: #121316;
-    border-radius: 6px;
-    padding: 40px;
-    margin-bottom: 40px;
-  }
+
 </style>
 
 <svelte:head>
   <title>Aaron Wilder</title>
 </svelte:head>
+
+<!--
+  
+  figure {
+    background: #121316;
+  }
+  border-radius: 1000px;
+
+--> 
 
 <section class="relative page-banner hero">
   {#if visible}
@@ -65,28 +61,36 @@
         Web developer from Everett, WA. I create custom websites to help
         businesses do better online.
       </h2>
-      <a href="projects" class="px-12 py-6 mt-8 text-2xl tracking-wider">
+      <a href="projects" class="self-start px-12 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">
         My Projects
       </a>
     </div>
-    <figure>
-      <img src="Portraits16-9.jpg" alt="Aaron Wilder smiling in a suit" />
+    <figure class="p-10 mb-10 rounded-md bg-figure_hero">
+      <img class="rounded-md hero__img" src="Portraits16-9.jpg" alt="Aaron Wilder smiling in a suit" />
     </figure>
 
   </div>
 
   {/if}
 </section>
-<section class="py-32">
+<section class="py-24">
   <div class="pb-20 mx-auto inner-wrapper">
-    <h2 class="pb-3 text-2xl font-medium uppercase border-b-4 text-secondary border-article">Featured Project</h2>
-    <article class="flex">
-      <figure>
-        <img src="esc.png" alt="e.s.c. mattress center"/>
-      </figure>
-      <div>
-        <h3>E.S.C. Mattress Center</h3>
-        <p>A local bedding company's web site designed to help customers find information on sleep health and find the best sleep solutions for their needs</p>  
+    <div class="pb-12">
+      <h2 class="pb-3 text-2xl font-medium uppercase border-b-4 text-secondary border-article">Featured Project</h2>
+    </div>
+    <article class="flex mx-auto justify-evenly">
+      <div class="w-3/5 max-w-3xl">
+        <figure class="p-10 mb-10 rounded-md bg-figure_projects">
+          <a href="projects">
+            <img src="esc.png" alt="e.s.c. mattress center" class="w-full h-auto rounded-md"/>
+            </a>
+        </figure>
+      </div>
+      <div class="flex flex-col justify-center w-2/5 align-middle">
+        <h3 class="text-5xl font-normal text-projects">
+          <a href="projects">E.S.C. Mattress Center</a>
+        </h3>
+        <p class="pt-4 text-3xl font-light text-secondary">A local bedding company's web site designed to help customers find information on sleep health and find the best sleep solutions for their needs</p>  
       </div>
     </article>
     </div>
