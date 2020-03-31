@@ -1,13 +1,17 @@
 <script>
-  	import { onMount } from 'svelte';
-    import { quintOut } from 'svelte/easing';
-
-	import { fly } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import { quintOut } from 'svelte/easing';
+  import { fly } from 'svelte/transition';
+  
+  
 	let visible = false;
 	onMount(()=> {
-		visible = true
-	})
+    visible = true
+	});
+  import Pen from "../components/icons/Pen_Icon.svelte";
 
+  import Desktop from "../components/icons/Desktop_Icon.svelte";
+  import Code from "../components/icons/Code_Icon.svelte";
 </script>
 
 <style>
@@ -34,7 +38,12 @@
     background: none;
     color: #4b6cc1;
   }
-
+  .esc-project {
+    box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+  }
+  .section__quote {
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+  }
 </style>
 
 <svelte:head>
@@ -43,10 +52,9 @@
 
 <!--
   
-  figure {
-    background: #121316;
-  }
-  border-radius: 1000px;
+  width: 92%;
+    margin-right: auto;
+    margin-left: auto;
 
 --> 
 
@@ -78,20 +86,34 @@
     <div class="pb-12">
       <h2 class="pb-3 text-2xl font-medium uppercase border-b-4 text-secondary border-article">Featured Project</h2>
     </div>
-    <article class="flex mx-auto justify-evenly">
-      <div class="w-3/5 max-w-3xl">
-        <figure class="p-10 mb-10 rounded-md bg-figure_projects">
+    <article class="flex flex-col mx-auto md:flex-row justify-evenly">
+      <div class="max-w-3xl md:w-3/5">
+        <figure class="max-w-2xl p-10 mb-10 rounded-md bg-figure_projects">
           <a href="projects">
-            <img src="esc.png" alt="e.s.c. mattress center" class="w-full h-auto rounded-md"/>
+            <img src="esc.png" alt="e.s.c. mattress center" class="w-full h-auto rounded-md esc-project"/>
             </a>
         </figure>
       </div>
-      <div class="flex flex-col justify-center w-2/5 align-middle">
+      <div class="flex flex-col justify-center align-middle md:w-2/5">
         <h3 class="text-5xl font-normal text-projects">
           <a href="projects">E.S.C. Mattress Center</a>
         </h3>
         <p class="pt-4 text-3xl font-light text-secondary">A local bedding company's web site designed to help customers find information on sleep health and find the best sleep solutions for their needs</p>  
+        <ul class="pt-12">
+          <li class="flex mb-10 uppercase text-secondary"><span class="mr-4"><Pen width={40}/></span>SEO Champain</li>
+          <li class="flex mb-10 uppercase text-secondary"><span class="mr-4"><Desktop width={40}/></span>Web Design</li>
+          <li class="flex mb-10 uppercase text-secondary"><span class="mr-4"><Code width={40}/></span>Gatsby Development</li>
+        </ul>
+        <a href="projects" class="self-start px-12 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">View Case Study</a>
       </div>
     </article>
+    </div>
+  </section>
+  <section class="py-24 section__quote bg-figure_projects">
+    <div class="py-32 mx-auto">
+      <blockquote class="text-center ">
+        <p>Aaron is an excellent web designer and needs a quote from Will. He’s a pleasure to work with, great value for money and will always go the extra mile when necessary.</p>
+      </blockquote>
+
     </div>
   </section>

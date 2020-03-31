@@ -37,6 +37,11 @@
   }
 </style>
 
+<!--  section {
+    width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+  }-->
 <Nav {segment} />
 
 <main>
