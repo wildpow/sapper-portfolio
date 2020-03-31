@@ -11,6 +11,11 @@ module.exports = {
     textColor: (theme) => ({
       ...theme('colors'),
       primary: '#ababab',
+      secondary: '#919191',
+    }),
+    borderColor: (theme) => ({
+      ...theme('colors'),
+      article: '#f6f6f6',
     }),
     extend: {},
   },

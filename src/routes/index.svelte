@@ -21,7 +21,7 @@
     img {
       margin-bottom: -80px;
     }
-    section {
+    .hero {
       padding-bottom: 200px;
     height: 107vh;
     }
@@ -54,7 +54,7 @@
   <title>Aaron Wilder</title>
 </svelte:head>
 
-<section class="relative page-banner">
+<section class="relative page-banner hero">
   {#if visible}
 
   <div
@@ -77,3 +77,8 @@
 
   {/if}
 </section>
+<section class="py-32">
+  <div class="pb-20 mx-auto inner-wrapper">
+    <h2 class="pb-3 text-2xl font-medium uppercase border-b-4 text-secondary border-article">Featured Project</h2>
+    </div>
+  </section>
