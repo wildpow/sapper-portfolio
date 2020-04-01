@@ -62,9 +62,9 @@
   {#if visible}
 
   <div
-    class="flex flex-col items-center justify-around py-4 pb-16 mx-auto inner-wrapper md:flex-row" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
+    class="flex flex-col items-center justify-around py-12 mx-auto sm:py-20 md:py-24 inner-wrapper md:flex-row" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
     <div class="flex flex-col align-middle">
-      <h1 class="heading__tagLine">Hey, I'm Aaron.</h1>
+      <h1 class="leading-none heading__tagLine">Hey, I'm Aaron.</h1>
       <h2 class="max-w-md pr-8 heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
         businesses do better online.

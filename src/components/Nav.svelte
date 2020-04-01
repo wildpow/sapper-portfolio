@@ -43,7 +43,7 @@
   opacity: 1;
 }
   .brand :global(a) {
-		@apply text-3xl font-medium text-white no-underline tracking-wider;
+		@apply  font-medium text-white no-underline tracking-wider;
 	}
 	.brand :global(a):after {
 		transition: max-width ease .3s;
@@ -63,9 +63,9 @@
 </style>
 {#if visible}
 <header class="absolute z-10 w-full">
-  <div class="flex items-center justify-between pt-4 pb-6 mx-auto border-b-2 border-gray-600 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
+  <div style="border-color: rgba(255, 255, 255, 0.1)" class="flex items-center justify-between pt-5 pb-5 mx-auto border-b-2 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
     <div class="brand">
-      <a  aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
+      <a  class="text-2xl leading-none md:text-3xl" aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
     </div>
     <nav class="hidden lg:block">
       <ul class="flex">
