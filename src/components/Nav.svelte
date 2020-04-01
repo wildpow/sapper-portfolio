@@ -14,15 +14,12 @@
   li:not(:last-child) {
     margin-right: 50px;
   }
-  nav ul :global(a) {
+  nav ul a {
     @apply text-2xl font-light text-primary no-underline tracking-wider;
     transition: all ease 0.3s;
     position: relative;
-		/* color: #ababab; */
-		text-rendering: optimizeLegibility;
-		
   }
-  nav ul :global(a)::before {
+  nav ul a::before {
     transform: translateX(-50%);
     width: 20%;
     height: 6px;
@@ -42,10 +39,10 @@
   width: 70%;
   opacity: 1;
 }
-  .brand :global(a) {
+  .brand a {
 		@apply  font-medium text-white no-underline tracking-wider;
 	}
-	.brand :global(a):after {
+	.brand a:after {
 		transition: max-width ease .3s;
 		margin-top: 10px;
 		width: 100%;
@@ -56,8 +53,7 @@
     border-radius: 1000px;
     background: #4b6cc1;
 		}
-	.brand :global(a):hover:after {
-	
+	.brand a:hover:after {
 		max-width: 22px;
 	}
 </style>
