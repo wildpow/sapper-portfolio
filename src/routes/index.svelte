@@ -25,8 +25,8 @@
       margin-bottom: -80px;
     }
     .hero {
-      padding-bottom: 200px;
-    height: 105vh;
+      padding-bottom: 100px;
+   
     }
   }
   .hero__button {
@@ -69,7 +69,7 @@
         Web developer from Everett, WA. I create custom websites to help
         businesses do better online.
       </h2>
-      <a href="projects" class="self-start px-12 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">
+      <a href="projects" class="self-start px-12 py-6 mt-8 text-2xl leading-none tracking-wider text-white rounded-full md:text-3xl hero__button bg-button_blue">
         My Projects
       </a>
     </div>
@@ -107,7 +107,7 @@
           </ul>
         </div>
         <div class="pt-10">
-          <a href="projects" class="self-start px-12 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">View Case Study</a>
+          <a href="projects" class="self-start px-8 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">View Case Study</a>
         </div>
       </div>
     </article>
