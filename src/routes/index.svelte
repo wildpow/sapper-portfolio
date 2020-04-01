@@ -84,27 +84,31 @@
 <section class="py-24">
   <div class="pb-20 mx-auto inner-wrapper">
     <div class="pb-12">
-      <h2 class="pb-3 text-2xl font-medium uppercase border-b-4 text-secondary border-article">Featured Project</h2>
+      <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">Featured Project</h2>
     </div>
-    <article class="flex flex-col mx-auto md:flex-row justify-evenly">
-      <div class="max-w-3xl md:w-3/5">
-        <figure class="max-w-2xl p-10 mb-10 rounded-md bg-figure_projects">
+    <article class="flex flex-col justify-between mx-auto md:flex-row">
+      <div class="max-w-4xl md:w-3/5">
+        <figure class="p-10 mb-10 rounded-md bg-figure_projects">
           <a href="projects">
-            <img src="esc.png" alt="e.s.c. mattress center" class="w-full h-auto rounded-md esc-project"/>
+            <img src="esc.png" alt="e.s.c. mattress center" class="rounded-md esc-project"/>
             </a>
         </figure>
       </div>
-      <div class="flex flex-col justify-center align-middle md:w-2/5">
-        <h3 class="text-5xl font-normal text-projects">
-          <a href="projects">E.S.C. Mattress Center</a>
+      <div class="flex flex-col content-center justify-center align-middle md:w-2/6">
+        <h3 class="text-5xl font-normal leading-none text-projects" style="line-height: 115%">
+          <a href="projects">E.S.C. Mattress</a>
         </h3>
-        <p class="pt-4 text-3xl font-light text-secondary">A local bedding company's web site designed to help customers find information on sleep health and find the best sleep solutions for their needs</p>  
-        <ul class="pt-12">
-          <li class="flex mb-10 uppercase text-secondary"><span class="mr-4"><Pen width={40}/></span>SEO Champain</li>
-          <li class="flex mb-10 uppercase text-secondary"><span class="mr-4"><Desktop width={40}/></span>Web Design</li>
-          <li class="flex mb-10 uppercase text-secondary"><span class="mr-4"><Code width={40}/></span>Gatsby Development</li>
-        </ul>
-        <a href="projects" class="self-start px-12 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">View Case Study</a>
+        <p class="mt-5 text-2xl font-light leading-relaxed text-list">A complete online-presents and marketing solution for a local bedding company designed to drive retail business.</p>  
+        <div class="pt-10">
+          <ul>
+            <li class="flex items-center mb-8 text-xl font-medium leading-none tracking-wide uppercase text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Pen width={24}/></span>SEO Champain</li>
+            <li class="flex items-center mb-8 text-xl font-medium leading-none tracking-wide uppercase text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Desktop width={24}/></span>Web Design</li>
+            <li class="flex items-center mb-8 text-xl font-medium leading-none tracking-wide uppercase text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Code width={24}/></span>Gatsby Development</li>
+          </ul>
+        </div>
+        <div class="pt-10">
+          <a href="projects" class="self-start px-12 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">View Case Study</a>
+        </div>
       </div>
     </article>
     </div>
