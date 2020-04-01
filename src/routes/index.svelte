@@ -44,28 +44,34 @@
   .section__quote {
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
   }
+
+  @media screen and (max-width: 1920px) {
+.inner-wrapper-hero {
+    max-width: 1200px;
+    width: 92%;
+}
+  }
+@media screen and (min-width: 1921px) {
+  .inner-wrapper-hero {
+    max-width: 1200px;
+    width: 92%;
+}
+}
+  
 </style>
 
 <svelte:head>
   <title>Aaron Wilder</title>
 </svelte:head>
 
-<!--
-  
-  width: 92%;
-    margin-right: auto;
-    margin-left: auto;
-
---> 
-
 <section class="relative page-banner hero">
   {#if visible}
 
   <div
-    class="flex flex-col items-center justify-around py-12 mx-auto sm:py-20 md:py-24 inner-wrapper md:flex-row" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
-    <div class="flex flex-col align-middle">
+    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
+    <div class="flex flex-col pr-20 align-middle">
       <h1 class="leading-none heading__tagLine">Hey, I'm Aaron.</h1>
-      <h2 class="max-w-md pr-8 heading__desciption">
+      <h2 class="heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
         businesses do better online.
       </h2>
@@ -73,7 +79,7 @@
         My Projects
       </a>
     </div>
-    <figure class="p-10 mb-10 rounded-md bg-figure_hero">
+    <figure class="p-12 mb-12 rounded-md bg-figure_hero">
       <img class="rounded-md hero__img" src="Portraits16-9.jpg" alt="Aaron Wilder smiling in a suit" />
     </figure>
 

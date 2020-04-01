@@ -19,6 +19,12 @@
       width: 92%;
     }
   }
+  @media screen and (min-width: 1921px) {
+    .inner-wrapper {
+      max-width: 1200px;
+      max-width: 1430px;
+    }
+  }
   .page-banner {
     padding-top: 90px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
@@ -26,14 +32,14 @@
   }
   @media screen and (min-width: 768px) {
     .page-banner {
-      padding-top: 180px;
+      padding-top: 131px;
     }
   }
   .heading__tagLine {
-    @apply text-4xl text-6xl text-white;
+    @apply text-7xl text-white;
   }
   .heading__desciption {
-    @apply mt-5 text-3xl font-light text-primary;
+    @apply mt-8 text-3.5xl font-light text-primary;
   }
 </style>
 
