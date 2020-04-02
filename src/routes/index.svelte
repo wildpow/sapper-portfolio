@@ -81,7 +81,33 @@
       </a>
     </div>
     <figure class="p-12 mb-12 rounded-md bg-figure_hero">
-      <img class="rounded-md hero__img" src="Portraits-new.jpg" alt="Aaron Wilder smiling in a suit" />
+      <picture>
+        <source 
+            type="image/webp" 
+            srcset="
+            portrait/portrait_w190.webp 190w,
+            portrait/portrait_w326.webp 326w,
+            portrait/portrait_w423.webp 423w,
+            portrait/portrait_w520.webp 520w,
+            portrait/portrait_w608.webp 608w,
+            portrait/portrait_w650.webp 650w" 
+            sizes="(max-width: 650px) 100vw, 650px"/>
+          <source
+          type="image/jpg"
+            srcset="
+            portrait/portrait_w190.jpg 190w,
+            portrait/portrait_w326.jpg 326w,
+            portrait/portrait_w423.jpg 423w,
+            portrait/portrait_w520.jpg 520w,
+            portrait/portrait_w608.jpg 608w,
+            portrait/portrait_w650.jpg 650w" 
+            sizes="(max-width: 650px) 100vw, 650px"/>
+          <img
+            src="portrait/portrait_w650.jpg"
+            alt="e.s.c. mattress center"
+            class="rounded-md hero__img"
+          >
+        </picture>
     </figure>
 
   </div>
@@ -108,6 +134,7 @@
                         esc/esc_w766.webp 766w" 
                 sizes="(max-width: 766px) 100vw, 766px" />
                 <source 
+                type="image/png"
                 srcset="esc/esc_w200.png 200w,
                         esc/esc_w241.png 241w,
                         esc/esc_w276.png 276w,
@@ -116,6 +143,7 @@
                         esc/esc_w766.png 766w" 
                 sizes="(max-width: 766px) 100vw, 766px" />
               <img
+              sizes="(max-width: 766px) 100vw, 766px"
                 src="esc/esc_w766.png"
                 alt="e.s.c. mattress center"
                 class="rounded-md esc-project"
