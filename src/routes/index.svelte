@@ -1,17 +1,24 @@
 <script>
-  import { onMount } from 'svelte';
+  import { onMount,onDestroy} from 'svelte';
   import { quintOut } from 'svelte/easing';
   import { fly, fade } from 'svelte/transition';
-  
-  
-	let visible = false;
-	onMount(()=> {
-    visible = true
-	});
+  import {flown} from '../components/store.js';
   import Pen from "../components/icons/Pen_Icon.svelte";
-
   import Desktop from "../components/icons/Desktop_Icon.svelte";
   import Code from "../components/icons/Code_Icon.svelte";
+
+  let visible = false;
+	onMount(() => visible = true);
+
+onDestroy(() => flown.set(true))
+
+function flyOnce(node,...params) {
+    if($flown === true) {
+      return
+    } else {
+      return fly(node, ...params)
+    }
+  }
 </script>
 
 <style>
@@ -67,10 +74,9 @@
 
 <section class="relative page-banner hero" style="min-height: 974px;">
   {#if visible}
-
   <div 
-    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:fly="{{ y: 100, duration: 1000 }}">
-    <div class="flex flex-col pr-20 " in:fade>
+    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:flyOnce="{{ y: 100, duration: 1000 }}">
+    <div class="flex flex-col pr-20 " transition:fade>
       <h1 class="leading-none heading__tagLine">Hey, I'm Aaron.</h1>
       <h2 class="heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
@@ -80,7 +86,7 @@
         My Projects
       </a>
     </div>
-    <figure class="p-12 mb-12 rounded-md bg-figure_hero">
+    <figure class="p-12 mb-12 rounded-md bg-figure_hero" transition:fade>
       <picture>
         <source 
             type="image/webp" 
