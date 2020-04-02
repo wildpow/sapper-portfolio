@@ -1,7 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import { quintOut } from 'svelte/easing';
-  import { fly } from 'svelte/transition';
+  import { fly, fade } from 'svelte/transition';
   
   
 	let visible = false;
@@ -65,12 +65,12 @@
   <title>Aaron Wilder</title>
 </svelte:head>
 
-<section class="relative page-banner hero">
+<section class="relative page-banner hero" style="min-height: 974px;">
   {#if visible}
 
-  <div
-    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
-    <div class="flex flex-col pr-20 ">
+  <div 
+    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:fly="{{ y: 100, duration: 1000 }}">
+    <div class="flex flex-col pr-20 " in:fade>
       <h1 class="leading-none heading__tagLine">Hey, I'm Aaron.</h1>
       <h2 class="heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
