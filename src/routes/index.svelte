@@ -97,7 +97,30 @@
       <div class="max-w-4xl md:w-3/5">
         <figure class="p-10 mb-10 rounded-md bg-figure_projects">
           <a href="projects">
-            <img src="esc.png" alt="e.s.c. mattress center" class="rounded-md esc-project"/>
+            <picture>
+              <source 
+                type="image/webp" 
+                srcset="esc/esc_w200.webp 200w,
+                        esc/esc_w241.webp 241w,
+                        esc/esc_w276.webp 276w,
+                        esc/esc_w346.webp 346w,
+                        esc/esc_w355.webp 355w,
+                        esc/esc_w766.webp 766w" 
+                sizes="(max-width: 766px) 100vw, 766px" />
+                <source 
+                srcset="esc/esc_w200.png 200w,
+                        esc/esc_w241.png 241w,
+                        esc/esc_w276.png 276w,
+                        esc/esc_w346.png 346w,
+                        esc/esc_w355.png 355w,
+                        esc/esc_w766.png 766w" 
+                sizes="(max-width: 766px) 100vw, 766px" />
+              <img
+                src="esc/esc_w766.png"
+                alt="e.s.c. mattress center"
+                class="rounded-md esc-project"
+              >
+              </picture>
             </a>
         </figure>
       </div>
