@@ -1,13 +1,7 @@
 <script>
-  import { onMount } from 'svelte';
-  import { quintOut } from 'svelte/easing';
-  import { fly, fade } from 'svelte/transition';
-  
-  
-	let visible = false;
-	onMount(()=> {
-    visible = true
-	});
+  // import { onMount } from 'svelte';
+  // import { quintOut } from 'svelte/easing';
+  // import { fly, fade } from 'svelte/transition';
   import Pen from "../components/icons/Pen_Icon.svelte";
 
   import Desktop from "../components/icons/Desktop_Icon.svelte";
@@ -16,8 +10,6 @@
 
 <style>
   .hero__img {
-    /* width: 345px;
-    height: 510px; */
     max-width: 325px;
     max-height: 491px;
   }
@@ -50,6 +42,7 @@
 .inner-wrapper-hero {
     max-width: 1200px;
     width: 92%;
+   
 }
   }
 @media screen and (min-width: 1921px) {
@@ -65,12 +58,12 @@
   <title>Aaron Wilder</title>
 </svelte:head>
 
-<section class="relative page-banner hero" style="min-height: 974px;">
-  {#if visible}
+<section class=" page-banner hero" >
+
 
   <div 
-    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:fly="{{ y: 100, duration: 1000 }}">
-    <div class="flex flex-col pr-20 " in:fade>
+    class="flex flex-col items-center justify-between py-12 mx-auto heroAnimation sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" >
+    <div class="flex flex-col pr-20" >
       <h1 class="leading-none heading__tagLine">Hey, I'm Aaron.</h1>
       <h2 class="heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
@@ -86,7 +79,6 @@
 
   </div>
 
-  {/if}
 </section>
 <section class="py-24">
   <div class="pb-20 mx-auto inner-wrapper">

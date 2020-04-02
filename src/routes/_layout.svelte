@@ -8,6 +8,25 @@
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+  @keyframes slide-in {
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  .heroAnimation {
+    animation-iteration-count: 1;
+    animation: slide-in 700ms forwards;
+    animation-delay: 250ms;
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  .navAnimation {
+    animation: slide-in 700ms forwards;
+    animation-delay: 250ms;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
   body {
     font-family: 'Rubik', 'Arial', sans-serif;
     text-rendering: optimizeLegibility;
@@ -26,15 +45,10 @@
     }
   }
   .page-banner {
-    padding-top: 90px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
     @apply bg-primary pb-32;
   }
-  @media screen and (min-width: 768px) {
-    .page-banner {
-      padding-top: 131px;
-    }
-  }
+
   .heading__tagLine {
     @apply text-7xl text-white;
   }
