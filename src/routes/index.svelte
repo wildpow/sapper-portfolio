@@ -18,7 +18,8 @@
   .hero__img {
     /* width: 345px;
     height: 510px; */
-    max-width: 345px;
+    max-width: 325px;
+    max-height: 491px;
   }
   @media screen and (min-width: 768px){
     img {
@@ -69,7 +70,7 @@
 
   <div
     class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:fly="{{ y: 100, duration: 1000, opacity: 0.1, easing: quintOut }}">
-    <div class="flex flex-col pr-20 align-middle">
+    <div class="flex flex-col pr-20 ">
       <h1 class="leading-none heading__tagLine">Hey, I'm Aaron.</h1>
       <h2 class="heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
@@ -80,7 +81,7 @@
       </a>
     </div>
     <figure class="p-12 mb-12 rounded-md bg-figure_hero">
-      <img class="rounded-md hero__img" src="Portraits16-9.jpg" alt="Aaron Wilder smiling in a suit" />
+      <img class="rounded-md hero__img" src="Portraits-new.jpg" alt="Aaron Wilder smiling in a suit" />
     </figure>
 
   </div>
