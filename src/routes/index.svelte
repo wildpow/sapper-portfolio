@@ -1,7 +1,7 @@
 <script>
   import { onMount,onDestroy} from 'svelte';
   import { quintOut } from 'svelte/easing';
-  import { fly, fade } from 'svelte/transition';
+  import { fly, fade, slide } from 'svelte/transition';
   import {flown} from '../components/store.js';
   import Pen from "../components/icons/Pen_Icon.svelte";
   import Desktop from "../components/icons/Desktop_Icon.svelte";
@@ -76,7 +76,7 @@ function flyOnce(node,...params) {
   {#if visible}
   <div 
     class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:flyOnce="{{ y: 100, duration: 1000 }}">
-    <div class="flex flex-col pr-20 " transition:fade>
+    <div class="flex flex-col pr-20 "in:fade="{{duration: 150}}" out:fade="{{duration: 150}}">
       <h1 class="leading-none heading__tagLine">Hey, I'm Aaron.</h1>
       <h2 class="heading__desciption">
         Web developer from Everett, WA. I create custom websites to help
@@ -86,7 +86,7 @@ function flyOnce(node,...params) {
         My Projects
       </a>
     </div>
-    <figure class="p-12 mb-12 rounded-md bg-figure_hero" transition:fade>
+    <figure class="p-12 mb-12 rounded-md bg-figure_hero" in:fade="{{duration: 150}}" out:fade="{{duration: 150}}">
       <picture>
         <source 
             type="image/webp" 
