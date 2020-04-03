@@ -179,4 +179,11 @@ function flyOnce(node,...params) {
   </section>
 
 <Quote />
+<section class="py-24">
+  <div class="pb-20 mx-auto inner-wrapper">
+    <div class="pb-12">
+      <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">My Services</h2>
+    </div>
+    </div>
+    </section>
 <Footer />

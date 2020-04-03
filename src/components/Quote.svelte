@@ -1,3 +1,7 @@
+<script>
+
+</script>
+
 <style>
   .inner__quote::before,
   .inner__quote::after {
@@ -24,6 +28,11 @@
   }
   .section__quote {
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+    background-size: 600px;
+    background-image: url('bg-stripes.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(246, 246, 246);
   }
 </style>
 
@@ -38,16 +47,20 @@
           competent developer.
         </p>
       </div>
-      <cite class="mt-20">
+      <cite class="mt-20 text-3xl leading-none text-list">
         <img
           style="max-width: 80px;"
           class="mx-auto mb-5 rounded-full"
           src="will.jpg"
           alt="William Wellauer E.S.C. Mattress Center Owner" />
 
-        <strong class="mb-1 ">William Wellauer</strong>
-        Owner of
-        <a href="https://www.escmattresscenter.com/">E.S.C.</a>
+        <strong class="mb-2 not-italic font-medium ">William Wellauer</strong>
+        <div class="pt-1 not-italic font-light">
+          Owner of
+          <a class="text-blue" href="https://www.escmattresscenter.com/">
+            E.S.C. Mattress Center
+          </a>
+        </div>
 
       </cite>
     </blockquote>
