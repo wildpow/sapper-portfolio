@@ -65,6 +65,19 @@ function flyOnce(node,...params) {
     width: 92%;
 }
 }
+.icon-span {
+  transform: rotate(50%);
+}
+.icon-span::after {
+ margin: 40px auto;
+ width: 100%;
+ height: 6px;
+ display: block;
+ content: " ";
+ border-radius: 1000px;
+ background-color: #4b6cc1;
+ max-width: 30px;
+}
 
 </style>
 
@@ -184,9 +197,24 @@ function flyOnce(node,...params) {
     <div class="pb-12">
       <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">My Services</h2>
     </div>
-      <div>
-        <div></div>
-        <div></div>
+      <div class="flex justify-between w-full">
+        <div style="width: 48.1%">
+          <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
+            <span class="icon-span text-blue"><Pen width={52} styles="margin:auto;"/></span>
+            <div class="text-center ">
+              <h3>Web Design</h3>
+              <h4>User Focused</h4>
+              <p>
+				A website should be designed for the people who will use it, so that's exactly what I do. User focused design should be the primary goal of any website.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div style="width: 48.1%">
+          <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
+          
+          </div>
+        </div>
       </div>
     </div>
     </section>

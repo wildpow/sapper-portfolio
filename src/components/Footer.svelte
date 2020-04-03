@@ -45,7 +45,7 @@
     </div>
   </div>
 </section>
-<footer class="flex justify-center  bg-primary">
+<footer class="flex justify-center bg-primary" style="background-color: #101114;">
   <div class="max-w-4xl py-10 my-auto text-center ">
     <p class="text-lg leading-none text-list">© 2020 Aaron Wilder. All rights reserved. </p>
   </div>

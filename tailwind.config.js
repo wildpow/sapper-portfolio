@@ -22,6 +22,7 @@ module.exports = {
     borderColor: (theme) => ({
       ...theme('colors'),
       article: '#f6f6f6',
+      blue: '#4b6cc1',
     }),
     fontSize: {
       xs: '0.75rem',
@@ -37,6 +38,14 @@ module.exports = {
       '6xl': '4rem',
       // new
       '7xl': '4.5rem',
+    },
+    borderWidth: {
+      default: '1px',
+      '0': '0',
+      '2': '2px',
+      '4': '4px',
+      '6': '6px',
+      '8': '8px',
     },
     extend: {},
   },

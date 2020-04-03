@@ -1,9 +1,11 @@
 <script>
-  export let width = 20
+  export let width = 20;
+  export let styles;
 </script>
 
 <svg
   {width}
+  style={styles}
   aria-hidden="true"
   focusable="false"
   data-prefix="fas"
