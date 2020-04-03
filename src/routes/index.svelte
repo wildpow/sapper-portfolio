@@ -86,7 +86,7 @@ function flyOnce(node,...params) {
         My Projects
       </a>
     </div>
-    <figure class="p-12 mb-12 rounded-md bg-figure_hero" in:fade="{{duration: 150}}" out:fade="{{duration: 150}}">
+    <figure class="p-12 mb-12 rounded-md bg-figure_hero" transition:fade="{{duration: 150}}">
       <picture>
         <source 
             type="image/webp" 
