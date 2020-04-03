@@ -7,7 +7,8 @@
   import Desktop from "../components/icons/Desktop_Icon.svelte";
   import Code from "../components/icons/Code_Icon.svelte";
   import Footer from '../components/Footer.svelte';
-  
+  import Quote from '../components/Quote.svelte';
+
   let visible = false;
 	onMount(() => visible = true);
 
@@ -50,9 +51,7 @@ function flyOnce(node,...params) {
   .esc-project {
     box-shadow: 0 5px 30px rgba(0,0,0,0.2);
   }
-  .section__quote {
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
-  }
+
 
   @media screen and (max-width: 1920px) {
 .inner-wrapper-hero {
@@ -66,7 +65,7 @@ function flyOnce(node,...params) {
     width: 92%;
 }
 }
-  
+
 </style>
 
 <svelte:head>
@@ -178,12 +177,6 @@ function flyOnce(node,...params) {
     </article>
     </div>
   </section>
-  <section class="py-24 section__quote bg-figure_projects">
-    <div class="py-32 mx-auto">
-      <blockquote class="text-center ">
-        <p>Aaron is an excellent web designer and needs a quote from Will. He’s a pleasure to work with, great value for money and will always go the extra mile when necessary.</p>
-      </blockquote>
 
-    </div>
-  </section>
+<Quote />
 <Footer />
