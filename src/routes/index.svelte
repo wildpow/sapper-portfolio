@@ -184,6 +184,10 @@ function flyOnce(node,...params) {
     <div class="pb-12">
       <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">My Services</h2>
     </div>
+      <div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
     </section>
 <Footer />
