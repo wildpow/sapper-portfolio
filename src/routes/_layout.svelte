@@ -41,6 +41,21 @@
   .heading__desciption {
     @apply mt-8 text-3.5xl font-light text-primary;
   }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    animation-delay: 150ms;
+  }
 </style>
 
 <!--  section {

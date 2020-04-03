@@ -6,7 +6,8 @@
   import Pen from "../components/icons/Pen_Icon.svelte";
   import Desktop from "../components/icons/Desktop_Icon.svelte";
   import Code from "../components/icons/Code_Icon.svelte";
-
+  import Footer from '../components/Footer.svelte';
+  
   let visible = false;
 	onMount(() => visible = true);
 
@@ -185,3 +186,4 @@ function flyOnce(node,...params) {
 
     </div>
   </section>
+<Footer />
