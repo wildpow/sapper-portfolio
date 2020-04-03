@@ -17,6 +17,7 @@ module.exports = {
       secondary: '#919191',
       list: '#5e5e5e',
       projects: '#191a1d',
+      blue: '#4b6cc1',
     }),
     borderColor: (theme) => ({
       ...theme('colors'),
@@ -41,4 +42,4 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-}
+};
