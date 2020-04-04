@@ -195,7 +195,7 @@ function flyOnce(node,...params) {
     <div class="pb-12">
       <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">My Services</h2>
     </div>
-      <div class="flex justify-between w-full">
+      <div class="flex flex-col justify-between w-full  md:flex-row">
         <div style="width: 48.1%">
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Pen width={52} styles="margin:auto;"/></span>

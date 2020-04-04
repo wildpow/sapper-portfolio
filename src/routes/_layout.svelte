@@ -61,7 +61,6 @@
   }
 </style>
 
-<div class="text-5xl " />
 <!--  section {
     width: 92%;
     margin-right: auto;

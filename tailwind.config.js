@@ -16,6 +16,7 @@ module.exports = {
       primary: '#ababab',
       secondary: '#919191',
       list: '#5e5e5e',
+      light: 'rgba(255,255,255,0.5)',
       projects: '#191a1d',
       blue: '#4b6cc1',
     }),
