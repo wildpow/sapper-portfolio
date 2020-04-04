@@ -69,14 +69,14 @@ function flyOnce(node,...params) {
   transform: rotate(50%);
 }
 .icon-span::after {
- margin: 40px auto;
- width: 100%;
- height: 6px;
- display: block;
- content: " ";
- border-radius: 1000px;
- background-color: #4b6cc1;
- max-width: 30px;
+  margin: 40px auto;
+  width: 100%;
+  height: 6px;
+  display: block;
+  content: " ";
+  border-radius: 1000px;
+  background-color: #4b6cc1;
+  max-width: 30px;
 }
 
 </style>
@@ -202,9 +202,9 @@ function flyOnce(node,...params) {
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Pen width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
-              <h3>Web Design</h3>
-              <h4>User Focused</h4>
-              <p>
+              <h3 class="text-4xl font-normal leading-tight text-projects">Web Design</h3>
+              <h4 class="mt-5 text-2xl leading-relaxed text-projects">User Focused</h4>
+              <p class="mt-5 text-2xl leading-relaxed ">
 				A website should be designed for the people who will use it, so that's exactly what I do. User focused design should be the primary goal of any website.
               </p>
             </div>
@@ -212,7 +212,13 @@ function flyOnce(node,...params) {
         </div>
         <div style="width: 48.1%">
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
-          
+            <span class="icon-span text-blue"><Desktop width={52} styles="margin:auto;"/></span>
+            <div class="text-center ">
+              <h3 class="text-4xl font-normal leading-tight text-projects">Web Development </h3>
+              <h4 class="mt-5 text-2xl leading-relaxed text-projects">Responsive and Fast</h4>
+              <p class="mt-5 text-2xl leading-relaxed ">Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.
+              </p>
+            </div>
           </div>
         </div>
       </div>
