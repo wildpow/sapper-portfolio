@@ -26,7 +26,6 @@
   .quotes::after {
     content: close-quote;
   }
-
   section {
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
     background-size: 600px;
@@ -40,7 +39,7 @@
       background-size: 400px;
       padding-top: 50px;
       padding-bottom: 100px;
-      clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+      clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 calc(100% - 50px));
     }
   }
 </style>

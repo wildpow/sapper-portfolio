@@ -76,7 +76,14 @@ function flyOnce(node,...params) {
   background-color: #4b6cc1;
   max-width: 30px;
 }
-
+.services {
+  width: 48.1%;
+}
+@media screen and (max-width: 640px){
+  .services {
+    width: 100%;
+  }
+}
 </style>
 
 <svelte:head>
@@ -131,7 +138,7 @@ function flyOnce(node,...params) {
 
   {/if}
 </section>
-<section class="py-24">
+<section class="py-12 md:py-24">
   <div class="pb-20 mx-auto inner-wrapper">
     <div class="pb-12">
       <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">Featured Project</h2>
@@ -190,13 +197,13 @@ function flyOnce(node,...params) {
   </section>
 
 <Quote />
-<section class="py-24">
+<section class="py-12 md:py-24">
   <div class="pb-20 mx-auto inner-wrapper">
     <div class="pb-12">
       <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">My Services</h2>
     </div>
-      <div class="flex flex-col justify-between w-full  md:flex-row">
-        <div style="width: 48.1%">
+      <div class="flex flex-col justify-between w-full md:flex-row">
+        <div class="services">
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Pen width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
@@ -208,7 +215,7 @@ function flyOnce(node,...params) {
             </div>
           </div>
         </div>
-        <div style="width: 48.1%">
+        <div class="services">
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Desktop width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
