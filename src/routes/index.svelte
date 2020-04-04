@@ -25,10 +25,15 @@ function flyOnce(node,...params) {
 
 <style>
   .hero__img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  @media screen and (min-width: 768px){
+    .hero__img {
     max-width: 325px;
     max-height: 491px;
   }
-  @media screen and (min-width: 768px){
     img {
       margin-bottom: -80px;
     }
@@ -106,28 +111,17 @@ function flyOnce(node,...params) {
     </div>
     <figure class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero" transition:fade="{{duration: 150}}">
       <picture>
-        <source 
-            type="image/webp" 
-            srcset="
-            portrait/portrait_w190.webp 190w,
-            portrait/portrait_w326.webp 326w,
-            portrait/portrait_w423.webp 423w,
-            portrait/portrait_w520.webp 520w,
-            portrait/portrait_w608.webp 608w,
-            portrait/portrait_w650.webp 650w" 
-            sizes="(max-width: 650px) 100vw, 650px"/>
-          <source
-          type="image/jpg"
-            srcset="
-            portrait/portrait_w190.jpg 190w,
-            portrait/portrait_w326.jpg 326w,
-            portrait/portrait_w423.jpg 423w,
-            portrait/portrait_w520.jpg 520w,
-            portrait/portrait_w608.jpg 608w,
-            portrait/portrait_w650.jpg 650w" 
-            sizes="(max-width: 650px) 100vw, 650px"/>
+        <source type="image/jpeg" srcset="newPort/aaron-w404.jpg 1x, newPort/aaron-w808.jpg 2x" media="(min-width: 901px)">
+        <source type="image/webp" srcset="newPort/aaron-w404.webp 1x, newPort/aaron-w808.webp 2x" media="(min-width: 901px)">
+        
+          <source type="image/jpeg" srcset="newPort/aaron-mobile_w315_1x.jpg 1x, newPort/aaron-mobile_w630_2x.jpg 2x" media="(max-width: 375px)">
+          <source type="image/webp" srcset="newPort/aaron-mobile_w315_1x.webp 1x, newPort/aaron-mobile_w630_2x.webp 2x" media="(max-width: 375px)">
+            
+            <source type="image/jpeg" srcset="newPort/aaron-tablet_1x_w_768.jpg 1x, newPort/aaron-tablet_2x_w_1536.jpg 2x" media="(max-width: 900px) and (min-width: 376px)">
+              <source type="image/webp" srcset="newPort/aaron-tablet_1x_w_768.webp 1x, newPort/aaron-tablet_2x_w_1536.webp 2x" media="(max-width: 900px) and (min-width: 376px)">
+        
           <img
-            src="portrait/portrait_w650.jpg"
+            src="newPort/aaron-w404.jpg"
             alt="e.s.c. mattress center"
             class="rounded-md hero__img"
           >
