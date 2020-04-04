@@ -25,8 +25,6 @@ function flyOnce(node,...params) {
 
 <style>
   .hero__img {
-    /* width: 345px;
-    height: 510px; */
     max-width: 325px;
     max-height: 491px;
   }
@@ -88,18 +86,18 @@ function flyOnce(node,...params) {
 <section class="relative page-banner hero" style="min-height: 974px;">
   {#if visible}
   <div 
-    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero md:flex-row" in:flyOnce="{{ y: 100, duration: 1000 }}">
-    <div class="flex flex-col pr-20 "in:fade="{{duration: 150}}" out:fade="{{duration: 150}}">
-      <h1 class="leading-none heading__tagLine">Hey, I'm Aaron.</h1>
-      <h2 class="heading__desciption">
+    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero lg:flex-row" in:flyOnce="{{ y: 100, duration: 1000 }}">
+    <div class="flex flex-col lg:pr-20 "in:fade="{{duration: 150}}" out:fade="{{duration: 150}}">
+      <h1 class="leading-none heading__tagLine sm:text-6xl lg:text-7xl">Hey, I'm Aaron.</h1>
+      <h2 class="heading__desciption sm:text-3xl md:3.5xl">
         Web developer from Everett, WA. I create custom websites to help
         businesses do better online.
       </h2>
-      <a href="projects" class="self-start px-12 py-6 mt-8 text-2xl leading-none tracking-wider text-white rounded-full md:text-3xl hero__button bg-button_blue">
+      <a href="projects" class="self-start px-8 py-5 mt-8 text-2xl leading-none tracking-wider text-white rounded-full md:px-12 md:py-6 md:text-3xl hero__button bg-button_blue">
         My Projects
       </a>
     </div>
-    <figure class="p-12 mb-12 rounded-md bg-figure_hero" transition:fade="{{duration: 150}}">
+    <figure class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero" transition:fade="{{duration: 150}}">
       <picture>
         <source 
             type="image/webp" 
