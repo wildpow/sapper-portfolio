@@ -55,7 +55,7 @@
           competent developer.
         </p>
       </div>
-      <cite class="mt-20 text-3xl leading-none text-list">
+      <cite class="mt-20 text-lg leading-none sm:text-3xl text-list">
         <img
           style="max-width: 80px;"
           class="mx-auto mb-5 rounded-full"

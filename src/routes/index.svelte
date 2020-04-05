@@ -137,7 +137,7 @@ function flyOnce(node,...params) {
   {/if}
 </section>
 <section class="py-12 md:py-24">
-  <div class="pb-20 mx-auto inner-wrapper">
+  <div class="pb-5 mx-auto  sm:pb-20 inner-wrapper">
     <div class="pb-8 sm:pb-12">
       <h2 class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">Featured Project</h2>
     </div>
@@ -168,8 +168,8 @@ function flyOnce(node,...params) {
             <li class="flex items-center font-medium leading-none tracking-wide uppercase sm:text-xl text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Code width={24}/></span>Gatsby Development</li>
           </ul>
         </div>
-        <div class="pt-6  sm:pt-10">
-          <a href="projects" class="self-start px-8 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">View Case Study</a>
+        <div class="pt-6 sm:pt-10">
+          <a href="projects" class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">View Case Study</a>
         </div>
       </div>
     </article>
