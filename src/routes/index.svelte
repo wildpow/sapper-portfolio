@@ -27,8 +27,11 @@ function flyOnce(node,...params) {
   .hero__img {
     max-width: 100%;
     max-height: 100%;
+    margin-bottom: -30px;
   }
-
+  .hero {
+    min-height: 932px;
+  }
   @media screen and (min-width: 768px){
     .hero__img {
     max-width: 325px;
@@ -38,6 +41,7 @@ function flyOnce(node,...params) {
       margin-bottom: -80px;
     }
     .hero {
+      min-height: 974px;
       padding-bottom: 100px;
    
     }
@@ -95,7 +99,7 @@ function flyOnce(node,...params) {
   <title>Aaron Wilder</title>
 </svelte:head>
 
-<section class="relative page-banner hero" style="min-height: 974px;">
+<section class="relative page-banner hero">
   {#if visible}
   <div 
     class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero lg:flex-row" in:flyOnce="{{ y: 100, duration: 1000 }}">
@@ -134,37 +138,37 @@ function flyOnce(node,...params) {
 </section>
 <section class="py-12 md:py-24">
   <div class="pb-20 mx-auto inner-wrapper">
-    <div class="pb-12">
-      <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">Featured Project</h2>
+    <div class="pb-8 sm:pb-12">
+      <h2 class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">Featured Project</h2>
     </div>
     <article class="flex flex-col justify-between mx-auto md:flex-row">
       <div class="max-w-4xl md:w-3/5">
-        <figure class="p-10 mb-10 rounded-md bg-figure_projects">
+        <figure class="p-4 mb-4 rounded-md sm:mb-10 sm:p-10 bg-figure_projects">
           <a href="projects">
             <picture>
               <source type="image/webp" srcset="new_esc.webp" media="(min-width: 276px)">
                 <img
                   src="new_esc.png"
                   alt="e.s.c. mattress center"
-                  class="rounded-md esc-project"
+                  class="-mb-8 rounded-md esc-project"
                 >
               </picture>
           </a>
         </figure>
       </div>
-      <div class="flex flex-col content-center justify-center align-middle md:w-2/6">
-        <h3 class="text-5xl font-normal leading-none text-projects" style="line-height: 115%">
+      <div class="flex flex-col content-center justify-center pl-4 pr-4 mt-8 align-middle md:w-2/6">
+        <h3 class="text-3xl font-normal leading-none sm:text-5xl text-projects" style="line-height: 115%">
           <a href="projects">E.S.C. Mattress</a>
         </h3>
-        <p class="mt-5 text-2xl font-light leading-relaxed text-list">A complete online-presents and marketing solution for a local bedding company designed to drive retail business.</p>  
-        <div class="pt-10">
+        <p class="mt-5 text-xl font-light leading-relaxed sm:text-2xl text-list">A complete online-presents and marketing solution for a local bedding company designed to drive retail business.</p>  
+        <div class="pt-6 sm:pt-10">
           <ul>
-            <li class="flex items-center mb-8 text-xl font-medium leading-none tracking-wide uppercase text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Pen width={24}/></span>SEO Champain</li>
-            <li class="flex items-center mb-8 text-xl font-medium leading-none tracking-wide uppercase text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Desktop width={24}/></span>Web Design</li>
-            <li class="flex items-center mb-8 text-xl font-medium leading-none tracking-wide uppercase text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Code width={24}/></span>Gatsby Development</li>
+            <li class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase sm:text-xl text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Pen width={24}/></span>SEO Champain</li>
+            <li class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase sm:text-xl text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Desktop width={24}/></span>Web Design</li>
+            <li class="flex items-center font-medium leading-none tracking-wide uppercase sm:text-xl text-secondary" style="margin-bottom: 30px"><span class="mr-4"><Code width={24}/></span>Gatsby Development</li>
           </ul>
         </div>
-        <div class="pt-10">
+        <div class="pt-6  sm:pt-10">
           <a href="projects" class="self-start px-8 py-6 mt-8 text-2xl tracking-wider text-white rounded-full hero__button bg-button_blue">View Case Study</a>
         </div>
       </div>
