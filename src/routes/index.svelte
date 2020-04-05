@@ -142,32 +142,14 @@ function flyOnce(node,...params) {
         <figure class="p-10 mb-10 rounded-md bg-figure_projects">
           <a href="projects">
             <picture>
-              <source 
-                type="image/webp" 
-                srcset="esc/esc_w200.webp 200w,
-                        esc/esc_w241.webp 241w,
-                        esc/esc_w276.webp 276w,
-                        esc/esc_w346.webp 346w,
-                        esc/esc_w355.webp 355w,
-                        esc/esc_w766.webp 766w" 
-                sizes="(max-width: 766px) 100vw, 766px" />
-                <source 
-                type="image/png"
-                srcset="esc/esc_w200.png 200w,
-                        esc/esc_w241.png 241w,
-                        esc/esc_w276.png 276w,
-                        esc/esc_w346.png 346w,
-                        esc/esc_w355.png 355w,
-                        esc/esc_w766.png 766w" 
-                sizes="(max-width: 766px) 100vw, 766px" />
-              <img
-              sizes="(max-width: 766px) 100vw, 766px"
-                src="esc/esc_w766.png"
-                alt="e.s.c. mattress center"
-                class="rounded-md esc-project"
-              >
+              <source type="image/webp" srcset="new_esc.webp" media="(min-width: 276px)">
+                <img
+                  src="new_esc.png"
+                  alt="e.s.c. mattress center"
+                  class="rounded-md esc-project"
+                >
               </picture>
-            </a>
+          </a>
         </figure>
       </div>
       <div class="flex flex-col content-center justify-center align-middle md:w-2/6">
