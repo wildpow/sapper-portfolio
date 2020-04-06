@@ -4,20 +4,32 @@
 
 <style>
   aside {
-    left: -100%;
-    transition: left 0.3s ease-in-out;
+    top: -200vh;
+    transition: all 0.3s ease-in-out;
+    height: 100vh;
+    opacity: 0;
   }
 
   .open {
-    left: 0;
+    top: 83px;
+    opacity: 1;
+  }
+  nav {
+    padding: 40px 4% 4%;
   }
 </style>
 
-<aside
-  class="absolute w-full h-full bg-gray-200 border-r-2 shadow-lg"
-  class:open>
-  <nav class="p-12 text-xl">
-    <a class="block" href="#about">About</a>
-    <a class="block" href="#contact">Contact</a>
+<aside class="absolute w-full h-full bg-white" class:open>
+  <nav class="text-xl ">
+    <a
+      class="block pb-5 mb-5 font-light leading-tight border-b-2 text-list border-nav"
+      href="#about">
+      About
+    </a>
+    <a
+      class="block pb-5 mb-5 font-light leading-tight border-b-2 text-list border-nav"
+      href="#contact">
+      Contact
+    </a>
   </nav>
 </aside>

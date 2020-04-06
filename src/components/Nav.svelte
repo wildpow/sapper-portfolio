@@ -1,11 +1,12 @@
 <script>
-	export let segment;
-	import { onMount } from 'svelte';
+  import { onMount } from 'svelte';
 	import { quintOut } from 'svelte/easing';
   import { fly } from 'svelte/transition';
   import Hamburger from './mobile-nav/Hamburger.svelte';
   import Sidebar from './mobile-nav/Sidebar.svelte';
+  import Brand from './Brand.svelte';
   
+	export let segment;
   let visible = false;
   let open = false;
 	onMount(()=> {
@@ -42,31 +43,13 @@
   width: 70%;
   opacity: 1;
 }
-  .brand a {
-		@apply  font-medium text-white no-underline tracking-wider;
-	}
-	.brand a:after {
-		transition: max-width ease .3s;
-		margin-top: 10px;
-		width: 100%;
-		max-width: 38px;
-    height: 6px;
-    display: block;
-    content: '';
-    border-radius: 1000px;
-    background: #4b6cc1;
-		}
-	.brand a:hover:after {
-		max-width: 22px;
-	}
+
 </style>
 
 {#if visible}
-<header class="absolute z-10 w-full">
+<header class="absolute z-10 w-full" style={`background-color: ${open ? '#fff' : '#191a1d'}`}>
   <div style="border-color: rgba(255, 255, 255, 0.1)" class="flex items-center justify-between pt-5 pb-5 mx-auto border-b-2 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
-    <div class="brand">
-      <a  class="text-2xl leading-none md:text-3xl" aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
-    </div>
+   <Brand bind:open {segment}/>
     <Hamburger bind:open={open}/>
     <nav class="hidden lg:block">
       <ul class="flex">

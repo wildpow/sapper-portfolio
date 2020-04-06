@@ -24,6 +24,7 @@ module.exports = {
       ...theme('colors'),
       article: '#f6f6f6',
       blue: '#4b6cc1',
+      nav: '#f1f1f1',
     }),
     fontSize: {
       xs: '0.75rem',

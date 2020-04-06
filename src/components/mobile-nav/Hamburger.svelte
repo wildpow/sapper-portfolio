@@ -1,5 +1,5 @@
 <script>
-	export let open = false
+	export let open = false;
 </script>
 
 <button class="mr-4 text-gray-500 border-none cursor-pointer hover:text-gray-700 focus:outline-none" class:open on:click={() => open = !open}>
