@@ -43,7 +43,9 @@
   width: 70%;
   opacity: 1;
 }
-
+header {
+  transition: all 300ms linear;
+}
 </style>
 
 {#if visible}

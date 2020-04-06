@@ -20,7 +20,10 @@
   }
   .open {
     color: #191a1d;
-    background-color: white;
+    /* background-color: white; */
+  }
+  .brand a {
+    transition: all .3s ease-in-out;
   }
 </style>
 
