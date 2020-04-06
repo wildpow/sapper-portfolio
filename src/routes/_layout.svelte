@@ -1,8 +1,7 @@
 <script>
   import Nav from '../components/Nav.svelte';
-  import Sidebar from '../components/mobile-nav/Sidebar.svelte';
+
   export let segment;
-  let open = false;
 </script>
 
 <style global>
@@ -62,8 +61,12 @@
   }
 </style>
 
-<Sidebar bind:open />
-<Nav {segment} bind:sidebar={open} />
+<!--  section {
+    width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+  }-->
+<Nav {segment} />
 
 <main>
   <slot />

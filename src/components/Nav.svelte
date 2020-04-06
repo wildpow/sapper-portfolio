@@ -2,15 +2,12 @@
 	export let segment;
 	import { onMount } from 'svelte';
 	import { quintOut } from 'svelte/easing';
-  import { fly, fade } from 'svelte/transition';
-  import Hamburger from './mobile-nav/Hamburger.svelte';
-	export let sidebar = false;
 
+	import { fly } from 'svelte/transition';
 	let visible = false;
 	onMount(()=> {
 		visible = true
-  });
-
+	})
 </script>
 
 <style>
@@ -63,12 +60,11 @@
 {#if visible}
 <header class="absolute z-10 w-full">
   <div style="border-color: rgba(255, 255, 255, 0.1)" class="flex items-center justify-between pt-5 pb-5 mx-auto border-b-2 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
-    <div class="brand" transition:fade="{{duration: 150}}">
+    <div class="brand">
       <a  class="text-2xl leading-none md:text-3xl" aria-current='{segment === undefined ? "page" : undefined}' href=".">AARON WILDER</a>
     </div>
-    <nav transition:fade="{{duration: 150}}" class="relative">
-      <Hamburger bind:open={sidebar}/>
-      <ul class="hidden lg:flex">
+    <nav class="hidden lg:block">
+      <ul class="flex">
         <li>
 					<a aria-current='{segment === "projects" ? "page" : undefined}' href='projects'>Projects</a>
         </li>
