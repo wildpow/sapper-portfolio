@@ -183,13 +183,13 @@ function flyOnce(node,...params) {
       <h2 class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">My Services</h2>
     </div>
       <div class="flex flex-col justify-between w-full md:flex-row">
-        <div class="services">
+        <div class="mb-8 services lg:mb-0">
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Pen width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
-              <h3 class="text-xl font-normal leading-tight sm:text-4xl text-projects">Web Design</h3>
-              <h4 class="mt-5 text-xl font-light leading-relaxed sm:text-2xl text-projects">User Focused</h4>
-              <p class="mt-5 text-xl font-light leading-relaxed sm:text-2xl text-list">
+              <h3 class="text-2xl font-normal leading-tight sm:text-4xl text-projects">Web Design</h3>
+              <h4 class="mt-4 text-xl font-light leading-relaxed  md:mt-5 sm:text-2xl text-projects">User Focused</h4>
+              <p class="mt-4 text-lg font-light leading-relaxed md:mt-5 sm:text-2xl text-list">
 				A website should be designed for the people who will use it, so that's exactly what I do. User focused design should be the primary goal of any website.
               </p>
             </div>
@@ -199,9 +199,9 @@ function flyOnce(node,...params) {
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Desktop width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
-              <h3 class="text-4xl font-normal leading-tight text-projects">Web Development </h3>
-              <h4 class="mt-5 text-2xl leading-relaxed text-projects">Responsive and Fast</h4>
-              <p class="mt-5 text-2xl leading-relaxed ">Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.
+              <h3 class="text-2xl font-normal leading-tight sm:text-4xl text-projects">Web Development </h3>
+              <h4 class="mt-4 text-xl font-light leading-relaxed md:mt-5 sm:text-2xl text-projects">Responsive and Fast</h4>
+              <p class="mt-4 text-lg font-light leading-relaxed md:mt-5 sm:text-2xl text-list">Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.
               </p>
             </div>
           </div>
