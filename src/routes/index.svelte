@@ -137,7 +137,7 @@ function flyOnce(node,...params) {
   {/if}
 </section>
 <section class="py-12 md:py-24">
-  <div class="pb-5 mx-auto  sm:pb-20 inner-wrapper">
+  <div class="pb-5 mx-auto sm:pb-20 inner-wrapper">
     <div class="pb-8 sm:pb-12">
       <h2 class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">Featured Project</h2>
     </div>
@@ -179,17 +179,17 @@ function flyOnce(node,...params) {
 <Quote />
 <section class="py-12 md:py-24">
   <div class="pb-20 mx-auto inner-wrapper">
-    <div class="pb-12">
-      <h2 class="pb-4 text-2xl font-medium leading-none tracking-wider uppercase border-b-4 text-secondary border-article">My Services</h2>
+    <div class="pb-8 sm:pb-12">
+      <h2 class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">My Services</h2>
     </div>
       <div class="flex flex-col justify-between w-full md:flex-row">
         <div class="services">
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Pen width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
-              <h3 class="text-4xl font-normal leading-tight text-projects">Web Design</h3>
-              <h4 class="mt-5 text-2xl leading-relaxed text-projects">User Focused</h4>
-              <p class="mt-5 text-2xl leading-relaxed ">
+              <h3 class="text-xl font-normal leading-tight sm:text-4xl text-projects">Web Design</h3>
+              <h4 class="mt-5 text-xl font-light leading-relaxed sm:text-2xl text-projects">User Focused</h4>
+              <p class="mt-5 text-xl font-light leading-relaxed sm:text-2xl text-list">
 				A website should be designed for the people who will use it, so that's exactly what I do. User focused design should be the primary goal of any website.
               </p>
             </div>
