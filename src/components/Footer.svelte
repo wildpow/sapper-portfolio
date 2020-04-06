@@ -29,7 +29,7 @@
           <h2 class="text-3xl font-normal leading-tight text-white md:text-5xl">
             Let's work Together
           </h2>
-          <p class="mt-5 text-lg leading-relaxed text-white opacity-50 md:text-2xl">
+          <p class="mt-5 text-lg leading-relaxed text-light md:text-2xl">
             Have a project you'd like to discuss?
           </p>
         </div>

@@ -85,6 +85,12 @@ function flyOnce(node,...params) {
   background-color: #4b6cc1;
   max-width: 30px;
 }
+@media screen and (min-width:640px) {
+  .icon-span::after {
+    margin: 30px auto;
+  }
+  
+}
 .services {
   width: 48.1%;
 }
@@ -177,8 +183,8 @@ function flyOnce(node,...params) {
   </section>
 
 <Quote />
-<section class="py-12 md:py-24">
-  <div class="pb-20 mx-auto inner-wrapper">
+<section class="flex flex-col py-12 md:py-24">
+  <div class="pb-5 mx-auto sm:pb-20 inner-wrapper">
     <div class="pb-8 sm:pb-12">
       <h2 class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">My Services</h2>
     </div>
@@ -188,7 +194,7 @@ function flyOnce(node,...params) {
             <span class="icon-span text-blue"><Pen width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
               <h3 class="text-2xl font-normal leading-tight sm:text-4xl text-projects">Web Design</h3>
-              <h4 class="mt-4 text-xl font-light leading-relaxed  md:mt-5 sm:text-2xl text-projects">User Focused</h4>
+              <h4 class="mt-4 text-xl font-light leading-relaxed md:mt-5 sm:text-2xl text-projects">User Focused</h4>
               <p class="mt-4 text-lg font-light leading-relaxed md:mt-5 sm:text-2xl text-list">
 				A website should be designed for the people who will use it, so that's exactly what I do. User focused design should be the primary goal of any website.
               </p>
@@ -208,5 +214,8 @@ function flyOnce(node,...params) {
         </div>
       </div>
     </div>
-    </section>
+    <div class="pt-10 mx-auto ">
+      <a href="services" class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">View All Services</a>
+    </div>
+  </section>
 <Footer />
