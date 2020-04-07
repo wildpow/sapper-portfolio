@@ -13,6 +13,9 @@
   function handleScroll(data) {
     open = data.detail.open;
   }
+  function handleClick(data) {
+    open = data.detail.open;
+  }
 
 	onMount(()=> {
 		visible = true
@@ -79,4 +82,4 @@ header {
   </div>
 </header>
 {/if}
-<Sidebar bind:open {segment} on:message={handleScroll}/>
+<Sidebar bind:open {segment} on:message={handleScroll} on:linkClick={handleClick} />
