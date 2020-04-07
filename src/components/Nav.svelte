@@ -9,6 +9,7 @@
 	export let segment;
   let visible = false;
   let open = false;
+  
 	onMount(()=> {
 		visible = true
 	});
