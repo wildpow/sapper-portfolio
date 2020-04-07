@@ -10,6 +10,10 @@
   let visible = false;
   let open = false;
   
+  function handleScroll(data) {
+    open = data.detail.open;
+  }
+
 	onMount(()=> {
 		visible = true
 	});
@@ -75,4 +79,4 @@ header {
   </div>
 </header>
 {/if}
-<Sidebar bind:open {segment}/>
+<Sidebar bind:open {segment} on:message={handleScroll}/>

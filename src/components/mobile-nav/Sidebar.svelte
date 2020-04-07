@@ -1,19 +1,29 @@
 <script>
   export let open = false;
+  let y;
   import { fly } from 'svelte/transition';
+  import {createEventDispatcher, beforeUpdate} from 'svelte'
   import { quintOut, expoInOut, backInOut } from 'svelte/easing';
   export let segment;
+  const dispatch = createEventDispatcher()
+  function handleClick() {
+    dispatch('message', {open: false})
+  }
   let menuItems = [
     {id: 1, name: "projects"},
     {id: 2, name: "about"},
     {id: 3, name: "services"},
     {id: 4, name: "contact"},
   ];
-  // let y;
+
   function jsUcfirst(string) 
 {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+beforeUpdate(()=> {
+  if(y >0 && open) handleClick()
+})
 </script>
 
 <style>
@@ -26,10 +36,10 @@
   }
 </style>
 
-<!-- <svelte:window bind:scrollY={y}/> -->
+<svelte:window bind:scrollY={y}/>
 {#if open}
 <aside class="absolute w-full h-full bg-white" transition:fly="{{ y: -100, duration: 600, opacity: 0, easing: expoInOut }}">
-  <nav class="text-2xl">
+  <nav class="text-2xl">{y}
     {#each menuItems as {id, name}, i}
       {#if open}
     <a aria-current='{segment === {name} ? "page" : undefined}'
