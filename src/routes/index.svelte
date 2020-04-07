@@ -75,7 +75,8 @@ function flyOnce(node,...params) {
 .icon-span {
   transform: rotate(50%);
 }
-.icon-span::after {
+
+.icon-span::after { 
   margin: 40px auto;
   width: 100%;
   height: 6px;

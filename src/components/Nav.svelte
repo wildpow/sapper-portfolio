@@ -6,7 +6,7 @@
   import Sidebar from './mobile-nav/Sidebar.svelte';
   import Brand from './Brand.svelte';
   
-	export let segment;
+	export let segment; 
   let visible = false;
   let open = false;
   
@@ -47,16 +47,15 @@
 header {
   transition: all 300ms linear;
 }
-</style>
+  </style>
 
 {#if visible}
 <header class="absolute z-10 w-full" >
   <div style="border-color: rgba(255, 255, 255, 0.1)" class="flex items-center justify-between pt-5 pb-5 mx-auto border-b-2 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
-   <Brand bind:open {segment}/>
-   <div class=" lg:hidden">
-
-     <Hamburger bind:open={open}/>
-   </div>
+    <Brand bind:open {segment}/>
+      <div class=" lg:hidden">
+        <Hamburger bind:open={open}/>
+      </div>
     <nav class="hidden lg:block">
       <ul class="flex">
         <li>
