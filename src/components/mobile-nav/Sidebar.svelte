@@ -39,29 +39,29 @@ beforeUpdate(()=> {
   }
 </style>
 
-<svelte:window bind:scrollY={y}/>
 {#if open}
 <aside class="absolute w-full h-full bg-white" transition:fly="{{ y: -100, duration: 600, opacity: 0, easing: expoInOut }}">
-  <nav class="text-2xl">
+  <nav class="overflow-scroll text-2xl">
     {#each menuItems as {id, name}, i}
-      {#if open}
+    {#if open}
     <a aria-current='{segment === {name} ? "page" : undefined}'
-        on:click={handleLinkClick}
-        in:fly="{{ y: -100, duration: 600, delay: i*100, easing: backInOut }}"
-        out:fly="{{ y: -100, duration: 300, delay: i*25, easing: backInOut }}"
-        class="block pb-5 mb-5 font-light leading-tight border-b-2 text-list border-nav"
-        href={name}
-        style="background-color: transparent;"
+    on:click={handleLinkClick}
+    in:fly="{{ y: -100, duration: 600, delay: i*100, easing: backInOut }}"
+    out:fly="{{ y: -100, duration: 300, delay: i*25, easing: backInOut }}"
+    class="block pb-5 mb-5 font-light leading-tight border-b-2 text-list border-nav"
+    href={name}
+    style="background-color: transparent;"
     >
-      {jsUcfirst(name)}
+    {jsUcfirst(name)}
     </a>
     {/if}
     {/each}
-
-  </nav>
-</aside>
-{/if}
-
+    
+    </nav>
+    </aside>
+    {/if}
+    
+    <svelte:window bind:scrollY={y}/>
 
  
 

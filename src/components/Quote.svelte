@@ -44,12 +44,12 @@
   }
 </style>
 
-<section class="md:py-24 bg-figure_projects">
+<section class="px-4 sm:px-10 sm:py-24 md:py-24 bg-figure_projects">
   <div class="py-12 mx-auto md:py-32" style="max-width: 925px;">
     <blockquote class="flex flex-col leading-none text-center">
       <div class="relative py-16 inner__quote">
         <p
-          class="text-2xl font-light leading-snug text-center md:text-5xl text-projects quotes">
+          class="text-2xl font-light leading-snug text-center sm:text-4xl md:text-5xl text-projects quotes">
           Aaron was instrumental in the development and deployment of our web
           services. We couldn’t have asked for a more professional, friendly, or
           competent developer.

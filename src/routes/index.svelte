@@ -29,22 +29,24 @@ function flyOnce(node,...params) {
     max-height: 100%;
     margin-bottom: -30px;
   }
-  .hero {
+  /* .hero {
     min-height: 932px;
-  }
-  @media screen and (min-width: 768px){
+  } */
+  @media screen and (min-width: 768px) {
     .hero__img {
     max-width: 325px;
     max-height: 491px;
   }
+  }
+  @media screen and (min-width: 768px){
     img {
       margin-bottom: -80px;
     }
-    .hero {
+    /* .hero {
       min-height: 974px;
       padding-bottom: 100px;
    
-    }
+    } */
   }
   .hero__button {
     transition: all ease 0.3s;
@@ -105,11 +107,11 @@ function flyOnce(node,...params) {
 <svelte:head>
   <title>Aaron Wilder</title>
 </svelte:head>
-
+<!--md:py-20 lg:py-24-->
 <section class="relative page-banner hero">
   {#if visible}
   <div 
-    class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 md:py-24 inner-wrapper-hero lg:flex-row" in:flyOnce="{{ y: 100, duration: 1000 }}">
+    class="flex flex-col items-center justify-between py-12 mx-auto inner-wrapper-hero md:flex-row" in:flyOnce="{{ y: 100, duration: 1000 }}">
     <div class="flex flex-col lg:pr-20 "in:fade="{{duration: 150}}" out:fade="{{duration: 150}}">
       <h1 class="leading-none heading__tagLine sm:text-6xl lg:text-7xl">Hey, I'm Aaron.</h1>
       <h2 class="heading__desciption sm:text-3xl md:3.5xl">
@@ -143,13 +145,13 @@ function flyOnce(node,...params) {
 
   {/if}
 </section>
-<section class="py-12 md:py-24">
+<section class="py-12 lg:py-24">
   <div class="pb-5 mx-auto sm:pb-20 inner-wrapper">
     <div class="pb-8 sm:pb-12">
       <h2 class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">Featured Project</h2>
     </div>
-    <article class="flex flex-col justify-between mx-auto md:flex-row">
-      <div class="max-w-4xl md:w-3/5">
+    <article class="flex flex-col justify-between mx-auto lg:flex-row">
+      <div class="max-w-4xl lg:w-3/5">
         <figure class="p-4 mb-4 rounded-md sm:mb-10 sm:p-10 bg-figure_projects">
           <a href="projects">
             <picture>
@@ -163,7 +165,7 @@ function flyOnce(node,...params) {
           </a>
         </figure>
       </div>
-      <div class="flex flex-col content-center justify-center pl-4 pr-4 mt-8 align-middle md:w-2/6">
+      <div class="flex flex-col content-center justify-center pl-4 pr-4 mt-8 align-middle lg:w-2/6">
         <h3 class="text-3xl font-normal leading-none sm:text-5xl text-projects" style="line-height: 115%">
           <a href="projects">E.S.C. Mattress</a>
         </h3>
@@ -189,8 +191,8 @@ function flyOnce(node,...params) {
     <div class="pb-8 sm:pb-12">
       <h2 class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">My Services</h2>
     </div>
-      <div class="flex flex-col justify-between w-full md:flex-row">
-        <div class="mb-8 services lg:mb-0">
+      <div class="flex flex-col justify-between w-full sm:flex-row">
+        <div class="mb-8 services sm:mb-0">
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Pen width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
@@ -202,7 +204,7 @@ function flyOnce(node,...params) {
             </div>
           </div>
         </div>
-        <div class="services">
+        <div class="h-full services">
           <div class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue" style="padding: 10%">
             <span class="icon-span text-blue"><Desktop width={52} styles="margin:auto;"/></span>
             <div class="text-center ">
