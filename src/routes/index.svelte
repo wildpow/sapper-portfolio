@@ -29,9 +29,9 @@ function flyOnce(node,...params) {
     max-height: 100%;
     margin-bottom: -30px;
   }
-  /* .hero {
+  .hero {
     min-height: 932px;
-  } */
+  }
   @media screen and (min-width: 768px) {
     .hero__img {
     max-width: 325px;
@@ -42,11 +42,11 @@ function flyOnce(node,...params) {
     img {
       margin-bottom: -80px;
     }
-    /* .hero {
+    .hero {
       min-height: 974px;
       padding-bottom: 100px;
    
-    } */
+    }
   }
   .hero__button {
     transition: all ease 0.3s;

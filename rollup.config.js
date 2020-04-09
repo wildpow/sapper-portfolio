@@ -12,9 +12,9 @@ const mode = process.env.NODE_ENV
 const dev = mode === 'development'
 const legacy = !!process.env.SAPPER_LEGACY_BUILD
 const tailwind = require('./tailwind.config.js')
-// const cssnano = require('cssnano')({
-//   preset: 'default',
-// })
+const cssnano = require('cssnano')({
+  preset: 'default',
+})
 const purgecss = require('@fullhuman/postcss-purgecss')({
   // Specify the paths to all of the template files in your project
   content: ['./src/**/*.html', './src/**/*.svelte'],
@@ -53,12 +53,12 @@ const preprocessProd = sveltePreprocess({
   postcss: {
     plugins: [
       require('tailwindcss')(tailwind),
-      // require('postcss-import')(),
-      // require('postcss-url')(),
-      // require('autoprefixer'),
+      require('postcss-import')(),
+      require('postcss-url')(),
+      require('autoprefixer'),
       require('postcss-preset-env'),
       purgecss,
-      // cssnano,
+      cssnano,
     ],
   },
 })
@@ -81,7 +81,7 @@ export default {
       }),
       svelte({
         preprocess,
-        emitCss: false,
+        emitCss: true,
         dev,
         hydratable: true,
       }),
@@ -135,7 +135,7 @@ export default {
       svelte({
         preprocess,
         generate: 'ssr',
-        emitCss: false,
+        emitCss: true,
         dev,
       }),
       resolve({
