@@ -1,6 +1,5 @@
 <script>
   import Nav from '../components/Nav.svelte';
-
   export let segment;
 </script>
 
@@ -8,6 +7,9 @@
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
+  /* h1,h2,h3,h4,h6 {
+    @apply leading-none;
+  } */
   body {
     font-family: 'Rubik', 'Arial', sans-serif;
     text-rendering: optimizeLegibility;
@@ -24,12 +26,6 @@
       max-width: 1200px;
       max-width: 1430px;
     }
-  }
-  .heading__tagLine {
-    @apply text-4xl text-white;
-  }
-  .heading__desciption {
-    @apply mt-8 text-xl font-light text-primary;
   }
 
   @keyframes fadeIn {
