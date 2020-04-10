@@ -7,7 +7,7 @@ import babel from 'rollup-plugin-babel'
 import { terser } from 'rollup-plugin-terser'
 import config from 'sapper/config/rollup.js'
 import pkg from './package.json'
-
+import image from "svelte-image";
 const mode = process.env.NODE_ENV
 const dev = mode === 'development'
 const legacy = !!process.env.SAPPER_LEGACY_BUILD
@@ -80,7 +80,11 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
       svelte({
-        preprocess,
+        preprocess: [image({trace: {
+          background: "#f6f6f6",
+          color: "#919191",
+          threshold: 120
+        }}), preprocess],
         emitCss: true,
         dev,
         hydratable: true,
@@ -133,7 +137,11 @@ export default {
         'process.env.NODE_ENV': JSON.stringify(mode),
       }),
       svelte({
-        preprocess,
+        preprocess: [image({trace: {
+          background: "#f6f6f6",
+          color: "#919191",
+          threshold: 120
+        }}), preprocess],
         generate: 'ssr',
         emitCss: true,
         dev,

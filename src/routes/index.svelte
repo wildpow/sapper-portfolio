@@ -1,5 +1,6 @@
 <script>
   import { onMount,onDestroy} from 'svelte';
+  import Image from "svelte-image";
   import { quintOut } from 'svelte/easing';
   import { fly, fade, slide } from 'svelte/transition';
   import {flown} from '../components/store.js';
@@ -132,12 +133,14 @@ function flyOnce(node,...params) {
             
             <source type="image/jpeg" srcset="newPort/aaron-tablet_1x_w_768.jpg 1x, newPort/aaron-tablet_2x_w_1536.jpg 2x" media="(max-width: 900px) and (min-width: 376px)">
               <source type="image/webp" srcset="newPort/aaron-tablet_1x_w_768.webp 1x, newPort/aaron-tablet_2x_w_1536.webp 2x" media="(max-width: 900px) and (min-width: 376px)">
-        
+        <div class="-mb-8 lg:-mb-24">
+
           <img
             src="newPort/aaron-w404.jpg"
-            alt="e.s.c. mattress center"
+            alt="Aaron in smiling in a suit"
             class="rounded-md hero__img"
           >
+        </div>
         </picture>
     </figure>
 
@@ -154,14 +157,17 @@ function flyOnce(node,...params) {
       <div class="max-w-4xl lg:w-3/5">
         <figure class="p-4 mb-4 rounded-md sm:mb-10 sm:p-10 bg-figure_projects">
           <a href="projects">
-            <picture>
-              <source type="image/webp" srcset="new_esc.webp" media="(min-width: 276px)">
-                <img
-                  src="new_esc.png"
-                  alt="e.s.c. mattress center"
-                  class="-mb-8 rounded-md esc-project"
-                >
-              </picture>
+            <div class="-mb-8 rounded-md lg:-mb-24 esc-project">
+              
+                 <Image
+                   src="new_esc.png"
+                   alt="e.s.c. mattress center"
+                   class="rounded-md esc-project"
+                 />
+
+            </div>
+       
+             
           </a>
         </figure>
       </div>
