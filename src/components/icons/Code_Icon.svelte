@@ -1,5 +1,5 @@
 <script>
-  export let width = 20
+  export let width = 20;
 </script>
 
 <svg

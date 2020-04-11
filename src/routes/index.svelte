@@ -9,7 +9,6 @@
   import Code from "../components/icons/Code_Icon.svelte";
   import Footer from '../components/Footer.svelte';
   import Quote from '../components/Quote.svelte';
-
   let visible = false;
 	onMount(() => visible = true);
 
@@ -25,7 +24,7 @@ function flyOnce(node,...params) {
 </script>
 
 <style>
-  .hero__img {
+  .hero__img  {
     max-width: 100%;
     max-height: 100%;
     margin-bottom: -30px;

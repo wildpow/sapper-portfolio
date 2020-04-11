@@ -1,6 +1,5 @@
 <script>
-  import Image from "svelte-image";
-
+  import Image from 'svelte-image';
 </script>
 
 <style>
@@ -61,9 +60,12 @@
           style="max-width: 80px;"
           class="mx-auto mb-5 rounded-full"
           src="will.jpg"
-          alt="William Wellauer E.S.C. Mattress Center Owner"
-        >
-        <Image  class="mx-auto mb-5 rounded-full"  style="max-width: 80px;"  src="will.jpg" alt="William Wellauer E.S.C. Mattress Center Owner"/>
+          alt="William Wellauer E.S.C. Mattress Center Owner">
+          <Image
+            class="mx-auto mb-5 rounded-full"
+            style="max-width: 80px;"
+            src="will.jpg"
+            alt="William Wellauer E.S.C. Mattress Center Owner" />
         </div>
 
         <strong class="mb-2 not-italic font-medium ">William Wellauer</strong>
