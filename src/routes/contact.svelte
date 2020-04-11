@@ -1,10 +1,3 @@
-<style>
-  .section--small {
-    max-width: 925px;
-    width: 92%;
-  }
-</style>
-
 <svelte:head>
   <title>Contact</title>
 </svelte:head>
@@ -73,3 +66,10 @@
     </p>
   </div>
 </footer>
+
+<style>
+  .section--small {
+    max-width: 925px;
+    width: 92%;
+  }
+</style>

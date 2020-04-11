@@ -3,6 +3,20 @@
   export let segment;
 </script>
 
+<!--  
+    "plugins": ["prettier-plugin-svelte"]
+
+  section {
+    width: 92%;
+    margin-right: auto;
+    margin-left: auto;
+  }-->
+<Nav {segment} />
+
+<main>
+  <slot />
+</main>
+
 <style global>
   @tailwind base;
   @tailwind components;
@@ -88,17 +102,3 @@
     }
   }
 </style>
-
-<!--  
-    "plugins": ["prettier-plugin-svelte"]
-
-  section {
-    width: 92%;
-    margin-right: auto;
-    margin-left: auto;
-  }-->
-<Nav {segment} />
-
-<main>
-  <slot />
-</main>

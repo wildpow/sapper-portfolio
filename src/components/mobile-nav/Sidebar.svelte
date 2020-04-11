@@ -2,32 +2,57 @@
   export let open = false;
   let y;
   import { fly } from 'svelte/transition';
-  import {createEventDispatcher, beforeUpdate} from 'svelte'
-  import { quintOut, expoInOut, backInOut } from 'svelte/easing';
+  import { createEventDispatcher, beforeUpdate } from 'svelte';
+  import { expoInOut, backInOut } from 'svelte/easing';
   export let segment;
-  const dispatch = createEventDispatcher()
+  const dispatch = createEventDispatcher();
   function handleScroll() {
-    dispatch('message', {open: false})
+    dispatch('message', { open: false });
   }
   function handleLinkClick() {
-    dispatch('linkClick', {open: false})
+    dispatch('linkClick', { open: false });
   }
   let menuItems = [
-    {id: 1, name: "projects"},
-    {id: 2, name: "about"},
-    {id: 3, name: "services"},
-    {id: 4, name: "contact"},
+    { id: 1, name: 'projects' },
+    { id: 2, name: 'about' },
+    { id: 3, name: 'services' },
+    { id: 4, name: 'contact' },
   ];
 
-  function jsUcfirst(string) 
-{
+  function jsUcfirst(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
-}
+  }
 
-beforeUpdate(()=> {
-  if(y >0 && open) handleScroll()
-})
+  beforeUpdate(() => {
+    if (y > 0 && open) handleScroll();
+  });
 </script>
+
+{#if open}
+  <aside
+    class="absolute w-full h-full bg-white"
+    transition:fly={{ y: -100, duration: 600, opacity: 0, easing: expoInOut }}>
+    <nav class="overflow-scroll text-2xl">
+      {#each menuItems as { id, name }, i}
+        {#if open}
+          <a
+            aria-current={segment === { name } ? 'page' : undefined}
+            on:click={handleLinkClick}
+            in:fly={{ y: -100, duration: 600, delay: i * 100, easing: backInOut }}
+            out:fly={{ y: -100, duration: 300, delay: i * 25, easing: backInOut }}
+            class="block pb-5 mb-5 font-light leading-tight border-b-2 text-list border-nav"
+            href={name}
+            style="background-color: transparent;">
+            {jsUcfirst(name)}
+          </a>
+        {/if}
+      {/each}
+
+    </nav>
+  </aside>
+{/if}
+
+<svelte:window bind:scrollY={y} />
 
 <style>
   aside {
@@ -38,32 +63,3 @@ beforeUpdate(()=> {
     padding: 140px 4% 4%;
   }
 </style>
-
-{#if open}
-<aside class="absolute w-full h-full bg-white" transition:fly="{{ y: -100, duration: 600, opacity: 0, easing: expoInOut }}">
-  <nav class="overflow-scroll text-2xl">
-    {#each menuItems as {id, name}, i}
-    {#if open}
-    <a aria-current='{segment === {name} ? "page" : undefined}'
-    on:click={handleLinkClick}
-    in:fly="{{ y: -100, duration: 600, delay: i*100, easing: backInOut }}"
-    out:fly="{{ y: -100, duration: 300, delay: i*25, easing: backInOut }}"
-    class="block pb-5 mb-5 font-light leading-tight border-b-2 text-list border-nav"
-    href={name}
-    style="background-color: transparent;"
-    >
-    {jsUcfirst(name)}
-    </a>
-    {/if}
-    {/each}
-    
-    </nav>
-    </aside>
-    {/if}
-    
-    <svelte:window bind:scrollY={y}/>
-
- 
-
-    
- 

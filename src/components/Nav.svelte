@@ -1,15 +1,15 @@
 <script>
   import { onMount } from 'svelte';
-	import { quintOut } from 'svelte/easing';
+  import { quintOut } from 'svelte/easing';
   import { fly } from 'svelte/transition';
   import Hamburger from './mobile-nav/Hamburger.svelte';
   import Sidebar from './mobile-nav/Sidebar.svelte';
   import Brand from './Brand.svelte';
-  
-	export let segment; 
+
+  export let segment;
   let visible = false;
   let open = false;
-  
+
   function handleScroll(data) {
     open = data.detail.open;
   }
@@ -17,10 +17,61 @@
     open = data.detail.open;
   }
 
-	onMount(()=> {
-		visible = true
-	});
+  onMount(() => {
+    visible = true;
+  });
 </script>
+
+{#if visible}
+  <header class="absolute z-10 w-full">
+    <div
+      style="border-color: rgba(255, 255, 255, 0.1)"
+      class="flex items-center justify-between pt-5 pb-5 mx-auto border-b-2 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none"
+      in:fly={{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}>
+      <Brand bind:open {segment} />
+      <div class=" lg:hidden">
+        <Hamburger bind:open />
+      </div>
+      <nav class="hidden lg:block">
+        <ul class="flex">
+          <li>
+            <a
+              aria-current={segment === 'projects' ? 'page' : undefined}
+              href="projects">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={segment === 'about' ? 'page' : undefined}
+              href="about">
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={segment === 'services' ? 'page' : undefined}
+              href="services">
+              Services
+            </a>
+          </li>
+          <li>
+            <a
+              aria-current={segment === 'contact' ? 'page' : undefined}
+              href="contact">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+{/if}
+<Sidebar
+  bind:open
+  {segment}
+  on:message={handleScroll}
+  on:linkClick={handleClick} />
 
 <style>
   li:not(:last-child) {
@@ -40,46 +91,19 @@
     left: 50%;
     opacity: 0;
     pointer-events: none;
-    content: "";
+    content: '';
     border-radius: 6px;
-		background: #4b6cc1;
-		transition: all ease 0.3s;  }
+    background: #4b6cc1;
+    transition: all ease 0.3s;
+  }
   nav ul :global(a):hover {
     color: white;
-	}
-	nav ul :global(a):hover::before{
-  width: 70%;
-  opacity: 1;
-}
-header {
-  transition: all 300ms linear;
-}
-  </style>
-
-{#if visible}
-<header class="absolute z-10 w-full" >
-  <div style="border-color: rgba(255, 255, 255, 0.1)" class="flex items-center justify-between pt-5 pb-5 mx-auto border-b-2 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none" in:fly="{{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}">
-    <Brand bind:open {segment}/>
-      <div class=" lg:hidden">
-        <Hamburger bind:open={open}/>
-      </div>
-    <nav class="hidden lg:block">
-      <ul class="flex">
-        <li>
-					<a aria-current='{segment === "projects" ? "page" : undefined}' href='projects'>Projects</a>
-        </li>
-        <li>
-          <a aria-current='{segment === "about" ? "page" : undefined}' href='about'>About</a>
-        </li>
-        <li>
-          <a aria-current='{segment === "services" ? "page" : undefined}' href='services'>Services</a>
-        </li>
-        <li>
-          <a aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-{/if}
-<Sidebar bind:open {segment} on:message={handleScroll} on:linkClick={handleClick} />
+  }
+  nav ul :global(a):hover::before {
+    width: 70%;
+    opacity: 1;
+  }
+  header {
+    transition: all 300ms linear;
+  }
+</style>

@@ -5,22 +5,6 @@
   import Twitter from './icons/Twitter.svelte';
 </script>
 
-<style>
-   section {
-    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
-  }
-  @media screen and (max-width: 670px) {
-    section {
-      clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
-    } 
-
-  }
-  .inner-box {
-    max-width: 1200px;
-    width: 92%;
-  }
-</style>
-
 <section class="pt-12 md:pt-40 bg-primary">
   <div class="pt-12 pb-12 mx-auto leading-none md:py-40 inner-box">
     <div class="flex flex-col md:flex-row">
@@ -42,17 +26,66 @@
       </div>
       <div class="mt-8 md:w-1/3 md:mt-0">
         <ul class="font-light leading-none">
-          <li class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-light" style="margin-bottom: 30px"><span class="mr-4 text-blue"><Mail width={24}/></span><a href="mailto:aaron.s.wilder@gmail.com?subject=Let's work together.">aaron@gmail.com</a></li>
-          <li class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-light" style="margin-bottom: 30px"><span class="mr-4 text-blue"><Git width={24}/></span><a href="https://github.com/wildpow">on Github</a></li>
-          <li class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-light" style="margin-bottom: 30px"><span class="mr-4 text-blue "><LinkedIn width={24}/></span><a href="https://www.linkedin.com/in/aaronswilder/">on LinkedIn</a></li>
-          <li class="flex items-center font-medium leading-none tracking-wide uppercase md:text-xl text-light"><span class="mr-4 text-blue"><Twitter width={24}/></span><a href="https://twitter.com/awildair">on twitter</a></li>
+          <li
+            class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-light"
+            style="margin-bottom: 30px">
+            <span class="mr-4 text-blue">
+              <Mail width={24} />
+            </span>
+            <a
+              href="mailto:aaron.s.wilder@gmail.com?subject=Let's work together.">
+              aaron@gmail.com
+            </a>
+          </li>
+          <li
+            class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-light"
+            style="margin-bottom: 30px">
+            <span class="mr-4 text-blue">
+              <Git width={24} />
+            </span>
+            <a href="https://github.com/wildpow">on Github</a>
+          </li>
+          <li
+            class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-light"
+            style="margin-bottom: 30px">
+            <span class="mr-4 text-blue ">
+              <LinkedIn width={24} />
+            </span>
+            <a href="https://www.linkedin.com/in/aaronswilder/">on LinkedIn</a>
+          </li>
+          <li
+            class="flex items-center font-medium leading-none tracking-wide uppercase md:text-xl text-light">
+            <span class="mr-4 text-blue">
+              <Twitter width={24} />
+            </span>
+            <a href="https://twitter.com/awildair">on twitter</a>
+          </li>
         </ul>
       </div>
     </div>
   </div>
 </section>
-<footer class="flex justify-center bg-primary" style="background-color: #101114;">
+<footer
+  class="flex justify-center bg-primary"
+  style="background-color: #101114;">
   <div class="max-w-4xl py-5 text-center md:py-10 ">
-    <p class="font-light leading-none tracking-normal md:text-lg text-list">© 2020 Aaron Wilder. All rights reserved. </p>
+    <p class="font-light leading-none tracking-normal md:text-lg text-list">
+      © 2020 Aaron Wilder. All rights reserved.
+    </p>
   </div>
 </footer>
+
+<style>
+  section {
+    clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  }
+  @media screen and (max-width: 670px) {
+    section {
+      clip-path: polygon(0 0, 100% 50px, 100% 100%, 0 100%);
+    }
+  }
+  .inner-box {
+    max-width: 1200px;
+    width: 92%;
+  }
+</style>

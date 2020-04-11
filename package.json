@@ -18,7 +18,8 @@
     "cy:run": "cypress run",
     "cy:open": "cypress open",
     "test": "run-p --race dev cy:run",
-    "format": "npx prettier --write \"{,!(node_modules)/**/}*.{js,jsx}\""
+    "format": "prettier --write '{public,src}/**/*.{css,html,js,svelte}'",
+    "lint": "eslint --fix --quiet src --ext .js,.svelte"
   },
   "dependencies": {
     "compression": "^1.7.1",
@@ -46,7 +47,7 @@
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
     "postcss-url": "^8.0.0",
-    "prettier": "^2.0.4",
+    "prettier": "^1.19.1",
     "prettier-plugin-svelte": "^0.7.0",
     "rollup": "^2.3.4",
     "rollup-plugin-babel": "^4.0.2",

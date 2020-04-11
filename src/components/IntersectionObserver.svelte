@@ -15,7 +15,7 @@
       const rootMargin = `${bottom}px ${left}px ${top}px ${right}px`;
 
       const observer = new IntersectionObserver(
-        (entries) => {
+        entries => {
           intersecting = entries[0].isIntersecting;
           if (intersecting && once) {
             observer.unobserve(container);
@@ -48,13 +48,13 @@
   });
 </script>
 
+<div bind:this={container}>
+  <slot {intersecting} />
+</div>
+
 <style>
   div {
     width: 100%;
     height: 100%;
   }
 </style>
-
-<div bind:this={container}>
-  <slot {intersecting} />
-</div>

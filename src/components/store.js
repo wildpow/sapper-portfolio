@@ -1,3 +1,3 @@
-import { writable } from 'svelte/store'
-let flown = writable(false)
-export { flown }
+import { writable } from 'svelte/store';
+let flown = writable(false);
+export { flown };
