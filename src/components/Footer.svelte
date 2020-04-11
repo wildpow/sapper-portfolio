@@ -33,6 +33,7 @@
               <Mail width={24} />
             </span>
             <a
+              class="footer__link"
               href="mailto:aaron.s.wilder@gmail.com?subject=Let's work together.">
               aaron@gmail.com
             </a>
@@ -43,7 +44,9 @@
             <span class="mr-4 text-blue">
               <Git width={24} />
             </span>
-            <a href="https://github.com/wildpow">on Github</a>
+            <a class="footer__link" href="https://github.com/wildpow">
+              on Github
+            </a>
           </li>
           <li
             class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-light"
@@ -51,14 +54,20 @@
             <span class="mr-4 text-blue ">
               <LinkedIn width={24} />
             </span>
-            <a href="https://www.linkedin.com/in/aaronswilder/">on LinkedIn</a>
+            <a
+              class="footer__link"
+              href="https://www.linkedin.com/in/aaronswilder/">
+              on LinkedIn
+            </a>
           </li>
           <li
             class="flex items-center font-medium leading-none tracking-wide uppercase md:text-xl text-light">
             <span class="mr-4 text-blue">
               <Twitter width={24} />
             </span>
-            <a href="https://twitter.com/awildair">on twitter</a>
+            <a class="footer__link" href="https://twitter.com/awildair">
+              on twitter
+            </a>
           </li>
         </ul>
       </div>
@@ -76,6 +85,12 @@
 </footer>
 
 <style>
+  .footer__link {
+    transition: color 0.3s ease;
+  }
+  .footer__link:hover {
+    color: white;
+  }
   section {
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
   }
@@ -87,5 +102,14 @@
   .inner-box {
     max-width: 1200px;
     width: 92%;
+  }
+  .hero__button {
+    transition: all ease 0.3s;
+  }
+  .hero__button:hover {
+    transform: scale(1.075);
+    box-shadow: inset 0 0 0 2px #4b6cc1;
+    background: none;
+    color: #4b6cc1;
   }
 </style>

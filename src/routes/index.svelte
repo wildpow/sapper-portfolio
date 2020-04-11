@@ -124,7 +124,7 @@
         <h3
           class="text-3xl font-normal leading-none sm:text-5xl text-projects"
           style="line-height: 115%">
-          <a href="projects">E.S.C. Mattress</a>
+          <a class="project__link" href="projects">E.S.C. Mattress</a>
         </h3>
         <p
           class="mt-5 text-xl font-light leading-relaxed sm:text-2xl text-list">
@@ -244,6 +244,12 @@
 <Footer />
 
 <style>
+  .project__link {
+    transition: opacity 0.3s ease;
+  }
+  .project__link:hover {
+    opacity: 0.5;
+  }
   .hero__img {
     max-width: 100%;
     max-height: 100%;
