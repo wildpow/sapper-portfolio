@@ -2,7 +2,7 @@
   export let open = false;
   let y;
   import { fly } from 'svelte/transition';
-  import { createEventDispatcher, beforeUpdate } from 'svelte';
+  import { createEventDispatcher, beforeUpdate, onMount } from 'svelte';
   import { expoInOut, backInOut } from 'svelte/easing';
   export let segment;
   const dispatch = createEventDispatcher();
@@ -22,12 +22,23 @@
   function jsUcfirst(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
+  const mediaQueryHandler = e => {
+    if (!e.matches) {
+      dispatch('message', { open: false });
+    }
+  };
+  onMount(() => {
+    const mediaListener = window.matchMedia('(max-width: 900px)');
+    mediaListener.addListener(mediaQueryHandler);
+    return () => removeEventListener(mediaListener);
+  });
 
   beforeUpdate(() => {
     if (y > 0 && open) handleScroll();
   });
 </script>
 
+<svelte:window bind:scrollY={y} />
 {#if open}
   <aside
     class="absolute w-full h-full bg-white"
@@ -51,8 +62,6 @@
     </nav>
   </aside>
 {/if}
-
-<svelte:window bind:scrollY={y} />
 
 <style>
   aside {
