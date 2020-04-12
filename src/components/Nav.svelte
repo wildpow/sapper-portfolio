@@ -36,6 +36,7 @@
         <ul class="flex">
           <li>
             <a
+              class:selected={segment === 'projects'}
               aria-current={segment === 'projects' ? 'page' : undefined}
               href="projects">
               Projects
@@ -43,6 +44,7 @@
           </li>
           <li>
             <a
+              class:selected={segment === 'about'}
               aria-current={segment === 'about' ? 'page' : undefined}
               href="about">
               About
@@ -50,6 +52,7 @@
           </li>
           <li>
             <a
+              class:selected={segment === 'services'}
               aria-current={segment === 'services' ? 'page' : undefined}
               href="services">
               Services
@@ -57,6 +60,7 @@
           </li>
           <li>
             <a
+              class:selected={segment === 'contact'}
               aria-current={segment === 'contact' ? 'page' : undefined}
               href="contact">
               Contact
@@ -105,5 +109,12 @@
   }
   header {
     transition: all 300ms linear;
+  }
+  .selected::before {
+    width: 70%;
+    opacity: 1;
+  }
+  .selected {
+    color: white;
   }
 </style>

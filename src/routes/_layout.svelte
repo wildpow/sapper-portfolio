@@ -12,7 +12,6 @@
     margin-left: auto;
   }-->
 <Nav {segment} />
-
 <main>
   <slot />
 </main>
