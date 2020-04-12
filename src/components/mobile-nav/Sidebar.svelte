@@ -47,6 +47,7 @@
       {#each menuItems as { id, name }, i}
         {#if open}
           <a
+            class:selected={segment === name}
             aria-current={segment === { name } ? 'page' : undefined}
             on:click={handleLinkClick}
             in:fly={{ y: -100, duration: 600, delay: i * 100, easing: backInOut }}
@@ -64,11 +65,23 @@
 {/if}
 
 <style>
+  .selected {
+    @apply border-blue text-projects;
+  }
   aside {
     z-index: 1;
     height: 100vh;
   }
   nav {
     padding: 140px 4% 4%;
+  }
+  nav a {
+    transition: all 0.2s ease;
+  }
+  nav a:hover {
+    @apply text-blue;
+  }
+  nav a:last-child {
+    border-style: none;
   }
 </style>
