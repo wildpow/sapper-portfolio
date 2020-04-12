@@ -100,10 +100,10 @@
     background: #4b6cc1;
     transition: all ease 0.3s;
   }
-  nav ul :global(a):hover {
+  nav ul a:hover {
     color: white;
   }
-  nav ul :global(a):hover::before {
+  nav ul a:hover::before {
     width: 70%;
     opacity: 1;
   }

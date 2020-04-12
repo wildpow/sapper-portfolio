@@ -29,7 +29,7 @@
 <section class="relative page-banner hero">
   {#if visible}
     <div
-      class="flex flex-col items-center justify-between py-12 mx-auto inner-wrapper-hero md:flex-row"
+      class="flex flex-col items-center justify-between py-12 mx-auto lg:py-24 inner-wrapper-hero md:flex-row"
       in:flyOnce={{ y: 100, duration: 1000 }}>
       <div
         class="flex flex-col lg:pr-20 "
