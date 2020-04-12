@@ -80,6 +80,7 @@
   }
   nav a:hover {
     @apply text-blue;
+    transform: scale3d(1, 1.05, 1);
   }
   nav a:last-child {
     border-style: none;
