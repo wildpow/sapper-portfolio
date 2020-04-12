@@ -26,13 +26,13 @@
   <header class="absolute z-10 w-full">
     <div
       style="border-color: rgba(255, 255, 255, 0.1)"
-      class="flex items-center justify-between pt-5 pb-5 mx-auto border-b-2 border-solid md:pb-12 md:pt-16 inner-wrapper md:border-none"
+      class="flex items-center justify-between py-5 mx-auto border-b-2 border-solid wapper md:py-10 inner-wrapper"
       in:fly={{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}>
       <Brand bind:open {segment} />
-      <div class=" lg:hidden">
+      <div class="hamburger">
         <Hamburger bind:open />
       </div>
-      <nav class="hidden lg:block">
+      <nav class="hidden">
         <ul class="flex">
           <li>
             <a
@@ -78,6 +78,17 @@
   on:linkClick={handleClick} />
 
 <style>
+  @media screen and (min-width: 900px) {
+    .hamburger {
+      display: none;
+    }
+    nav {
+      display: block;
+    }
+    .wapper {
+      @apply pb-12 pt-16 border-none;
+    }
+  }
   li:not(:last-child) {
     margin-right: 50px;
   }

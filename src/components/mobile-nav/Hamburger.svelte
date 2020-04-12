@@ -3,7 +3,7 @@
 </script>
 
 <button
-  class="mr-4 text-gray-500 border-none cursor-pointer hover:text-gray-700 focus:outline-none"
+  class="text-white border-none cursor-pointer hover:text-blue focus:outline-none"
   class:open
   on:click={() => (open = !open)}>
   <svg width="32" height="24">
@@ -28,7 +28,9 @@
   button {
     z-index: 20;
   }
-
+  .open {
+    @apply text-blue;
+  }
   .open svg {
     transform: scale(0.7);
   }
