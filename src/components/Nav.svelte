@@ -23,7 +23,7 @@
 </script>
 
 {#if visible}
-  <header class="absolute z-10 w-full">
+  <header class="absolute z-10 w-full" class:navOpen={open === true}>
     <div
       style="border-color: rgba(255, 255, 255, 0.1)"
       class="flex items-center justify-between py-5 mx-auto border-b-2 border-solid wapper md:py-10 inner-wrapper"
@@ -78,6 +78,14 @@
   on:linkClick={handleClick} />
 
 <style>
+  @media screen and (orientation: landscape) and (max-width: 800px) {
+    .navOpen {
+      @apply shadow-md;
+    }
+  }
+  .navOpen {
+    background-color: white;
+  }
   @media screen and (min-width: 900px) {
     .hamburger {
       display: none;
@@ -119,7 +127,7 @@
     opacity: 1;
   }
   header {
-    transition: all 300ms linear;
+    transition: all 600ms linear;
   }
   .selected::before {
     width: 70%;

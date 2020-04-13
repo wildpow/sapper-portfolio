@@ -43,7 +43,7 @@
   <aside
     class="absolute w-full h-full bg-white"
     transition:fly={{ y: -100, duration: 600, opacity: 0, easing: expoInOut }}>
-    <nav class="overflow-scroll text-2xl">
+    <nav class="h-full overflow-y-scroll text-2xl">
       {#each menuItems as { id, name }, i}
         {#if open}
           <a
@@ -74,6 +74,22 @@
   }
   nav {
     padding: 140px 4% 4%;
+  }
+  /* @media screen and (min-width: 768px) and (orientation: portrait) {
+    nav {
+      height: auto;
+    }
+    aside {
+      height: auto;
+    }
+    nav a {
+      font-size: 2rem;
+    }
+  } */
+  @media screen and (orientation: landscape) and (max-width: 800px) {
+    nav {
+      padding: 110px 4% 4%;
+    }
   }
   nav a {
     transition: all 0.2s ease;
