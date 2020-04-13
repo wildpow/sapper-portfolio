@@ -21,7 +21,7 @@
   <div class="mx-auto section--small">
     <div
       style="padding: 8%"
-      class="text-center rounded-lg border-blue border-t-6 bg-figure_projects">
+      class="text-center rounded-md border-blue border-t-6 bg-figure_projects">
       <div>
         <h2>
           <span class="text-xl leading-none md:text-3xl lg:text-4xl">

@@ -1,6 +1,6 @@
 <script>
   export let width = 20;
-  export let styles;
+  export let styles = '';
 </script>
 
 <svg

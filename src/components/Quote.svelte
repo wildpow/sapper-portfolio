@@ -1,5 +1,6 @@
 <script>
   import Image from 'svelte-image';
+  // import BG from '../../static/stripes.svg';
 </script>
 
 <section class="px-4 sm:px-10 sm:py-24 md:py-24 bg-figure_projects">
@@ -21,7 +22,6 @@
           alt="William Wellauer E.S.C. Mattress Center Owner">
           <Image
             class="mx-auto mb-5 rounded-full"
-            style="max-width: 80px;"
             src="will.jpg"
             alt="William Wellauer E.S.C. Mattress Center Owner" />
         </div>
@@ -67,7 +67,7 @@
   section {
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
     background-size: 600px;
-    background-image: url('bg-stripes.svg');
+    background-image: url(../stripes.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(246, 246, 246);

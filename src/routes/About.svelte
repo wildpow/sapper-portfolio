@@ -14,7 +14,9 @@
   style="width: 92%; max-width: 925px;">
   <div>
     <h2>Who I Am</h2>
-    <p>I'm a web developer based in Everett, WA.</p>
+    <p class="mt-4 leading-relaxed">
+      I'm a web developer based in Everett, WA.
+    </p>
   </div>
 
 </section>
