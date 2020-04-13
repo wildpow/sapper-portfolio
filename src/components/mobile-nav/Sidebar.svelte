@@ -75,17 +75,17 @@
   nav {
     padding: 140px 4% 4%;
   }
-  /* @media screen and (min-width: 768px) and (orientation: portrait) {
+  @media screen and (min-width: 768px) and (orientation: portrait) {
     nav {
       height: auto;
     }
     aside {
       height: auto;
     }
-    nav a {
+    /* nav a {
       font-size: 2rem;
-    }
-  } */
+    } */
+  }
   @media screen and (orientation: landscape) and (max-width: 800px) {
     nav {
       padding: 110px 4% 4%;
