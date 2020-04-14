@@ -14,7 +14,7 @@
     open = data.detail.open;
   }
   function handleClick(data) {
-    open = data.detail.open;
+    open = data ? data.detail.open : !open;
   }
 
   onMount(() => {
@@ -28,7 +28,7 @@
       style="border-color: rgba(255, 255, 255, 0.1)"
       class="flex items-center justify-between py-5 mx-auto border-b-2 border-solid wapper md:py-10 inner-wrapper"
       in:fly={{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}>
-      <Brand bind:open {segment} />
+      <Brand bind:open {segment} on:linkClick={handleClick} />
       <div class="hamburger">
         <Hamburger bind:open />
       </div>

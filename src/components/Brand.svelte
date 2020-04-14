@@ -1,6 +1,13 @@
 <script>
+  import { createEventDispatcher } from 'svelte';
   export let open = false;
   export let segment;
+
+  const dispatch = createEventDispatcher();
+
+  function handleLinkClick() {
+    dispatch('linkClick', { open: false });
+  }
 </script>
 
 <div class="brand">
@@ -8,6 +15,7 @@
     class="text-2xl font-medium leading-none tracking-wider text-white no-underline md:text-3xl"
     aria-current={segment === undefined ? 'page' : undefined}
     href="."
+    on:click={handleLinkClick}
     class:open>
     AARON WILDER
   </a>
