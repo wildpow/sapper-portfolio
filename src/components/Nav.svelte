@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
   import { quintOut } from 'svelte/easing';
   import { fly } from 'svelte/transition';
+  import { jsUcfirst } from '../utils.js';
   import Hamburger from './mobile-nav/Hamburger.svelte';
   import Sidebar from './mobile-nav/Sidebar.svelte';
   import Brand from './Brand.svelte';
@@ -9,6 +10,13 @@
   export let segment;
   let visible = false;
   let open = false;
+
+  let menuItems = [
+    { id: 1, name: 'projects' },
+    { id: 2, name: 'about' },
+    { id: 3, name: 'services' },
+    { id: 4, name: 'contact' },
+  ];
 
   function handleMenuClose(data) {
     open = data.detail.open;
@@ -31,38 +39,16 @@
       </div>
       <nav class="hidden">
         <ul class="flex">
-          <li>
-            <a
-              class:selected={segment === 'projects'}
-              aria-current={segment === 'projects' ? 'page' : undefined}
-              href="projects">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a
-              class:selected={segment === 'about'}
-              aria-current={segment === 'about' ? 'page' : undefined}
-              href="about">
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              class:selected={segment === 'services'}
-              aria-current={segment === 'services' ? 'page' : undefined}
-              href="services">
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              class:selected={segment === 'contact'}
-              aria-current={segment === 'contact' ? 'page' : undefined}
-              href="contact">
-              Contact
-            </a>
-          </li>
+          {#each menuItems as { id, name }}
+            <li>
+              <a
+                class:selected={segment === name}
+                aria-current={segment === { name } ? 'page' : undefined}
+                href={name}>
+                {jsUcfirst(name)}
+              </a>
+            </li>
+          {/each}
         </ul>
       </nav>
     </div>

@@ -2,11 +2,12 @@
   import { fly } from 'svelte/transition';
   import { createEventDispatcher, beforeUpdate, onMount } from 'svelte';
   import { expoInOut, backInOut } from 'svelte/easing';
-  export let segment;
+  import { jsUcfirst } from '../../utils.js';
 
+  export let segment;
   export let open = false;
-  let y;
   const dispatch = createEventDispatcher();
+  let y;
 
   function handleMenuClose() {
     dispatch('closeEvent', { open: false });
@@ -19,9 +20,6 @@
     { id: 4, name: 'contact' },
   ];
 
-  function jsUcfirst(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
   const mediaQueryHandler = e => {
     if (!e.matches) {
       dispatch('message', { open: false });
@@ -59,7 +57,6 @@
           </a>
         {/if}
       {/each}
-
     </nav>
   </aside>
 {/if}
