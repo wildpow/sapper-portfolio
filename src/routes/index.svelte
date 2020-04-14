@@ -33,7 +33,7 @@
       in:flyOnce={{ y: 100, duration: 1000 }}>
       <div
         style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"
-        class="flex flex-col md:pr-4"
+        class="flex flex-col w-full md:pr-4"
         in:fade={{ duration: 150 }}
         out:fade={{ duration: 150 }}>
         <h1 class="text-4xl leading-none text-white sm:text-6xl lg:text-7xl">
@@ -49,7 +49,9 @@
           My Projects
         </a>
       </div>
-      <div style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;">
+      <div
+        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"
+        class="w-full ">
         <figure
           class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero"
           transition:fade={{ duration: 150 }}>
