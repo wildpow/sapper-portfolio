@@ -49,9 +49,7 @@
           My Projects
         </a>
       </div>
-      <div
-        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"
-        class="w-full ">
+      <div style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;" class="w-full">
         <figure
           class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero"
           transition:fade={{ duration: 150 }}>
