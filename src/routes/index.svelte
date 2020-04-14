@@ -32,6 +32,7 @@
       class="flex flex-col items-center justify-between py-12 mx-auto inner-wrapper-hero md:flex-row"
       in:flyOnce={{ y: 100, duration: 1000 }}>
       <div
+        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"
         class="flex flex-col md:pr-4"
         in:fade={{ duration: 150 }}
         out:fade={{ duration: 150 }}>
@@ -48,50 +49,18 @@
           My Projects
         </a>
       </div>
-      <figure
-        class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero"
-        transition:fade={{ duration: 150 }}>
-        <picture>
-          <source
-            type="image/jpeg"
-            srcset="newPort/aaron-w404.jpg 1x, newPort/aaron-w808.jpg 2x"
-            media="(min-width: 901px)" />
-          <source
-            type="image/webp"
-            srcset="newPort/aaron-w404.webp 1x, newPort/aaron-w808.webp 2x"
-            media="(min-width: 901px)" />
-
-          <source
-            type="image/jpeg"
-            srcset="newPort/aaron-mobile_w315_1x.jpg 1x,
-            newPort/aaron-mobile_w630_2x.jpg 2x"
-            media="(max-width: 375px)" />
-          <source
-            type="image/webp"
-            srcset="newPort/aaron-mobile_w315_1x.webp 1x,
-            newPort/aaron-mobile_w630_2x.webp 2x"
-            media="(max-width: 375px)" />
-
-          <source
-            type="image/jpeg"
-            srcset="newPort/aaron-tablet_1x_w_768.jpg 1x,
-            newPort/aaron-tablet_2x_w_1536.jpg 2x"
-            media="(max-width: 900px) and (min-width: 376px)" />
-          <source
-            type="image/webp"
-            srcset="newPort/aaron-tablet_1x_w_768.webp 1x,
-            newPort/aaron-tablet_2x_w_1536.webp 2x"
-            media="(max-width: 900px) and (min-width: 376px)" />
+      <div style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;">
+        <figure
+          class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero"
+          transition:fade={{ duration: 150 }}>
           <div class="-mb-8 lg:-mb-24">
-
-            <img
-              src="newPort/aaron-w404.jpg"
+            <Image
+              src="new.jpg"
               alt="Aaron in smiling in a suit"
               class="rounded-md hero__img" />
           </div>
-        </picture>
-      </figure>
-
+        </figure>
+      </div>
     </div>
   {/if}
 </section>
