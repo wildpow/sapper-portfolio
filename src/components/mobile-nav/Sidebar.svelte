@@ -1,17 +1,17 @@
 <script>
-  export let open = false;
-  let y;
   import { fly } from 'svelte/transition';
   import { createEventDispatcher, beforeUpdate, onMount } from 'svelte';
   import { expoInOut, backInOut } from 'svelte/easing';
   export let segment;
+
+  export let open = false;
+  let y;
   const dispatch = createEventDispatcher();
-  function handleScroll() {
-    dispatch('message', { open: false });
+
+  function handleMenuClose() {
+    dispatch('closeEvent', { open: false });
   }
-  function handleLinkClick() {
-    dispatch('linkClick', { open: false });
-  }
+
   let menuItems = [
     { id: 1, name: 'projects' },
     { id: 2, name: 'about' },
@@ -34,7 +34,7 @@
   });
 
   beforeUpdate(() => {
-    if (y > 0 && open) handleScroll();
+    if (y > 0 && open) handleMenuClose();
   });
 </script>
 
@@ -49,7 +49,7 @@
           <a
             class:selected={segment === name}
             aria-current={segment === { name } ? 'page' : undefined}
-            on:click={handleLinkClick}
+            on:click={handleMenuClose}
             in:fly={{ y: -100, duration: 600, delay: i * 100, easing: backInOut }}
             out:fly={{ y: -100, duration: 300, delay: i * 25, easing: backInOut }}
             class="block pb-5 mb-5 font-light leading-tight border-b-2 text-list border-nav"
