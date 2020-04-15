@@ -18,3 +18,10 @@
     </div>
   </div>
 </section>
+
+<style>
+  .section--small {
+    max-width: 925px;
+    width: 92%;
+  }
+</style>
