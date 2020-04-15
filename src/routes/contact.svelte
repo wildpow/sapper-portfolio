@@ -1,22 +1,16 @@
+<script>
+  import Headline from '../components/Headline.svelte';
+  import Copyright from '../components/Copyright.svelte';
+</script>
+
 <svelte:head>
   <title>Contact</title>
 </svelte:head>
-<section class="page-banner md:pt-32 md:pb-24">
-  <div
-    class="flex flex-col justify-center py-12 mx-auto text-center sm:py-24 lg:py-32 fadeIn inner-wrapper section--small">
-    <div>
-      <h1
-        class="text-4xl font-normal leading-none text-center text-white md:text-6xl lg:text-7xl ">
-        Contact Me
-      </h1>
-      <h2
-        class="mt-6 text-xl font-light leading-snug text-primary sm:mt-8 sm:text-3xl md:text-4xl">
-        If you’d like to chat about a project please fill in the form below and
-        I’ll get back within 1-2 days.
-      </h2>
-    </div>
-  </div>
-</section>
+
+<Headline
+  headline="Contact Me"
+  tagline=" If you’d like to chat about a project please fill in the form below
+  and I’ll get back within 1-2 days." />
 <section class="py-12 md:py-24 lg:py-32">
   <div class="mx-auto section--small">
     <div
@@ -57,15 +51,7 @@
   </div>
 </section>
 
-<footer
-  class="flex justify-center bg-primary"
-  style="background-color: #101114;">
-  <div class="max-w-4xl py-5 text-center md:py-10 ">
-    <p class="font-light leading-none tracking-normal md:text-lg text-list">
-      © 2020 Aaron Wilder. All rights reserved.
-    </p>
-  </div>
-</footer>
+<Copyright />
 
 <style>
   .section--small {

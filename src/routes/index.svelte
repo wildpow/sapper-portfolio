@@ -7,10 +7,12 @@
   import Desktop from '../components/icons/Desktop_Icon.svelte';
   import Code from '../components/icons/Code_Icon.svelte';
   import Footer from '../components/Footer.svelte';
+  import Copyright from '../components/Copyright.svelte';
   import Quote from '../components/Quote.svelte';
-  let visible = false;
-  onMount(() => (visible = true));
 
+  let visible = false;
+
+  onMount(() => (visible = true));
   onDestroy(() => flown.set(true));
 
   function flyOnce(node, ...params) {
@@ -25,7 +27,7 @@
 <svelte:head>
   <title>Aaron Wilder</title>
 </svelte:head>
-<!--md:py-20 lg:py-24-->
+
 <section class="relative page-banner hero">
   {#if visible}
     <div
@@ -79,14 +81,13 @@
         <figure class="p-4 mb-4 rounded-md sm:mb-10 sm:p-10 bg-figure_projects">
           <a href="projects">
             <div class="-mb-8 rounded-md lg:-mb-24 esc-project">
-
               <Image
                 src="new_esc.png"
                 alt="e.s.c. mattress center"
-                class="rounded-md esc-project" />
-
+                class="rounded-md esc-project"
+                wrapperClass="rounded-md"
+                placeholderClass="rounded-md" />
             </div>
-
           </a>
         </figure>
       </div>
@@ -141,7 +142,6 @@
     </article>
   </div>
 </section>
-
 <Quote />
 <section class="flex flex-col py-12 md:py-24">
   <div class="pb-5 mx-auto sm:pb-20 inner-wrapper">
@@ -213,6 +213,7 @@
   </div>
 </section>
 <Footer />
+<Copyright />
 
 <style>
   .project__link {
@@ -226,28 +227,17 @@
     max-height: 100%;
     margin-bottom: -30px;
   }
-  .new {
-    margin-left: auto;
-    max-width: 421px;
-  }
   .hero {
     min-height: 932px;
   }
   @media screen and (min-width: 768px) {
-    .hero__img {
-      /* max-width: 325px;
-      max-height: 491px; */
-      margin-left: auto;
-      max-width: 421px;
-    }
-  }
-  @media screen and (min-width: 768px) {
-    img {
-      margin-bottom: -80px;
-    }
     .hero {
       min-height: 974px;
       padding-bottom: 100px;
+    }
+    .hero__img {
+      margin-left: auto;
+      max-width: 421px;
     }
   }
   @media screen and (min-width: 1024px) {
@@ -267,23 +257,13 @@
   .esc-project {
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
   }
-
-  @media screen and (max-width: 1920px) {
-    .inner-wrapper-hero {
-      max-width: 1200px;
-      width: 92%;
-    }
-  }
-  @media screen and (min-width: 1921px) {
-    .inner-wrapper-hero {
-      max-width: 1200px;
-      width: 92%;
-    }
+  .inner-wrapper-hero {
+    max-width: 1200px;
+    width: 92%;
   }
   .icon-span {
     transform: rotate(50%);
   }
-
   .icon-span::after {
     margin: 40px auto;
     width: 100%;

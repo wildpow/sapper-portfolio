@@ -1,4 +1,5 @@
 <script>
+  import Copyright from '../components/Copyright.svelte';
   export let status;
   export let error;
   const dev = process.env.NODE_ENV === 'development';
@@ -19,6 +20,8 @@
     </div>
   </div>
 </section>
+
+<Copyright />
 
 <style>
   @keyframes gradient {
