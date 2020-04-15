@@ -21,6 +21,8 @@
           src="will.jpg"
           alt="William Wellauer E.S.C. Mattress Center Owner">
           <Image
+            wrapperClass="rounded-full"
+            placeholderClass="rounded-full"
             class="mx-auto mb-5 rounded-full"
             src="will.jpg"
             alt="William Wellauer E.S.C. Mattress Center Owner" />
