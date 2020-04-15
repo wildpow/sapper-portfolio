@@ -51,10 +51,12 @@
       </div>
       <div class="w-full">
         <figure
-          class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero hero__img"
+          class="p-4 mt-0 mt-10 mb-4 rounded-md md:mb-12 md:p-12 bg-figure_hero hero__img"
           transition:fade={{ duration: 150 }}>
-          <div class="-mb-8 lg:-mb-24 ">
+          <div class="-mb-8 rounded-md lg:-mb-24">
             <Image
+              wrapperClass="rounded-md"
+              placeholderClass="rounded-md"
               src="new.jpg"
               alt="Aaron in smiling in a suit"
               class="rounded-md" />
