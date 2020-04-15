@@ -29,17 +29,17 @@
 <section class="relative page-banner hero">
   {#if visible}
     <div
-      class="flex flex-col items-center justify-between py-12 mx-auto inner-wrapper-hero md:flex-row"
+      class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 inner-wrapper-hero md:flex-row lg:py-24"
       in:flyOnce={{ y: 100, duration: 1000 }}>
       <div
-        style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;"
-        class="flex flex-col w-full md:pr-4"
+        class="flex flex-col w-full md:pr-4 bg-primary lg:pt-10"
         in:fade={{ duration: 150 }}
         out:fade={{ duration: 150 }}>
         <h1 class="text-4xl leading-none text-white sm:text-6xl lg:text-7xl">
           Hey, I'm Aaron.
         </h1>
-        <h2 class="mt-8 text-xl font-light text-primary sm:text-3xl md:3.5xl">
+        <h2
+          class="mt-8 text-xl font-light text-primary sm:text-3xl md:text-35xl">
           Web developer from Everett, WA. I create custom websites to help
           businesses do better online.
         </h2>
@@ -49,15 +49,15 @@
           My Projects
         </a>
       </div>
-      <div style="flex-grow: 1; flex-shrink: 1; flex-basis: 0%;" class="w-full">
+      <div class="w-full">
         <figure
-          class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero"
+          class="p-4 mt-0 mt-10 mb-4 rounded-md md: md:mb-12 md:p-12 bg-figure_hero hero__img"
           transition:fade={{ duration: 150 }}>
-          <div class="-mb-8 lg:-mb-24">
+          <div class="-mb-8 lg:-mb-24 ">
             <Image
               src="new.jpg"
               alt="Aaron in smiling in a suit"
-              class="rounded-md hero__img" />
+              class="rounded-md" />
           </div>
         </figure>
       </div>
@@ -224,13 +224,19 @@
     max-height: 100%;
     margin-bottom: -30px;
   }
+  .new {
+    margin-left: auto;
+    max-width: 421px;
+  }
   .hero {
     min-height: 932px;
   }
   @media screen and (min-width: 768px) {
     .hero__img {
-      max-width: 325px;
-      max-height: 491px;
+      /* max-width: 325px;
+      max-height: 491px; */
+      margin-left: auto;
+      max-width: 421px;
     }
   }
   @media screen and (min-width: 768px) {
@@ -240,6 +246,11 @@
     .hero {
       min-height: 974px;
       padding-bottom: 100px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .hero {
+      min-height: 1010px;
     }
   }
   .hero__button {

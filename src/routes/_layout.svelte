@@ -100,4 +100,9 @@
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
     }
   }
+  @media screen and (min-width: 1024px) {
+    .page-banner {
+      padding-top: 126px;
+    }
+  }
 </style>

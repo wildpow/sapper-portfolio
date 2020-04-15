@@ -1,6 +1,6 @@
 module.exports = {
   theme: {
-    backgroundColor: (theme) => ({
+    backgroundColor: theme => ({
       ...theme('colors'),
       primary: '#191a1d',
       secondary: '#5e5e5e',
@@ -11,7 +11,7 @@ module.exports = {
     fontFamily: {
       body: ['Rubik', 'Arial', 'sans-serif'],
     },
-    textColor: (theme) => ({
+    textColor: theme => ({
       ...theme('colors'),
       primary: '#ababab',
       secondary: '#919191',
@@ -20,7 +20,7 @@ module.exports = {
       projects: '#191a1d',
       blue: '#4b6cc1',
     }),
-    borderColor: (theme) => ({
+    borderColor: theme => ({
       ...theme('colors'),
       article: '#f6f6f6',
       blue: '#4b6cc1',
@@ -34,7 +34,7 @@ module.exports = {
       xl: '1.25rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
-      '3.5xl': '2.125rem',
+      '35xl': '2.125rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',

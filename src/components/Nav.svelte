@@ -76,6 +76,11 @@
       @apply pb-12 pt-16 border-none;
     }
   }
+  @media screen and (min-width: 1024px) {
+    .wapper {
+      @apply pt-20;
+    }
+  }
   li:not(:last-child) {
     margin-right: 50px;
   }
