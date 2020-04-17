@@ -26,7 +26,7 @@
         </h2>
         <p class="mt-5 text-2xl font-light leading-none lg:mt-6 text-list">
           I'm currently looking for new projects from
-          <strong class="font-medium ">January 2019</strong>
+          <strong class="font-medium ">April 2020</strong>
         </p>
       </div>
     </div>
