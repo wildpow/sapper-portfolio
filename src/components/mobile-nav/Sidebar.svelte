@@ -16,7 +16,7 @@
   let menuItems = [
     { id: 1, name: 'projects' },
     { id: 2, name: 'about' },
-    { id: 3, name: 'services' },
+    { id: 3, name: 'skills' },
     { id: 4, name: 'contact' },
   ];
 

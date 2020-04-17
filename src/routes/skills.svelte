@@ -5,12 +5,11 @@
 </script>
 
 <svelte:head>
-  <title>Services</title>
+  <title>Skills</title>
 </svelte:head>
 
 <Headline
-  headline="My Services"
+  headline="My Skills"
   tagline="Everything I offer with a detailed overview of each." />
-
 <Footer />
 <Copyright />
