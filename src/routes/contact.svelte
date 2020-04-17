@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="mx-auto section--small">
-    <form action="">
+    <form method="POST" name="contact" data-netlify="true">
       <div class="flex flex-col">
         <div class="flex flex-col sm:flex-row sm:justify-between">
 
@@ -77,6 +77,7 @@
         </div>
         <div class="mx-auto sm:mt-10">
           <button
+            type="submit"
             class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">
             Send Message
           </button>
