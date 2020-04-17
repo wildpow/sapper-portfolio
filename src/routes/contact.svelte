@@ -33,15 +33,41 @@
   </div>
   <div class="mx-auto section--small">
     <form action="">
-      <div>
-        <div>
-          <label for="">Name</label>
+      <div class="flex flex-col">
+        <div class="flex flex-col sm:flex-row sm:justify-between">
+
+          <div class="flex flex-col w-full input__wrapper">
+            <label class="text-lg font-medium uppercase text-secondary" for="">
+              Name
+            </label>
+            <input
+              class="h-16 p-6 text-lg rounded-md text-projects"
+              style="background-color: #f9f9f9; border: 2px solid #e2e2e2;"
+              type="text"
+              name="name"
+              required />
+          </div>
+          <div class="flex flex-col w-full input__wrapper">
+            <label class="text-lg font-medium uppercase text-secondary" for="">
+              email
+            </label>
+            <input
+              class="h-16 p-6 text-lg rounded-md text-projects"
+              style="background-color: #f9f9f9; border: 2px solid #e2e2e2;"
+              type="email"
+              name="email"
+              required />
+          </div>
         </div>
-        <div>
-          <label for="">email</label>
-        </div>
-        <div>
-          <label for="">How can I help?</label>
+        <div class="w-full">
+          <label class="text-lg font-medium uppercase text-secondary" for="">
+            How can I help?
+          </label>
+          <textarea
+            class="w-full h-16 p-6 text-lg rounded-md text-projects"
+            style="background-color: #f9f9f9; border: 2px solid #e2e2e2;"
+            name="message"
+            required />
         </div>
         <div>
           <button>Send Message</button>
@@ -57,5 +83,10 @@
   .section--small {
     max-width: 925px;
     width: 92%;
+  }
+  @media screen and (min-width: 640px) {
+    .input__wrapper {
+      width: 48.1%;
+    }
   }
 </style>
