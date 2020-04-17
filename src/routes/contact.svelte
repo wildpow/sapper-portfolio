@@ -32,7 +32,12 @@
     </div>
   </div>
   <div class="mx-auto section--small">
-    <form method="POST" name="contact" data-netlify="true">
+    <form
+      method="post"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      name="contact">
+      <input type="hidden" name="bot-field" />
       <div class="flex flex-col">
         <div class="flex flex-col sm:flex-row sm:justify-between">
 
