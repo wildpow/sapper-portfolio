@@ -26,6 +26,13 @@
 
 <svelte:head>
   <title>Aaron Wilder</title>
+  <meta
+    name="description"
+    content="Aaron Wilder's portfolio for web development." />
+  <meta
+    name="keywords"
+    content="Svelte, Sapper, Javascript, React, Gatsby, CSS, HTML, Web
+    Developer, Front-end developer" />
 </svelte:head>
 
 <section class="relative page-banner hero">
@@ -79,7 +86,7 @@
     <article class="flex flex-col justify-between mx-auto lg:flex-row">
       <div class="max-w-4xl lg:w-3/5">
         <figure class="p-4 mb-4 rounded-md sm:mb-10 sm:p-10 bg-figure_projects">
-          <a href="projects">
+          <a href="projects" aria-label="Link to featured project">
             <div class="-mb-8 rounded-md lg:-mb-24 esc-project">
               <Image
                 src="new_esc.png"
