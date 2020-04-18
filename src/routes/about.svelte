@@ -2,6 +2,10 @@
   import Headline from '../components/Headline.svelte';
   import Footer from '../components/Footer.svelte';
   import Copyright from '../components/Copyright.svelte';
+  let cora = 'new/cora2.jpg';
+  let tiffany = 'new/tiffany2.jpg';
+  let family = 'new/family.jpg';
+  let ninja3 = 'new/ninja3.jpg';
 </script>
 
 <svelte:head>
@@ -26,9 +30,31 @@
     subsequent three months paid team-lead role, I landed at a local mattress
     company designing and implementing their JAMStack application.
   </p>
-  <div class="mt-10">
-    <div />
-    <div />
+  <div class="flex justify-between mt-10">
+    <div>
+      <figure>
+        <img src={family} alt="" class="max-w-md" />
+        <figcaption
+          class="mt-10 text-lg leading-normal text-center text-secondary">
+          My favorite people.
+        </figcaption>
+      </figure>
+    </div>
+    <div>
+      <figure>
+        <img src={ninja3} alt="" class="max-w-md" />
+        <figcaption
+          class="mt-10 text-lg leading-normal text-center text-secondary">
+          Mr. Dr. Ninja Tiger
+        </figcaption>
+      </figure>
+    </div>
+    <!-- <div class="max-w-sm ">
+      <img src={cora} alt="" />
+    </div>
+    <div class="max-w-sm ">
+      <img src={tiffany} alt="" />
+    </div> -->
   </div>
 </section>
 <Footer />
