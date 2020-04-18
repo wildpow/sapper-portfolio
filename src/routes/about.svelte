@@ -20,12 +20,14 @@
   style="width: 92%; max-width: 925px;">
 
   <h2 class="text-5xl font-normal leading-tight ">Who I Am</h2>
-  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8">
+  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
     I'm a web developer based in Everett, WA.
   </p>
-  <p>
+  <p class="mt-5 text-xl font-light leading-relaxed lg:mt-8 text-list">
     After over ten years in the sales and customer service industries, I decided
     to make a career change and pursue my dream of becoming a software engineer.
+  </p>
+  <p class="mt-5 text-xl font-light leading-relaxed lg:mt-8 text-list">
     After completing Lambda School's nine-month computer science program and
     subsequent three months paid team-lead role, I landed at a local mattress
     company designing and implementing their JAMStack application.
@@ -56,6 +58,10 @@
       <img src={tiffany} alt="" />
     </div> -->
   </div>
+  <hr class="h-1 border-none lg:mt-24 bg-figure_projects" />
+  <h2 class="font-normal leading-tight  lg:mt-24 lg:text-5xl text-projects">
+    Why Work With Me
+  </h2>
 </section>
 <Footer />
 <Copyright />
