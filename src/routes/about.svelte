@@ -30,7 +30,13 @@
   <p class="mt-5 text-xl font-light leading-relaxed lg:mt-8 text-list">
     After completing Lambda School's nine-month computer science program and
     subsequent three months paid team-lead role, I landed at a local mattress
-    company designing and implementing their JAMStack application.
+    company designing and implementing their
+    <a
+      href="/projects"
+      class="transition-all duration-300 ease-in border-b-2 border-transparent border-solid hover:border-blue text-blue">
+      JAMStack application
+    </a>
+    .
   </p>
   <div class="flex justify-between mt-10">
     <div>
@@ -59,7 +65,7 @@
     </div> -->
   </div>
   <hr class="h-1 border-none lg:mt-24 bg-figure_projects" />
-  <h2 class="font-normal leading-tight  lg:mt-24 lg:text-5xl text-projects">
+  <h2 class="font-normal leading-tight lg:mt-24 lg:text-5xl text-projects">
     Why Work With Me
   </h2>
 </section>
