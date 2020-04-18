@@ -41,7 +41,10 @@
   <div class="flex justify-between mt-10">
     <div>
       <figure>
-        <img src={family} alt="" class="max-w-md" />
+        <img
+          src={family}
+          alt=""
+          class="max-w-md bg-white rounded-md shadow-2xl" />
         <figcaption
           class="mt-10 text-lg leading-normal text-center text-secondary">
           My favorite people.
@@ -50,7 +53,10 @@
     </div>
     <div>
       <figure>
-        <img src={ninja3} alt="" class="max-w-md" />
+        <img
+          src={ninja3}
+          alt=""
+          class="max-w-md bg-white rounded-md shadow-2xl" />
         <figcaption
           class="mt-10 text-lg leading-normal text-center text-secondary">
           Mr. Dr. Ninja Tiger
