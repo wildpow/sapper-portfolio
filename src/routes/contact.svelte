@@ -34,12 +34,12 @@
   <div class="mx-auto section--small">
     <form
       method="POST"
-      enctype="application/x-www-form-urlencoded"
+      Content-Type="application/x-www-form-urlencoded"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="contact"
       netlify>
-      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="bot-field" value="contact" />
       <div class="flex flex-col">
         <div class="flex flex-col sm:flex-row sm:justify-between">
 
@@ -85,6 +85,7 @@
         <div class="mx-auto sm:mt-10">
           <button
             type="submit"
+            value="send"
             class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">
             Send Message
           </button>
