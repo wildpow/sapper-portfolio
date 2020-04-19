@@ -1,11 +1,9 @@
 <script>
+  import Image from 'svelte-image';
+
   import Headline from '../components/Headline.svelte';
   import Footer from '../components/Footer.svelte';
   import Copyright from '../components/Copyright.svelte';
-  let cora = 'new/cora2.jpg';
-  let tiffany = 'new/tiffany2.jpg';
-  let family = 'new/family.jpg';
-  let ninja3 = 'new/ninja3.jpg';
 </script>
 
 <svelte:head>
@@ -38,25 +36,30 @@
     </a>
     .
   </p>
-  <div class="flex justify-between mt-10">
-    <div>
-      <figure>
-        <img
-          src={family}
+  <div class="flex flex-col mt-10 md:flex-row md:justify-between">
+    <div class="imgWrapper">
+      <figure class="w-full ">
+        <Image
+          src="family.jpg"
           alt=""
-          class="max-w-md bg-white rounded-md shadow-2xl" />
+          class="bg-white rounded-md shadow-2xl"
+          wrapperClass="rounded-md bg-white shadow-2xl"
+          placeholderClass="rounded-md bg-white shadow-2xl" />
         <figcaption
           class="mt-10 text-lg leading-normal text-center text-secondary">
           My favorite people.
         </figcaption>
       </figure>
     </div>
-    <div>
-      <figure>
-        <img
-          src={ninja3}
+    <div class="imgWrapper">
+      <figure class="w-full ">
+        <Image
+          src="ninja3.jpg"
           alt=""
-          class="max-w-md bg-white rounded-md shadow-2xl" />
+          class="bg-white rounded-md shadow-2xl"
+          wrapperClass="rounded-md bg-white shadow-2xl"
+          placeholderClass="rounded-md bg-white shadow-2xl" />
+
         <figcaption
           class="mt-10 text-lg leading-normal text-center text-secondary">
           Mr. Dr. Ninja Tiger
@@ -77,3 +80,14 @@
 </section>
 <Footer />
 <Copyright />
+
+<style>
+  .imgWrapper {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    .imgWrapper {
+      width: 48.5%;
+    }
+  }
+</style>
