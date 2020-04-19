@@ -87,14 +87,19 @@
         </div>
         <div class="mx-auto sm:mt-10">
           <label for="submit" id="submit">
-            <input type="submit" name="submit" value="Send" />
+            <!-- <input
+              type="submit"
+              name="submit"
+              value="Send"
+              class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue" /> -->
+            <button
+              type="submit"
+              value="send"
+              name="submit"
+              class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">
+              Send Message
+            </button>
           </label>
-          <!-- <button
-            type="submit"
-            value="send"
-            class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">
-            Send Message
-          </button> -->
         </div>
       </div>
     </form>
