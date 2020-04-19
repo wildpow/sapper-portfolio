@@ -56,15 +56,16 @@
     <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
     <div id="sapper">%sapper.html%</div>
-    <form name="contact" netlify netlify-honeypot="bot-field" content-type="application/x-www-form-urlencoded" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <textarea name="message"></textarea>
-      <button type="submit" name='submit'>submit</button>
-    </form>
+   
     <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
     %sapper.scripts%
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message" />
+      <input type="submit" name="submit"/>
+    </form>
   </body>
 </html>
