@@ -40,8 +40,8 @@
     <div class="imgWrapper">
       <figure class="w-full ">
         <Image
-          src="family.jpg"
-          alt=""
+          src="images/family.jpg"
+          alt="My family todether on thanksgiving"
           class="bg-white rounded-md shadow-2xl"
           wrapperClass="rounded-md bg-white shadow-2xl"
           placeholderClass="rounded-md bg-white shadow-2xl" />
@@ -54,8 +54,8 @@
     <div class="imgWrapper">
       <figure class="w-full ">
         <Image
-          src="ninja3.jpg"
-          alt=""
+          src="images/ninja3.jpg"
+          alt="My cat, Mr. Dr. Ninja Tiger being a lazy stud."
           class="bg-white rounded-md shadow-2xl"
           wrapperClass="rounded-md bg-white shadow-2xl"
           placeholderClass="rounded-md bg-white shadow-2xl" />
@@ -66,12 +66,6 @@
         </figcaption>
       </figure>
     </div>
-    <!-- <div class="max-w-sm ">
-      <img src={cora} alt="" />
-    </div>
-    <div class="max-w-sm ">
-      <img src={tiffany} alt="" />
-    </div> -->
   </div>
   <hr class="h-1 border-none lg:mt-24 bg-figure_projects" />
   <h2 class="font-normal leading-tight lg:mt-24 lg:text-5xl text-projects">

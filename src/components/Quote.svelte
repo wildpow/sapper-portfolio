@@ -15,16 +15,12 @@
         </p>
       </div>
       <cite class="mt-20 text-lg leading-none sm:text-3xl text-list">
-        <div
-          style="max-width: 80px;"
-          class="mx-auto mb-5 rounded-full"
-          src="will.jpg"
-          alt="William Wellauer E.S.C. Mattress Center Owner">
+        <div style="max-width: 80px;" class="mx-auto mb-5 rounded-full">
           <Image
             wrapperClass="rounded-full"
             placeholderClass="rounded-full"
             class="mx-auto mb-5 rounded-full"
-            src="will.jpg"
+            src="images/will.jpg"
             alt="William Wellauer E.S.C. Mattress Center Owner" />
         </div>
 
@@ -69,7 +65,7 @@
   section {
     clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
     background-size: 600px;
-    background-image: url(../stripes.svg);
+    background-image: url(../images/stripes.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(246, 246, 246);

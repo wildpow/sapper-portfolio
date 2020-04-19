@@ -66,7 +66,7 @@
             <Image
               wrapperClass="rounded-md"
               placeholderClass="rounded-md"
-              src="new.jpg"
+              src="images/new.jpg"
               alt="Aaron in smiling in a suit"
               class="rounded-md" />
           </div>
@@ -89,7 +89,7 @@
           <a href="projects" aria-label="Link to featured project">
             <div class="-mb-8 rounded-md lg:-mb-24 esc-project">
               <Image
-                src="new_esc.png"
+                src="images/new_esc.png"
                 alt="e.s.c. mattress center"
                 class="rounded-md esc-project"
                 wrapperClass="rounded-md"
