@@ -32,7 +32,7 @@
     </div>
   </div>
   <div class="mx-auto section--small">
-    <form
+    <!-- <form
       method="POST"
       Content-Type="application/x-www-form-urlencoded"
       netlify-honeypot="bot-field"
@@ -91,6 +91,56 @@
           </button>
         </div>
       </div>
+    </form> -->
+    <form
+      class="form"
+      name="contact"
+      method="POST"
+      action="/thankyou"
+      Content-Type="application/x-www-form-urlencoded"
+      netlify
+      netlify-honeypot="bot-field">
+      <label for="form-name" id="form-name">
+        <input type="hidden" name="form-name" value="contact" />
+      </label>
+      <label for="first-name" id="first-name">
+        First Name
+        <input
+          class="text"
+          type="text"
+          name="first-name"
+          placeholder="First Name"
+          required />
+      </label>
+      <label for="last-name" id="last-name">
+        Last Name
+        <input
+          class="text"
+          type="text"
+          name="last-name"
+          placeholder="Last Name"
+          required />
+      </label>
+      <label for="email" id="email">
+        Email
+        <input
+          class="text"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required />
+      </label>
+      <label for="subject" id="subject">
+        Subject
+        <input class="text" type="text" name="subject" placeholder="Subject" />
+      </label>
+      <label for="message" id="message">
+        Message
+        <textarea name="message" placeholder="Message" required />
+      </label>
+      <label for="submit" id="submit">
+        <input type="submit" name="submit" value="Send" />
+      </label>
     </form>
   </div>
 </section>
