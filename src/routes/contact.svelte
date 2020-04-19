@@ -36,6 +36,7 @@
       method="POST"
       netlify-honeypot="bot-field"
       data-netlify="true"
+      action="/contact"
       name="contact">
       <input type="hidden" name="bot-field" />
       <div class="flex flex-col">
