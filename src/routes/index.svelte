@@ -155,11 +155,11 @@
     <div class="pb-8 sm:pb-12">
       <h2
         class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">
-        My Services
+        My Skills
       </h2>
     </div>
     <div class="flex flex-col justify-between w-full sm:flex-row">
-      <div class="mb-8 services sm:mb-0">
+      <div class="mb-8 skills sm:mb-0">
         <div
           class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue"
           style="padding: 10%">
@@ -184,7 +184,7 @@
           </div>
         </div>
       </div>
-      <div class="h-full services">
+      <div class="h-full skills">
         <div
           class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue"
           style="padding: 10%">
@@ -213,9 +213,9 @@
   </div>
   <div class="pt-10 mx-auto ">
     <a
-      href="services"
+      href="skills"
       class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">
-      View All Services
+      View All Skills
     </a>
   </div>
 </section>
@@ -285,11 +285,11 @@
       margin: 30px auto;
     }
   }
-  .services {
+  .skills {
     width: 48.1%;
   }
   @media screen and (max-width: 640px) {
-    .services {
+    .skills {
       width: 100%;
     }
   }

@@ -34,10 +34,11 @@
   <div class="mx-auto section--small">
     <form
       method="POST"
+      enctype="application/x-www-form-urlencoded"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      action="/contact"
-      name="contact">
+      name="contact"
+      netlify>
       <input type="hidden" name="bot-field" />
       <div class="flex flex-col">
         <div class="flex flex-col sm:flex-row sm:justify-between">
@@ -45,7 +46,7 @@
           <div class="flex flex-col w-full input__wrapper">
             <label
               class="text-lg font-medium uppercase text-secondary sm:pb-4"
-              for="">
+              for="name">
               Name
             </label>
             <input
@@ -58,7 +59,7 @@
           <div class="flex flex-col w-full input__wrapper">
             <label
               class="text-lg font-medium uppercase text-secondary sm:pb-4"
-              for="">
+              for="email">
               email
             </label>
             <input
@@ -72,7 +73,7 @@
         <div class="flex flex-col w-full sm:mt-10">
           <label
             class="text-lg font-medium uppercase text-secondary sm:pb-4"
-            for="">
+            for="message">
             How can I help?
           </label>
           <textarea
