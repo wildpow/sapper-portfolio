@@ -33,7 +33,7 @@
   </div>
   <div class="mx-auto section--small">
     <form
-      method="post"
+      method="POST"
       netlify-honeypot="bot-field"
       data-netlify="true"
       name="contact">
