@@ -32,12 +32,13 @@
     </div>
   </div>
   <div class="mx-auto section--small">
-    <!-- <form
+    <form
+      action="/thankyou"
+      name="contact"
       method="POST"
       Content-Type="application/x-www-form-urlencoded"
       netlify-honeypot="bot-field"
       data-netlify="true"
-      name="contact"
       netlify>
       <input type="hidden" name="bot-field" value="contact" />
       <div class="flex flex-col">
@@ -91,8 +92,8 @@
           </button>
         </div>
       </div>
-    </form> -->
-    <form
+    </form>
+    <!-- <form
       class="form"
       name="contact"
       method="POST"
@@ -141,7 +142,7 @@
       <label for="submit" id="submit">
         <input type="submit" name="submit" value="Send" />
       </label>
-    </form>
+    </form> -->
   </div>
 </section>
 
