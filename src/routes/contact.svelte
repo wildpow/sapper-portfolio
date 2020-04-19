@@ -33,14 +33,16 @@
   </div>
   <div class="mx-auto section--small">
     <form
-      action="/thankyou"
+      class="form"
       name="contact"
       method="POST"
+      action="/thankyou"
       Content-Type="application/x-www-form-urlencoded"
-      netlify-honeypot="bot-field"
-      data-netlify="true"
-      netlify>
-      <input type="hidden" name="bot-field" value="contact" />
+      netlify
+      netlify-honeypot="bot-field">
+      <label for="form-name" id="form-name">
+        <input type="hidden" name="form-name" value="contact" />
+      </label>
       <div class="flex flex-col">
         <div class="flex flex-col sm:flex-row sm:justify-between">
 
@@ -84,12 +86,15 @@
             required />
         </div>
         <div class="mx-auto sm:mt-10">
-          <button
+          <label for="submit" id="submit">
+            <input type="submit" name="submit" value="Send" />
+          </label>
+          <!-- <button
             type="submit"
             value="send"
             class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">
             Send Message
-          </button>
+          </button> -->
         </div>
       </div>
     </form>
