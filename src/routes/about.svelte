@@ -17,7 +17,7 @@
   class="py-10 mx-auto sm:pt-20 md:py-24 "
   style="width: 92%; max-width: 925px;">
 
-  <h2 class="text-5xl font-normal leading-tight ">Who I Am</h2>
+  <h2 class="text-5xl font-normal leading-tight text-projects">Who I Am</h2>
   <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
     I'm a web developer based in Everett, WA.
   </p>
@@ -31,7 +31,7 @@
     company designing and implementing their
     <a
       href="/projects"
-      class="transition-all duration-300 ease-in border-b-2 border-transparent border-solid hover:border-blue text-blue">
+      class="transition-all duration-300 ease-in border-b border-transparent border-solid hover:border-blue text-blue">
       JAMStack application
     </a>
     .
@@ -46,7 +46,7 @@
           wrapperClass="rounded-md bg-white shadow-2xl"
           placeholderClass="rounded-md bg-white shadow-2xl" />
         <figcaption
-          class="mt-10 text-lg leading-normal text-center text-secondary">
+          class="mt-10 text-lg font-light leading-normal text-center text-secondary">
           My favorite people.
         </figcaption>
       </figure>
@@ -61,7 +61,7 @@
           placeholderClass="rounded-md bg-white shadow-2xl" />
 
         <figcaption
-          class="mt-10 text-lg leading-normal text-center text-secondary">
+          class="mt-10 text-lg font-light leading-normal text-center text-secondary">
           Mr. Dr. Ninja Tiger
         </figcaption>
       </figure>
@@ -81,8 +81,13 @@
     perfect, I do my best to come close.
   </p>
   <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
-    If you’ve got a project you’d like to work on with me just get in touch and
-    we can get to work!
+    If you’ve got a project you’d like to work on with me just
+    <a
+      href="contact"
+      class="transition-all duration-200 ease-in-out border-b border-transparent text-blue hover:border-blue">
+      get in touch
+    </a>
+    and we can get to work!
   </p>
 </section>
 <Footer />
