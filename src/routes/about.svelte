@@ -14,7 +14,7 @@
   headline="About Me"
   tagline="Find out who I am, where I'm from and what I'm all about." />
 <section
-  class="pt-10 mx-auto sm:pt-20 md:pt-24"
+  class="py-10 mx-auto sm:pt-20 md:py-24 "
   style="width: 92%; max-width: 925px;">
 
   <h2 class="text-5xl font-normal leading-tight ">Who I Am</h2>
@@ -67,10 +67,23 @@
       </figure>
     </div>
   </div>
-  <hr class="h-1 border-none lg:mt-24 bg-figure_projects" />
-  <h2 class="font-normal leading-tight lg:mt-24 lg:text-5xl text-projects">
+  <hr class="h-1 border-none lg:mt-24 bg-figure_projects md:mt-16" />
+  <h2
+    class="font-normal leading-tight lg:mt-24 sm:text-5xl text-projects md:mt-16 md:text">
     Why Work With Me
   </h2>
+  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
+    There’s nothing I enjoy more than designing and developing good websites for
+    nice people. It really is that simple.
+  </p>
+  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
+    I’ve spent many years trying to perfect what I do and while I’ll never be
+    perfect, I do my best to come close.
+  </p>
+  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
+    If you’ve got a project you’d like to work on with me just get in touch and
+    we can get to work!
+  </p>
 </section>
 <Footer />
 <Copyright />
