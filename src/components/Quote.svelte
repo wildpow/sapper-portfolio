@@ -27,7 +27,9 @@
         <strong class="mb-2 not-italic font-medium ">William Wellauer</strong>
         <div class="pt-1 not-italic font-light">
           Owner of
-          <a class="text-blue" href="https://www.escmattresscenter.com/">
+          <a
+            class="transition-all duration-200 ease-in-out border-b border-transparent text-blue hover:border-blue"
+            href="https://www.escmattresscenter.com/">
             E.S.C. Mattress Center
           </a>
         </div>
