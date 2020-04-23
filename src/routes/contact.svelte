@@ -28,9 +28,12 @@
           </span>
         </h2>
         <p
-          class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-6 text-list">
+          class="mt-4 text-xl font-light leading-relaxed md:text-2xl lg:mt-6 text-list">
           I'm currently looking for new projects from
-          <strong class="font-medium ">April 2020</strong>
+          <span>
+            <strong class="font-medium">April 2020</strong>
+
+          </span>
         </p>
       </div>
     </div>
@@ -48,7 +51,7 @@
         <input type="hidden" name="form-name" value="contact" />
       </label>
       <div class="flex flex-col">
-        <div class="flex flex-col sm:flex-row sm:justify-between">
+        <div class="flex flex-col md:flex-row md:justify-between">
 
           <div class="flex flex-col w-full input__wrapper">
             <label
@@ -63,7 +66,7 @@
               name="name"
               required />
           </div>
-          <div class="flex flex-col w-full mt-6 input__wrapper">
+          <div class="flex flex-col w-full mt-6 md:mt-0 input__wrapper">
             <label
               class="pb-2 font-medium tracking-wider uppercase sm:text-lg text-secondary"
               for="email">
@@ -126,7 +129,10 @@
     max-width: 925px;
     width: 92%;
   }
-  @media screen and (min-width: 640px) {
+  .text-area {
+    min-height: 180px;
+  }
+  @media screen and (min-width: 768px) {
     .text-area {
       min-height: 240px;
     }
