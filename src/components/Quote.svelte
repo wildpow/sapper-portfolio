@@ -8,13 +8,20 @@
     <blockquote class="flex flex-col leading-none text-center">
       <div class="relative py-16 inner__quote">
         <p
-          class="text-2xl font-light leading-snug text-center sm:text-4xl md:text-5xl text-projects quotes">
+          mt-5
+          text-xl
+          font-light
+          leading-relaxed
+          sm:text-2xl
+          lg:mt-8
+          text-list
+          class="text-2xl font-light leading-snug text-center sm:text-3xl md:text-5xl text-projects quotes">
           Aaron was instrumental in the development and deployment of our web
           services. We couldn’t have asked for a more professional, friendly, or
           competent developer.
         </p>
       </div>
-      <cite class="mt-20 text-lg leading-none sm:text-3xl text-list">
+      <cite class="mt-20 text-lg leading-none md:text-3xl text-list">
         <div style="max-width: 80px;" class="mx-auto mb-5 rounded-full">
           <Image
             wrapperClass="rounded-full"
@@ -25,7 +32,7 @@
         </div>
 
         <strong class="mb-2 not-italic font-medium ">William Wellauer</strong>
-        <div class="pt-1 not-italic font-light">
+        <div class="pt-1 not-italic font-light sm:pt-3">
           Owner of
           <a
             class="transition-all duration-200 ease-in-out border-b border-transparent text-blue hover:border-blue"

@@ -32,7 +32,6 @@
           I'm currently looking for new projects from
           <span>
             <strong class="font-medium">April 2020</strong>
-
           </span>
         </p>
       </div>

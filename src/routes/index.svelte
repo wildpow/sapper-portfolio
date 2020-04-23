@@ -38,17 +38,18 @@
 <section class="relative page-banner hero">
   {#if visible}
     <div
-      class="flex flex-col items-center justify-between py-12 mx-auto sm:py-20 inner-wrapper-hero md:flex-row lg:py-24"
+      class="flex flex-col items-center justify-between py-12 mx-auto md:py-20 inner-wrapper-hero md:flex-row lg:py-24"
       in:flyOnce={{ y: 100, duration: 1000 }}>
       <div
         class="flex flex-col w-full md:pr-4 bg-primary lg:pt-10"
         in:fade={{ duration: 150 }}
         out:fade={{ duration: 150 }}>
-        <h1 class="text-4xl leading-none text-white sm:text-6xl lg:text-7xl">
+        <h1
+          class="text-4xl leading-none text-white sm:text-5xl md:text-6xl lg:text-7xl">
           Hey, I'm Aaron.
         </h1>
         <h2
-          class="mt-8 text-xl font-light text-primary sm:text-3xl md:text-35xl">
+          class="mt-4 text-2xl font-light md:mt-8 text-primary md:text-3xl lg:text-35xl">
           Web developer from Everett, WA. I create custom websites to help
           businesses do better online.
         </h2>
@@ -62,7 +63,7 @@
         <figure
           class="p-4 mt-0 mt-10 mb-4 rounded-md md:mb-12 md:p-10 bg-figure_hero hero__img"
           transition:fade={{ duration: 150 }}>
-          <div class="-mb-8 rounded-md md:-mb-20 lg:-mb-24">
+          <div class="-mb-10 rounded-md md:-mb-20 lg:-mb-24">
             <Image
               wrapperClass="rounded-md"
               placeholderClass="rounded-md"
@@ -77,17 +78,18 @@
 </section>
 <section class="py-12 lg:py-24">
   <div class="pb-5 mx-auto sm:pb-20 inner-wrapper">
-    <div class="pb-8 sm:pb-12">
+    <div class="pb-8 md:pb-12">
       <h2
-        class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">
+        class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 md:text-2xl text-secondary border-article">
         Featured Project
       </h2>
     </div>
     <article class="flex flex-col justify-between mx-auto lg:flex-row">
       <div class="max-w-4xl lg:w-3/5">
-        <figure class="p-4 mb-4 rounded-md sm:mb-10 sm:p-10 bg-figure_projects">
+        <figure
+          class="p-4 mt-0 mb-4 rounded-md md:mt-10 md:mb-12 md:p-10 bg-figure_projects">
           <a href="projects" aria-label="Link to featured project">
-            <div class="-mb-8 rounded-md md:-mb-20 lg:-mb-24 esc-project">
+            <div class="-mb-10 rounded-md md:-mb-20 lg:-mb-24 esc-project">
               <Image
                 src="images/new_esc.png"
                 alt="e.s.c. mattress center"
@@ -99,14 +101,14 @@
         </figure>
       </div>
       <div
-        class="flex flex-col content-center justify-center pl-4 pr-4 mt-8 align-middle lg:w-2/6">
+        class="flex flex-col content-center justify-center px-4 mt-10 align-middle lg:w-2/6">
         <h3
-          class="text-3xl font-normal leading-none sm:text-5xl text-projects"
+          class="text-3xl font-normal leading-none md:text-5xl text-projects"
           style="line-height: 115%">
           <a class="project__link" href="projects">E.S.C. Mattress</a>
         </h3>
         <p
-          class="mt-5 text-xl font-light leading-relaxed sm:text-2xl text-list">
+          class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-8 text-list">
           A complete online-presents and marketing solution for a local bedding
           company designed to drive retail business.
         </p>
@@ -138,10 +140,10 @@
             </li>
           </ul>
         </div>
-        <div class="pt-6 sm:pt-10">
+        <div class="pt-6 md:pt-10">
           <a
             href="projects"
-            class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">
+            class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full md:text-2xl md:px-8 md:py-6 md:mt-8 hero__button bg-button_blue">
             View Case Study
           </a>
         </div>
@@ -154,12 +156,12 @@
   <div class="pb-5 mx-auto sm:pb-20 inner-wrapper">
     <div class="pb-8 sm:pb-12">
       <h2
-        class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 sm:text-2xl text-secondary border-article">
+        class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 md:text-2xl text-secondary border-article">
         My Skills
       </h2>
     </div>
-    <div class="flex flex-col justify-between w-full sm:flex-row">
-      <div class="mb-8 skills sm:mb-0">
+    <div class="flex flex-col justify-between w-full md:flex-row">
+      <div class="mb-8 skills md:mb-0">
         <div
           class="min-h-full text-center rounded-md bg-figure_projects border-t-6 border-blue"
           style="padding: 10%">
@@ -168,15 +170,15 @@
           </span>
           <div class="text-center ">
             <h3
-              class="text-2xl font-normal leading-tight sm:text-4xl text-projects">
+              class="text-2xl font-normal leading-tight md:text-4xl text-projects">
               Web Design
             </h3>
             <h4
-              class="mt-4 text-xl font-light leading-relaxed md:mt-5 sm:text-2xl text-projects">
+              class="mt-4 text-xl font-light leading-relaxed md:mt-5 md:text-2xl text-projects">
               User Focused
             </h4>
             <p
-              class="mt-4 text-lg font-light leading-relaxed md:mt-5 sm:text-2xl text-list">
+              class="mt-4 text-lg font-light leading-relaxed md:mt-5 md:text-2xl text-list">
               A website should be designed for the people who will use it, so
               that's exactly what I do. User focused design should be the
               primary goal of any website.
@@ -193,15 +195,15 @@
           </span>
           <div class="text-center ">
             <h3
-              class="text-2xl font-normal leading-tight sm:text-4xl text-projects">
+              class="text-2xl font-normal leading-tight md:text-4xl text-projects">
               Web Development
             </h3>
             <h4
-              class="mt-4 text-xl font-light leading-relaxed md:mt-5 sm:text-2xl text-projects">
+              class="mt-4 text-xl font-light leading-relaxed md:mt-5 md:text-2xl text-projects">
               Responsive and Fast
             </h4>
             <p
-              class="mt-4 text-lg font-light leading-relaxed md:mt-5 sm:text-2xl text-list">
+              class="mt-4 text-lg font-light leading-relaxed md:mt-5 md:text-2xl text-list">
               Every website should be built with two primary goals: Firstly, it
               needs to work across all devices. Secondly, it needs to be fast as
               possible.
@@ -214,7 +216,7 @@
   <div class="pt-10 mx-auto ">
     <a
       href="skills"
-      class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full sm:text-2xl sm:px-8 sm:py-6 sm:mt-8 hero__button bg-button_blue">
+      class="self-start px-6 py-5 text-lg tracking-wider text-white rounded-full md:text-2xl md:px-8 md:py-6 md:mt-8 hero__button bg-button_blue">
       View All Skills
     </a>
   </div>
@@ -286,11 +288,11 @@
     }
   }
   .skills {
-    width: 48.1%;
+    width: 100%;
   }
-  @media screen and (max-width: 640px) {
+  @media screen and (min-width: 768px) {
     .skills {
-      width: 100%;
+      width: 48.1%;
     }
   }
 </style>
