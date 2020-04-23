@@ -17,15 +17,20 @@
   class="py-10 mx-auto sm:pt-20 md:py-24 "
   style="width: 92%; max-width: 925px;">
 
-  <h2 class="text-5xl font-normal leading-tight text-projects">Who I Am</h2>
-  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
+  <h2 class="text-3xl font-normal leading-tight sm:text-5xl text-projects">
+    Who I Am
+  </h2>
+  <p
+    class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-8 text-list">
     I'm a web developer based in Everett, WA.
   </p>
-  <p class="mt-5 text-xl font-light leading-relaxed lg:mt-8 text-list">
+  <p
+    class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-8 text-list">
     After over ten years in the sales and customer service industries, I decided
     to make a career change and pursue my dream of becoming a software engineer.
   </p>
-  <p class="mt-5 text-xl font-light leading-relaxed lg:mt-8 text-list">
+  <p
+    class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-8 text-list">
     After completing Lambda School's nine-month computer science program and
     subsequent three months paid team-lead role, I landed at a local mattress
     company designing and implementing their
@@ -46,13 +51,13 @@
           wrapperClass="rounded-md bg-white shadow-2xl"
           placeholderClass="rounded-md bg-white shadow-2xl" />
         <figcaption
-          class="mt-10 text-lg font-light leading-normal text-center text-secondary">
+          class="mt-5 text-lg font-light leading-normal text-center sm:mt-10 text-secondary">
           My favorite people.
         </figcaption>
       </figure>
     </div>
-    <div class="imgWrapper">
-      <figure class="w-full ">
+    <div class="mt-8 imgWrapper md:mt-0">
+      <figure class="w-full">
         <Image
           src="images/ninja3.jpg"
           alt="My cat, Mr. Dr. Ninja Tiger being a lazy stud."
@@ -61,26 +66,29 @@
           placeholderClass="rounded-md bg-white shadow-2xl" />
 
         <figcaption
-          class="mt-10 text-lg font-light leading-normal text-center text-secondary">
+          class="mt-5 text-lg font-light leading-normal text-center sm:mt-10 text-secondary">
           Mr. Dr. Ninja Tiger
         </figcaption>
       </figure>
     </div>
   </div>
-  <hr class="h-1 border-none lg:mt-24 bg-figure_projects md:mt-16" />
+  <hr class="h-1 mt-10 border-none lg:mt-24 bg-figure_projects md:mt-16" />
   <h2
-    class="font-normal leading-tight lg:mt-24 sm:text-5xl text-projects md:mt-16 md:text">
+    class="mt-10 text-3xl font-normal leading-tight lg:mt-24 sm:text-5xl text-projects md:mt-16 md:text">
     Why Work With Me
   </h2>
-  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
+  <p
+    class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-8 text-list">
     There’s nothing I enjoy more than designing and developing good websites for
     nice people. It really is that simple.
   </p>
-  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
+  <p
+    class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-8 text-list">
     I’ve spent many years trying to perfect what I do and while I’ll never be
     perfect, I do my best to come close.
   </p>
-  <p class="mt-5 text-2xl font-light leading-relaxed lg:mt-8 text-list">
+  <p
+    class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-8 text-list">
     If you’ve got a project you’d like to work on with me just
     <a
       href="contact"

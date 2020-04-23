@@ -15,16 +15,20 @@
   <div class="mx-auto section--small">
     <div
       style="padding: 8%"
-      class="mb-20 text-center rounded-md border-blue border-t-6 bg-figure_projects">
+      class="mb-8 text-center rounded-md md:mb-20 border-blue border-t-6 bg-figure_projects">
       <div>
         <h2>
           <span class="text-xl leading-none md:text-3xl lg:text-4xl">
             Status
           </span>
           <br />
-          <span class="mt-5 text-blue md:text-5xl lg:mt-6">Available</span>
+          <span
+            class="text-3xl leading-none sm:mt-5 text-blue md:text-5xl lg:mt-6">
+            Available
+          </span>
         </h2>
-        <p class="mt-5 text-2xl font-light leading-none lg:mt-6 text-list">
+        <p
+          class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-6 text-list">
           I'm currently looking for new projects from
           <strong class="font-medium ">April 2020</strong>
         </p>
@@ -48,7 +52,7 @@
 
           <div class="flex flex-col w-full input__wrapper">
             <label
-              class="text-lg font-medium uppercase text-secondary sm:pb-4"
+              class="pb-2 font-medium tracking-wider uppercase sm:text-lg text-secondary"
               for="name">
               Name
             </label>
@@ -59,23 +63,23 @@
               name="name"
               required />
           </div>
-          <div class="flex flex-col w-full input__wrapper">
+          <div class="flex flex-col w-full mt-6 input__wrapper">
             <label
-              class="text-lg font-medium uppercase text-secondary sm:pb-4"
+              class="pb-2 font-medium tracking-wider uppercase sm:text-lg text-secondary"
               for="email">
               email
             </label>
             <input
-              class="h-16 p-6 text-lg rounded-md text-projects"
+              class="h-16 p-6 rounded-md sm:text-lg text-projects"
               style="background-color: #f9f9f9; border: 2px solid #e2e2e2;"
               type="email"
               name="email"
               required />
           </div>
         </div>
-        <div class="flex flex-col w-full sm:mt-10">
+        <div class="flex flex-col w-full mt-6 sm:mt-10">
           <label
-            class="text-lg font-medium uppercase text-secondary sm:pb-4"
+            class="pb-2 font-medium tracking-wider uppercase sm:text-lg text-secondary"
             for="message">
             How can I help?
           </label>
@@ -85,7 +89,7 @@
             name="message"
             required />
         </div>
-        <div class="mx-auto sm:mt-10">
+        <div class="mx-auto mt-6 sm:mt-10">
           <label for="submit" id="submit">
             <!-- <input
               type="submit"
