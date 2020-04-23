@@ -87,7 +87,7 @@
       <div class="max-w-4xl lg:w-3/5">
         <figure class="p-4 mb-4 rounded-md sm:mb-10 sm:p-10 bg-figure_projects">
           <a href="projects" aria-label="Link to featured project">
-            <div class="-mb-8 rounded-md lg:-mb-24 esc-project">
+            <div class="-mb-8 rounded-md md:-mb-20 lg:-mb-24 esc-project">
               <Image
                 src="images/new_esc.png"
                 alt="e.s.c. mattress center"
