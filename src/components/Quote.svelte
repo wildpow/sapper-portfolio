@@ -21,7 +21,7 @@
           competent developer.
         </p>
       </div>
-      <cite class="mt-20 text-lg leading-none md:text-3xl text-list">
+      <cite class="mt-20 text-xl leading-none md:text-3xl text-list">
         <div style="max-width: 80px;" class="mx-auto mb-5 rounded-full">
           <Image
             wrapperClass="rounded-full"

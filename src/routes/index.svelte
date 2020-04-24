@@ -108,32 +108,32 @@
           <a class="project__link" href="projects">E.S.C. Mattress</a>
         </h3>
         <p
-          class="mt-5 text-xl font-light leading-relaxed sm:text-2xl lg:mt-8 text-list">
+          class="mt-5 text-xl font-light leading-relaxed md:text-2xl lg:mt-8 text-list">
           A complete online-presents and marketing solution for a local bedding
           company designed to drive retail business.
         </p>
-        <div class="pt-6 sm:pt-10">
+        <div class="pt-6 md:pt-10">
           <ul>
             <li
-              class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase sm:text-xl text-secondary"
+              class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-secondary"
               style="margin-bottom: 30px">
-              <span class="mr-4">
+              <span class="mr-3 md:mr-4">
                 <Pen width={24} />
               </span>
               SEO Champain
             </li>
             <li
-              class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase sm:text-xl text-secondary"
+              class="flex items-center mb-8 font-medium leading-none tracking-wide uppercase md:text-xl text-secondary"
               style="margin-bottom: 30px">
-              <span class="mr-4">
+              <span class="mr-3 md:mr-4">
                 <Desktop width={24} />
               </span>
               Web Design
             </li>
             <li
-              class="flex items-center font-medium leading-none tracking-wide uppercase sm:text-xl text-secondary"
+              class="flex items-center font-medium leading-none tracking-wide uppercase md:text-xl text-secondary"
               style="margin-bottom: 30px">
-              <span class="mr-4">
+              <span class="mr-3 md:mr-4">
                 <Code width={24} />
               </span>
               Gatsby Development
