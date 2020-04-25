@@ -13,10 +13,7 @@
 <Headline
   headline="About Me"
   tagline="Find out who I am, where I'm from and what I'm all about." />
-<section
-  class="py-10 mx-auto sm:pt-20 md:py-24 "
-  style="width: 92%; max-width: 925px;">
-
+<section class="py-10 mx-auto sm:pt-20 md:py-24 wrapper-sm">
   <h2 class="text-3xl font-normal leading-tight sm:text-5xl text-projects">
     Who I Am
   </h2>

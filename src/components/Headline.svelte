@@ -5,7 +5,7 @@
 
 <section class="page-banner md:pt-32 md:pb-24">
   <div
-    class="flex flex-col justify-center py-12 mx-auto text-center sm:py-24 lg:py-32 fadeIn section--small">
+    class="flex flex-col justify-center py-12 mx-auto text-center sm:py-24 lg:py-32 fadeIn wrapper-sm">
     <div>
       <h1
         class="text-4xl font-normal leading-none text-center text-white md:text-6xl lg:text-7xl ">
@@ -18,10 +18,3 @@
     </div>
   </div>
 </section>
-
-<style>
-  .section--small {
-    max-width: 925px;
-    width: 92%;
-  }
-</style>

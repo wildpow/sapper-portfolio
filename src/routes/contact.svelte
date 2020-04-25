@@ -12,7 +12,7 @@
   tagline=" If you’d like to chat about a project please fill in the form below
   and I’ll get back within 1-2 days." />
 <section class="py-12 md:py-24 lg:py-32">
-  <div class="mx-auto section--small">
+  <div class="mx-auto wrapper-sm">
     <div
       style="padding: 8%"
       class="mb-8 text-center rounded-md md:mb-20 border-blue border-t-6 bg-figure_projects">
@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="mx-auto section--small">
+  <div class="mx-auto wrapper-sm">
     <form
       class="form"
       name="contact"
@@ -123,10 +123,6 @@
     box-shadow: inset 0 0 0 2px #4b6cc1;
     background: none;
     color: #4b6cc1;
-  }
-  .section--small {
-    max-width: 925px;
-    width: 92%;
   }
   .text-area {
     min-height: 180px;
