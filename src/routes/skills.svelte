@@ -20,47 +20,54 @@
     <div class="flex flex-col justify-between w-full">
       <div class="h-full skills">
         <div
-          class="flex min-h-full rounded-md bg-figure_projects border-t-6 border-blue"
+          class="flex flex-col rounded-md md:flex-row md:justify-between bg-figure_projects border-t-6 border-blue"
           style="padding: 10%">
-          <span class="icon-span text-blue" style="max-width: 128px;">
-            <Desktop width={200} />
+          <span class="icon-span text-blue">
+            <Desktop width={200} styles="max-width: 128px;" />
           </span>
-          <div>
+
+          <div class=" md:max-w-lg">
             <h3
-              class="text-2xl font-normal leading-tight md:text-4xl text-projects">
+              class="text-2xl font-normal leading-tight md:text-5xl text-projects">
               Web Development
             </h3>
-            <h4
-              class="mt-4 text-xl font-light leading-relaxed md:mt-5 md:text-2xl text-projects">
-              HTML / CSS
-            </h4>
-            <p
-              class="mt-4 text-lg font-light leading-relaxed md:mt-5 md:text-2xl text-list">
-              Creating a strong foundation for a website means getting the HTML
-              and CSS architecture right. If you've got a design I can create
-              the front-end code for it.
-            </p>
-            <h4
-              class="mt-4 text-xl font-light leading-relaxed md:mt-5 md:text-2xl text-projects">
-              React
-            </h4>
-            <p
-              class="mt-4 text-lg font-light leading-relaxed md:mt-5 md:text-2xl text-list">
-              bla bla bla
-            </p>
-            <h4
-              class="mt-4 text-xl font-light leading-relaxed md:mt-5 md:text-2xl text-projects">
-              Performance
-            </h4>
-            <p
-              class="mt-4 text-lg font-light leading-relaxed md:mt-5 md:text-2xl text-list">
-              Having a fast website is key to keeping people around which
-              ultimately converts them into customers. There are a myriad of
-              techniques involved in making a fast website, all of which I've
-              spent years learning. I build these techniques into every site I
-              code and can also offer this as a standalone service for existing
-              websites.
-            </p>
+            <div class="mt-4 md:mt-8">
+              <h4
+                class="text-xl font-normal leading-5 md:text-3xl text-projects">
+                HTML / CSS
+              </h4>
+              <p
+                class="mt-4 text-lg font-light leading-relaxed md:text-xl text-list">
+                Creating a strong foundation for a website means getting the
+                HTML and CSS architecture right. If you've got a design I can
+                create the front-end code for it.
+              </p>
+            </div>
+            <div class="mt-4 md:mt-8">
+              <h4
+                class="text-xl font-normal leading-5  md:text-3xl text-projects">
+                React
+              </h4>
+              <p
+                class="mt-4 text-lg font-light leading-relaxed md:text-xl text-list">
+                bla bla bla
+              </p>
+            </div>
+            <div class="mt-4 md:mt-8">
+              <h4
+                class="text-xl font-normal leading-5 md:text-3xl text-projects">
+                Performance
+              </h4>
+              <p
+                class="mt-4 text-lg font-light leading-relaxed md:text-xl text-list">
+                Having a fast website is key to keeping people around which
+                ultimately converts them into customers. There are a myriad of
+                techniques involved in making a fast website, all of which I've
+                spent years learning. I build these techniques into every site I
+                code and can also offer this as a standalone service for
+                existing websites.
+              </p>
+            </div>
           </div>
         </div>
       </div>
