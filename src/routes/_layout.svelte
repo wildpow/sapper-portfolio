@@ -17,8 +17,6 @@
 </main>
 
 <style global>
-  :global(.btn) {
-  }
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
@@ -67,15 +65,15 @@
   :global(body) {
     font-family: 'Rubik', 'Arial', sans-serif;
   }
-  :global(.wrapper-lg) {
+  .wrapper-lg {
     max-width: 1430px;
     width: 92%;
   }
-  :global(.wrapper-md) {
+  .wrapper-md {
     max-width: 1200px;
     width: 92%;
   }
-  :global(.wrapper-sm) {
+  .wrapper-sm {
     max-width: 925px;
     width: 92%;
   }
