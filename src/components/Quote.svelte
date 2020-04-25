@@ -4,7 +4,7 @@
 </script>
 
 <section class="px-4 sm:px-10 sm:py-24 md:py-24 bg-figure_projects">
-  <div class="py-12 mx-auto md:py-32 wrapper-sm">
+  <div class="py-12 mx-auto md:py-32" style="max-width: 925px;">
     <blockquote class="flex flex-col leading-none text-center">
       <div class="relative py-16 inner__quote">
         <p

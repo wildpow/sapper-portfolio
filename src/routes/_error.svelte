@@ -10,7 +10,7 @@
 </svelte:head>
 <section class="flex h-screen">
   <div
-    class="flex flex-col justify-center py-12 mx-auto text-center sm:py-24 lg:py-32 fadeIn wrapper-lg">
+    class="flex flex-col justify-center py-12 mx-auto text-center sm:py-24 lg:py-32 fadeIn wrapper__large section--small">
     <div>
       <h1 class="leading-none error">{status}</h1>
       <h2 class="mt-6 leading-none error sm:mt-8">{error.message}</h2>
@@ -52,6 +52,10 @@
     .error {
       font-size: 10rem;
     }
+  }
+  .section--small {
+    max-width: 925px;
+    width: 92%;
   }
   section {
     @apply bg-primary;

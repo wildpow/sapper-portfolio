@@ -6,7 +6,7 @@
 </script>
 
 <section class="pt-12 md:pt-40 bg-primary">
-  <div class="pt-12 pb-12 mx-auto leading-none lg:py-40 wrapper-md">
+  <div class="pt-12 pb-12 mx-auto leading-none lg:py-40 wrapper__small">
     <div class="flex flex-col md:flex-row">
       <div class="flex flex-col md:w-2/3">
         <div class="pb-6 md:pb-10">

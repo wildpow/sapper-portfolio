@@ -38,7 +38,7 @@
 <section class="relative page-banner hero">
   {#if visible}
     <div
-      class="flex flex-col items-center justify-between py-12 mx-auto md:py-20 wrapper-md md:flex-row lg:py-24"
+      class="flex flex-col items-center justify-between py-12 mx-auto md:py-20 wrapper__small md:flex-row lg:py-24"
       in:flyOnce={{ y: 100, duration: 1000 }}>
       <div
         class="flex flex-col w-full md:pr-4 bg-primary lg:pt-10"
@@ -77,7 +77,7 @@
   {/if}
 </section>
 <section class="py-12 lg:py-24">
-  <div class="pb-5 mx-auto sm:pb-20 wrapper-lg">
+  <div class="pb-5 mx-auto sm:pb-20 wrapper__large">
     <div class="pb-8 md:pb-12">
       <h2
         class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 md:text-2xl text-secondary border-article">
@@ -153,7 +153,7 @@
 </section>
 <Quote />
 <section class="flex flex-col py-12 md:py-24">
-  <div class="pb-5 mx-auto sm:pb-20 wrapper-lg">
+  <div class="pb-5 mx-auto sm:pb-20 wrapper__large">
     <div class="pb-8 sm:pb-12">
       <h2
         class="pb-4 text-xl font-medium leading-none tracking-wider uppercase border-b-4 md:text-2xl text-secondary border-article">

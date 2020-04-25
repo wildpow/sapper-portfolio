@@ -16,7 +16,7 @@
   headline="My Skills"
   tagline="Everything I offer with a detailed overview of each." />
 <section class="flex flex-col py-12 md:py-24">
-  <div class="pb-5 mx-auto sm:pb-20 wrapper-lg">
+  <div class="pb-5 mx-auto sm:pb-20 wrapper__large">
     <div class="flex flex-col justify-between w-full">
       <div class="h-full skills">
         <div
