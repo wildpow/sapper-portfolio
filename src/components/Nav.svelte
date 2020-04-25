@@ -31,7 +31,7 @@
   <header class="absolute z-10 w-full" class:navOpen={open === true}>
     <div
       style="border-color: rgba(255, 255, 255, 0.1)"
-      class="flex items-center justify-between py-5 mx-auto border-b-2 border-solid wapper md:py-10 inner-wrapper"
+      class="flex items-center justify-between py-5 mx-auto border-b-2 border-solid wapper md:py-10 wrapper__large"
       in:fly={{ y: -100, duration: 1000, opacity: 0.1, easing: quintOut }}>
       <Brand bind:open {segment} on:closeEvent={handleMenuClose} />
       <div class="hamburger">

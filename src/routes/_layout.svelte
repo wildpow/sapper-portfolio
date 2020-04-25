@@ -17,6 +17,8 @@
 </main>
 
 <style global>
+  :global(.btn) {
+  }
   @tailwind base;
   @tailwind components;
   @tailwind utilities;
@@ -62,20 +64,16 @@
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
   }
-  body {
+  :global(body) {
     font-family: 'Rubik', 'Arial', sans-serif;
   }
-  @media screen and (max-width: 1920px) {
-    .inner-wrapper {
-      max-width: 1430px;
-      width: 92%;
-    }
+  :global(.wrapper__large) {
+    max-width: 1430px;
+    width: 92%;
   }
-  @media screen and (min-width: 1921px) {
-    .inner-wrapper {
-      max-width: 1200px;
-      max-width: 1430px;
-    }
+  :global(.wrapper__small) {
+    max-width: 1200px;
+    width: 92%;
   }
 
   @keyframes fadeIn {

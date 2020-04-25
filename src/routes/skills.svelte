@@ -3,9 +3,9 @@
   import Footer from '../components/Footer.svelte';
   import Copyright from '../components/Copyright.svelte';
 
-  import Pen from '../components/icons/Pen_Icon.svelte';
+  // import Pen from '../components/icons/Pen_Icon.svelte';
   import Desktop from '../components/icons/Desktop_Icon.svelte';
-  import Code from '../components/icons/Code_Icon.svelte';
+  // import Code from '../components/icons/Code_Icon.svelte';
 </script>
 
 <svelte:head>
@@ -16,7 +16,7 @@
   headline="My Skills"
   tagline="Everything I offer with a detailed overview of each." />
 <section class="flex flex-col py-12 md:py-24">
-  <div class="pb-5 mx-auto sm:pb-20 inner-wrapper">
+  <div class="pb-5 mx-auto sm:pb-20 wrapper__large">
     <div class="flex flex-col justify-between w-full">
       <div class="h-full skills">
         <div
@@ -45,7 +45,7 @@
             </div>
             <div class="mt-4 md:mt-8">
               <h4
-                class="text-xl font-normal leading-5  md:text-3xl text-projects">
+                class="text-xl font-normal leading-5 md:text-3xl text-projects">
                 React
               </h4>
               <p
