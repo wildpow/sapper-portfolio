@@ -20,10 +20,10 @@
     <div class="flex flex-col justify-between w-full">
       <div class="h-full skills">
         <div
-          class="min-h-full rounded-md bg-figure_projects border-t-6 border-blue"
+          class="flex min-h-full rounded-md bg-figure_projects border-t-6 border-blue"
           style="padding: 10%">
-          <span class="icon-span text-blue">
-            <Desktop width={52} />
+          <span class="icon-span text-blue" style="max-width: 128px;">
+            <Desktop width={200} />
           </span>
           <div>
             <h3
