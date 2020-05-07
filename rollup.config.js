@@ -73,7 +73,7 @@ const onwarn = (warning, onwarn) =>
 export default {
   client: {
     input: config.client.input(),
-    output: config.client.output(),
+    output: { ...config.client.output(), sourcemap: false },
     plugins: [
       replace({
         'process.browser': true,
@@ -124,6 +124,7 @@ export default {
           module: true,
         }),
     ],
+		preserveEntrySignatures: "false",
 
     onwarn,
   },
@@ -155,13 +156,14 @@ export default {
       require('module').builtinModules ||
         Object.keys(process.binding('natives'))
     ),
+    preserveEntrySignatures: "false",
 
     onwarn,
   },
 
   serviceworker: {
     input: config.serviceworker.input(),
-    output: config.serviceworker.output(),
+    output: {...config.serviceworker.output(), sourcemap: false },
     plugins: [
       resolve(),
       replace({
