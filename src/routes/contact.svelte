@@ -31,7 +31,7 @@
           class="mt-4 text-xl font-light leading-relaxed md:text-2xl lg:mt-6 text-list">
           I'm currently looking for new projects from
           <span>
-            <strong class="font-medium">April 2020</strong>
+            <strong class="font-medium">August 2020</strong>
           </span>
         </p>
       </div>
